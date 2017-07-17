@@ -31,7 +31,7 @@ public class IndividualRestaurant {
 
 	public IndividualRestaurant(String restaurantName, String address, String websiteUrl,
 			String phoneNumber, String hours, String facebookUrl, String twitterUrl, String instagramUrl,
-			String yelpUrl, String price, Category category, String rating, String mainPagePictureUrl) {
+			String yelpUrl, String price, Category category, String mainPagePictureUrl) {
 		this.restaurantName = restaurantName;
 		this.address = address;
 		this.websiteUrl = websiteUrl;
@@ -43,7 +43,6 @@ public class IndividualRestaurant {
 		this.yelpUrl = yelpUrl;
 		this.price = price;
 		this.category = category;
-		this.rating = rating;
 		this.mainPagePictureUrl = mainPagePictureUrl;
 	}
 

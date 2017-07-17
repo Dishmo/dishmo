@@ -1,0 +1,26 @@
+package com.dishmo.dishmo;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class RestaurantController {
+	
+	@Resource
+	private IndividualRestaurantRepository restRepo;
+	
+	@Resource
+	private CategoryRepository catRepo;
+	
+	@RequestMapping ("/restaurant")
+	public String fetchRestaurantDetail(@RequestParam("restaurantId") Long id, Model model) {
+		IndividualRestaurant restaurant = restRepo.findOne(id);
+		model.addAttribute(restaurant);
+		return "restaurant";
+	}
+
+}

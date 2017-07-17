@@ -18,8 +18,7 @@ public class RestaurantController {
 	
 	@RequestMapping ("/restaurant")
 	public String fetchRestaurantDetail(@RequestParam("restaurantId") Long id, Model model) {
-		IndividualRestaurant restaurant = restRepo.findOne(id);
-		model.addAttribute(restaurant);
+		model.addAttribute("restaurantIn", restRepo.findOne(id));
 		return "restaurant";
 	}
 

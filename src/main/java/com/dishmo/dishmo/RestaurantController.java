@@ -26,7 +26,6 @@ public class RestaurantController {
 	public String fetchRestaurants(Model model) {
 		model.addAttribute("restaurantIn", restRepo.findAll());
 		return "restaurants";
-
 	}
 
 	@RequestMapping("/home")

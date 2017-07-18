@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Restaurants</title>
+</head>
+<body>
+	<h1>All dishmo Restaurants</h1>
+
+	<ol type="1">
+	<li th:each="currentRestaurant: ${restaurantIn}"><a th:href="@{/restaurant(id=${currentRestaurant.restaurantId})}" th:text="${currentRestaurant.name}" /></li>
+	</ol>
+
+</body>
+</html>

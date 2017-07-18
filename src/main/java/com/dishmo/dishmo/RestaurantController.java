@@ -9,17 +9,30 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class RestaurantController {
-	
+
 	@Resource
 	private RestaurantRepository restRepo;
-	
+
 	@Resource
 	private CategoryRepository catRepo;
-	
-	@RequestMapping ("/restaurant")
+
+	@RequestMapping("/restaurant")
 	public String fetchRestaurantDetail(@RequestParam("id") Long id, Model model) {
 		model.addAttribute("restaurantIn", restRepo.findOne(id));
 		return "restaurant";
+	}
+
+	@RequestMapping("/restaurants")
+	public String fetchRestaurants(Model model) {
+		model.addAttribute("restaurantIn", restRepo.findAll());
+		return "restaurants";
+
+	}
+
+	@RequestMapping("/home")
+	public String fetchHome(Model model) {
+		return "dishmohome";
+
 	}
 
 }

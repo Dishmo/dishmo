@@ -31,3 +31,15 @@ hr {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+a{
+	text-decoration: none;
+	color:#000000;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.btn-default {
+	border-color: black;

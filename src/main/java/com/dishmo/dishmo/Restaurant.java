@@ -1,15 +1,17 @@
 package com.dishmo.dishmo;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-public class IndividualRestaurant {
+@Entity
+public class Restaurant {
 
 	@Id
 	@GeneratedValue
 	private Long restaurantId;
-	private String restaurantName;
+	private String name;
 	private String address;
 	private String websiteUrl;
 	private String phoneNumber;
@@ -26,13 +28,13 @@ public class IndividualRestaurant {
 	private String rating;
 	private String mainPagePictureUrl;
 	
-	private IndividualRestaurant() {
+	private Restaurant() {
 	}
 
-	public IndividualRestaurant(String restaurantName, String address, String websiteUrl,
+	public Restaurant(String name, String address, String websiteUrl,
 			String phoneNumber, String hours, String facebookUrl, String twitterUrl, String instagramUrl,
 			String yelpUrl, String price, Category category, String mainPagePictureUrl) {
-		this.restaurantName = restaurantName;
+		this.name = name;
 		this.address = address;
 		this.websiteUrl = websiteUrl;
 		this.phoneNumber = phoneNumber;
@@ -50,8 +52,8 @@ public class IndividualRestaurant {
 		return restaurantId;
 	}
 
-	public String getRestaurantName() {
-		return restaurantName;
+	public String getName() {
+		return name;
 	}
 
 	public String getAddress() {

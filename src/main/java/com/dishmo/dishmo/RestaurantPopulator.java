@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class RestaurantPopulator implements CommandLineRunner {
 	
 	@Resource
-	private IndividualRestaurantRepository restRepo;
+	private RestaurantRepository restRepo;
 	
 	@Resource
 	private CategoryRepository catRepo;
@@ -21,7 +21,10 @@ public class RestaurantPopulator implements CommandLineRunner {
 		
 		catRepo.save(indian);
 		
-		IndividualRestaurant dosaCorner = new IndividualRestaurant("Dosa Corner", "1077 Old Henderson Rd. Columbus, OH 43220", "www.dosacornerrestaurant.com", "614-459-5515", "Mon 5-9pm, Tues-Sat 11am-9pm, Sun 12-8pm", "facebook.com/dosa2go", "na", "na", "yelp.com/biz/dosa-corner-columbus", "$", indian, "/images/mangolassi.jpg");
+		Restaurant dosaCorner = new Restaurant("Dosa Corner", "1077 Old Henderson Rd. Columbus, OH 43220", "www.dosacornerrestaurant.com", "614-459-5515", "Mon 5-9pm, Tues-Sat 11am-9pm, Sun 12-8pm", "facebook.com/dosa2go", "na", "na", "yelp.com/biz/dosa-corner-columbus", "$", indian, "/images/mangolassi.jpg");
+	    
+		restRepo.save(dosaCorner);
 	}
+	
 
 }

@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class RestaurantController {
 	
 	@Resource
-	private IndividualRestaurantRepository restRepo;
+	private RestaurantRepository restRepo;
 	
 	@Resource
 	private CategoryRepository catRepo;
 	
 	@RequestMapping ("/restaurant")
-	public String fetchRestaurantDetail(@RequestParam("restaurantId") Long id, Model model) {
+	public String fetchRestaurantDetail(@RequestParam("id") Long id, Model model) {
 		model.addAttribute("restaurantIn", restRepo.findOne(id));
 		return "restaurant";
 	}

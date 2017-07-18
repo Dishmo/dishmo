@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>dishmo | restaurant</title>
+	<title>dishmo | restaurant</title>
 </head>
 <body>
-<p> something goes here</p>
-</body>
-</html>
+	<p> something goes here</p>
+
+	<div th:each="current: ${restaurantIn}">
+	<p th:text="${current.name}" ></p>
+	</div>
+	</body>
+
+	</html>

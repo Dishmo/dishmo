@@ -34,4 +34,14 @@ public class RestaurantController {
 
 	}
 
+	@RequestMapping("/about")
+	public String fetchAbout(Model model) {
+		return "about";
+
+	}
+	@RequestMapping("/contact")
+	public String fetchContact(Model model) {
+		return "contact";
+
+	}
 }

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-	<title>dishmo | restaurant</title>
+	<title>About dishmo</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet"></link>
-	<link rel="stylesheet" type="text/css" href="/css/restaurant.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/about.css"></link>
 </head>
 <body>
-	
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -33,14 +32,10 @@
 			</div>
 		</div>
 	</nav>
-	<p> something goes here</p>
+	<h1>About dishmo</h1>
 
-	<div th:each="current: ${restaurantIn}">
-		<p th:text="${current.name}" ></p>
-	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </body>
-
-
 </html>

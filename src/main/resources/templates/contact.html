@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact dishmo</title>
-<link rel="stylesheet" type="text/css"
+	<title>Contact dishmo</title>
+	<link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
-<link rel="stylesheet" type="text/css"
+	<link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
-<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto"
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto"
 	rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="/css/contact.css"></link>
-<script
+	<link rel="stylesheet" type="text/css" href="/css/contact.css"></link>
+	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-	$(function() {
-		$("#dishmonav").load("/dishmonav.html");
-	});
-</script>
+	<script>
+		$(function() {
+			$("#dishmonav").load("/dishmonav.html");
+		});
+	</script>
 </head>
 <body>
 	<nav id="dishmonav"></nav>
@@ -24,13 +24,49 @@
 		<h1>Contact dishmo</h1>
 
 		<p>Ready for foodies to find you? Submit your restaurant to
-			Dishmo.</p>
+			dishmo.</p>
+
+		<form method="post" action="mailto:adamyoungpeter@gmail.com">
+			<div>
+				<label for="restaurant-name">Restaurant Name:</label> <input
+					name="restaurant-name" id="restaurant-name" type="text"
+					placeholder="your restaurant" required="true"></input>>
+			</div>
+			<div>
+				<label for="restaurant-url">Restaurant URL:</label> <input
+					name="restaurant-url" id="restaurant-url" type="text"
+					placeholder="your restaurant url" required="true"></input>
+			</div>
+			<div>
+				<label for="contact-name">Contact Name:</label> <input
+					name="contact-name" id="contact-name" type="text"
+					placeholder="John Smith" required="true"></input>
+			</div>
+			<div>
+				<label for="phone">Phone:</label> <input id="phone" type="phone"
+					placeholder="enter phone" required="true"></input>
+			</div>
+			<div>
+				<label for="email">Email:</label> <input id="email" type="email"
+					placeholder="enter email" required="true"></input>
+			</div>
+			<div>
+				<label for="time-contact">Best Time To Contact:</label> <input
+					name="time-contact" id="time-contact" type="text"
+					placeholder="9-10am" required="true"></input>
+			</div>
+			<div>
+				<input type="submit" value="Submit"></input>
+			</div>
+		</form>
+		
+		
+
 
 	</div>
 		<script type="text/javascript"
-			src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript"
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+	</html>

@@ -33,6 +33,10 @@ public class RestaurantController {
 		return "dishmohome";
 
 	}
+	@RequestMapping("/dishmonav")
+	public String fetchNav(Model model) {
+		return "dishmonav";
+	}
 
 	@RequestMapping("/about")
 	public String fetchAbout(Model model) {

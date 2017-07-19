@@ -63,6 +63,8 @@ a:hover {
 .navbar-brand, h3 {
 	color: #fccd04;
 }
-
+.navbar-toggle {
+	background: white;
+}
 
 	

@@ -6,32 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet"></link>
 	<link rel="stylesheet" type="text/css" href="/css/about.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script>
+  	$(function(){
+  		$("#dishmonav").load("/dishmonav.html");
+  	});
+  	</script>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/home">dishmo</a>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="http://localhost:8080/home">Home</a></li>
-					<li><a href="http://localhost:8080/about">About</a></li>
-					<li><a href="http://localhost:8080/contact">Contact</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Signup</a></li>
-					<li><a href="#about">Login</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<div id="dishmonav"></div>	
+	
 	<h1>About dishmo</h1>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>

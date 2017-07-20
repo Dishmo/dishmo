@@ -58,22 +58,22 @@ a:hover {
 	font-size: 16px;
 }
 .navbar-nav li a:hover {
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid #984b43;
 	background-color: rgba(0,0,0,0);
 }
 .navbar-brand, h3 {
-	color: #fccd04;
+	color: #eac67a;
 }
 .navbar-toggle {
 	background: black;
 }
 .navbar-brand:hover{
-	color: #fccd04;
-	border-bottom: 3px solid orange;
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
 	background-color: rgba(0,0,0,0);
 }
 button .icon-bar{
-	background-color: orange;
+	background-color: #eac67a;
 }
 .navbar-collapse.in {
 	width: 100px;

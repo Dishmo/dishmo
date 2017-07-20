@@ -1,72 +1,241 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact dishmo</title>
-	<link rel="stylesheet" type="text/css"
+<title>Contact dishmo</title>
+<link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
-	<link rel="stylesheet" type="text/css"
+<link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto"
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto"
 	rel="stylesheet"></link>
-	<link rel="stylesheet" type="text/css" href="/css/contact.css"></link>
-	<script
+<link rel="stylesheet" type="text/css" href="/css/contact.css"></link>
+<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		$(function() {
-			$("#dishmonav").load("/dishmonav.html");
-		});
-	</script>
+<script type="text/javascript" src="/js/contactform.js"></script>
+<script>
+	$(function() {
+		$("#dishmonav").load("/dishmonav.html");
+	});
+</script>
 </head>
 <body>
 	<nav id="dishmonav"></nav>
 
 	<div class="maincontent">
-		<h1>Contact dishmo</h1>
+		<div class="container">
 
-		<p>Ready for foodies to find you? Submit your restaurant to
-			dishmo.</p>
+			<form name="myForm" class="well form-horizontal" action="/form-submit" onsubmit="return validateForm()" method="post"
+				id="contact_form">
+				<fieldset>
 
-		<form method="post" action="mailto:adamyoungpeter@gmail.com">
-			<div>
-				<label for="restaurant-name">Restaurant Name:</label> <input
-					name="restaurant-name" id="restaurant-name" type="text"
-					placeholder="your restaurant" required="true"></input>>
-			</div>
-			<div>
-				<label for="restaurant-url">Restaurant URL:</label> <input
-					name="restaurant-url" id="restaurant-url" type="text"
-					placeholder="your restaurant url" required="true"></input>
-			</div>
-			<div>
-				<label for="contact-name">Contact Name:</label> <input
-					name="contact-name" id="contact-name" type="text"
-					placeholder="John Smith" required="true"></input>
-			</div>
-			<div>
-				<label for="phone">Phone:</label> <input id="phone" type="phone"
-					placeholder="enter phone" required="true"></input>
-			</div>
-			<div>
-				<label for="email">Email:</label> <input id="email" type="email"
-					placeholder="enter email" required="true"></input>
-			</div>
-			<div>
-				<label for="time-contact">Best Time To Contact:</label> <input
-					name="time-contact" id="time-contact" type="text"
-					placeholder="9-10am" required="true"></input>
-			</div>
-			<div>
-				<input type="submit" value="Submit"></input>
-			</div>
-		</form>
-		
-		
+					<!-- Form Name -->
+					<legend>Ready for foodies to find you? Contact dishmo
+						Today!</legend>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Contact Name</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									name="contact_name" class="form-control"
+									type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Restaurant Name</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									name="restaurant_name" class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label">E-Mail</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-envelope"></i></span> <input name="email"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
 
 
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Phone (###-###-####)</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-earphone"></i></span> <input name="phone"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Address</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="address"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">City</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="city"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Select Basic -->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">State</label>
+						<div class="col-md-4 selectContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-list"></i></span> <select name="state"
+									class="form-control selectpicker">
+									<option value=" ">Please select your state</option>
+									<option>Alabama</option>
+									<option>Alaska</option>
+									<option>Arizona</option>
+									<option>Arkansas</option>
+									<option>California</option>
+									<option>Colorado</option>
+									<option>Connecticut</option>
+									<option>Delaware</option>
+									<option>District of Columbia</option>
+									<option> Florida</option>
+									<option>Georgia</option>
+									<option>Hawaii</option>
+									<option>daho</option>
+									<option>Illinois</option>
+									<option>Indiana</option>
+									<option>Iowa</option>
+									<option> Kansas</option>
+									<option>Kentucky</option>
+									<option>Louisiana</option>
+									<option>Maine</option>
+									<option>Maryland</option>
+									<option> Mass</option>
+									<option>Michigan</option>
+									<option>Minnesota</option>
+									<option>Mississippi</option>
+									<option>Missouri</option>
+									<option>Montana</option>
+									<option>Nebraska</option>
+									<option>Nevada</option>
+									<option>New Hampshire</option>
+									<option>New Jersey</option>
+									<option>New Mexico</option>
+									<option>New York</option>
+									<option>North Carolina</option>
+									<option>North Dakota</option>
+									<option>Ohio</option>
+									<option>Oklahoma</option>
+									<option>Oregon</option>
+									<option>Pennsylvania</option>
+									<option>Rhode Island</option>
+									<option>South Carolina</option>
+									<option>South Dakota</option>
+									<option>Tennessee</option>
+									<option>Texas</option>
+									<option> Uttah</option>
+									<option>Vermont</option>
+									<option>Virginia</option>
+									<option>Washington</option>
+									<option>West Virginia</option>
+									<option>Wisconsin</option>
+									<option>Wyoming</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Zip Code</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="zip"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label">Website URL</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-globe"></i></span> <input name="website"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text area -->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Restaurant
+							Description</label>
+						<div class="col-md-4 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-pencil"></i></span>
+								<textarea class="form-control" name="comment"
+									placeholder="Restaurant Description"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label"></label>
+						<div class="col-md-4">
+							<button type="submit" value="Submit" class="btn btn-warning">
+								Send <span class="glyphicon glyphicon-send"></span>
+							</button>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
 	</div>
-		<script type="text/javascript"
+	<!-- /.container -->
+
+	<script type="text/javascript"
 		src="https://code.jquery.com/jquery-2.1.4.js"></script>
-		<script type="text/javascript"
+	<script type="text/javascript"
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</body>
-	</html>
+</body>
+</html>

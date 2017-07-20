@@ -48,4 +48,8 @@ public class RestaurantController {
 		return "contact";
 
 	}
+	@RequestMapping("/form-submit")
+	public String fetchSubmit(Model model) {
+		return "form-submit";
+	}
 }

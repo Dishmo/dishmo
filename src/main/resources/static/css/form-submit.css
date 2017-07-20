@@ -41,16 +41,3 @@ button .icon-bar{
 .maincontent {
 	margin-top: 100px;
 }
-#success_message{ display: none;}
-
-#contact_form{
-	background-color: #dfdce3;
-	border: #18121e 1px solid;
-}
-#contact_form fieldset legend{
-	border-bottom: #18121e 1px solid;
-}
-#contact_form fieldset button{
-	background-color: #eac67a;
-	border: #18121e 1px solid;
-}

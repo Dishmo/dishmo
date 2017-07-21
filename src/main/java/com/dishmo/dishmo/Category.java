@@ -17,7 +17,7 @@ public class Category {
 	private String name;
 	
 	@OneToMany(mappedBy = "category")
-	private Set<Restaurant> restaurantIn;
+	private Set<Restaurant> restaurantSet;
 
 	public Long getCategoryId() {
 		return categoryId;
@@ -28,7 +28,7 @@ public class Category {
 	}
 
 	public Set<Restaurant> getRestaurant() {
-		return restaurantIn;
+		return restaurantSet;
 	}
 	
 	private Category() {

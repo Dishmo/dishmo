@@ -1,9 +1,12 @@
 package com.dishmo.dishmo;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Restaurant {
@@ -21,6 +24,9 @@ public class Restaurant {
 	private String instagramUrl;
 	private String yelpUrl;
 	private String price;
+	
+	@OneToMany(mappedBy = "restaurant")
+	private Set<MenuItem> menuItem;
 	
 	@ManyToOne
 	private Category category;
@@ -46,6 +52,9 @@ public class Restaurant {
 		this.price = price;
 		this.category = category;
 		this.mainPagePictureUrl = mainPagePictureUrl;
+	}
+	public Set<MenuItem> getMenuItem() {
+		return menuItem;
 	}
 
 	public Long getRestaurantId() {

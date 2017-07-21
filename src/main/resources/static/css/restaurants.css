@@ -39,12 +39,15 @@ button .icon-bar{
 	background-color: #233237;
 }
 
+
 article ol li {
-	max-width: 800px;
 	background-color: ivory;
 	border: solid black 1px;
-	display:flex;
+	display: flex;
 	flex-direction: row;
-	justify-content:space-around;
-		
+	justify-content:space-between;
+	margin:auto;
+	
 }
+
+

@@ -13,9 +13,9 @@ public class RestaurantPopulator implements CommandLineRunner {
 
 	@Resource
 	private CategoryRepository catRepo;
-	
+
 	@Resource
-	private MenuItemRepository menuItemRepo; 
+	private MenuItemRepository menuItemRepo;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -54,18 +54,45 @@ public class RestaurantPopulator implements CommandLineRunner {
 		Restaurant qsBombBistro = new Restaurant("Q's Bomb A** Bistro", "3609 Trabue Rd. Columbus, OH 43228",
 				"www.qsbb.com", "614-868-5490", "Mon-Sun 11 am - 9:30 pm", "facebook.com/qsbb", "na", "na", "na", "$",
 				fusion, "/images/fusion200x133.png");
+		
+		Restaurant glourias = new Restaurant("Glouria’s", "5599 Fake St. Columbus, OH 43202", "www.glouriasplace.com", "615.555.9999", "Tues-Sat 11am - 11pm, Sun 11am-3pm", "n/a", "n/a", "n/a", "n/a", "$", fusion, "imgUrl");
 
 		restRepo.save(dosaCorner);
 		restRepo.save(blackDiamond);
 		restRepo.save(luckyDragon);
 		restRepo.save(coopersHawk);
 		restRepo.save(qsBombBistro);
+		restRepo.save(glourias);
 
 		MenuItem baconCheeseFries = new MenuItem("Bacon Cheese Fries", blackDiamond,
 				"Crispy crinkle cut fries topped with melted cheddar cheese, bacon, green onions, freshly cracked pepper and a side of sour cream and vinegar.",
 				"n/a", "$6.50");
 
 		menuItemRepo.save(baconCheeseFries);
+		
+		MenuItem plainDosa = new MenuItem("Plain Dosa", dosaCorner, "rice and lentil savory crepe with cilantro. served with sambar and chutney", "3", "$5.49");
+		MenuItem masalaDosa = new MenuItem("Masala Dosa", dosaCorner, "rice and lentil crepes topped with onion and herbed potato curry", "4", "$6.39");
+		MenuItem paneerMasalaDosa = new MenuItem("Paneer Masala Dosa", dosaCorner, "dosa topped with homemade cheese and herbed potato curry", "4", "$6.99");
+		MenuItem samosa = new MenuItem("Samosa ", dosaCorner, "triangle shaped appetizer filled with homemade spicy pastry", "2", "$3.59");
+		MenuItem mangoLassi= new MenuItem("Mango Lassi", dosaCorner, "traditional yogurt-based drink", "3", "$2.75");
+		
+		menuItemRepo.save(plainDosa);
+		menuItemRepo.save(masalaDosa);
+		menuItemRepo.save(paneerMasalaDosa);
+		menuItemRepo.save(samosa);
+		
+		MenuItem pecunaSaladSalad = new MenuItem("Pecuna Salad Salad", glourias, "two heaping scoops of house-made pecan “tuna” salad made your favorite way over a bed of spring mix, topped with capers, a dollop of Just Mayo and a sprinkle of freshly ground black pepper", "4", "$14");
+		MenuItem gnocchi = new MenuItem("Gnocchi with Sauce & Brussel Sprouts", glourias, "perfectly poached gnocchi with a house-made Roasted Red Pepper & butternut squash sauce, with a side of roasted brussel sprouts lightly salted", "4", "$18");
+		MenuItem olivesAndCrackers = new MenuItem("Olives & Crackers", glourias, " marinated olives & garlic, crispy house-made baked water crackers, and house-made coat cheese, Cotzarella cheese, couda cheese", "4", "$14");
+		MenuItem beetAndCheese = new MenuItem("Pickled Beet & Coat Cheese Platter", glourias, "house pickled beets with a pat of creamy, crumbly coconut milk “goat” cheese, house-madebaked table water crackers spinkled with pink himalayan sea salt, served on a smoked wood cuttingboard, sustainably sourced", "5", "14");
+		MenuItem roseBerryGin = new MenuItem("RoseBerry Gin Garden", glourias, "house-made rose berry kombucha with four seasons gin. Refreshing with ice shavings, muddled berry leaves and fresh berries as garnish", "4", "$11");
+
+		menuItemRepo.save(pecunaSaladSalad);
+		menuItemRepo.save(gnocchi);
+		menuItemRepo.save(olivesAndCrackers);
+		menuItemRepo.save(beetAndCheese);
+		menuItemRepo.save(roseBerryGin);
+	
 	}
 
 }

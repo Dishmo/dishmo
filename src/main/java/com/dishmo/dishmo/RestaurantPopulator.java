@@ -13,9 +13,9 @@ public class RestaurantPopulator implements CommandLineRunner {
 
 	@Resource
 	private CategoryRepository catRepo;
-	
+
 	@Resource
-	private MenuItemRepository menuItemRepo; 
+	private MenuItemRepository menuItemRepo;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -66,6 +66,27 @@ public class RestaurantPopulator implements CommandLineRunner {
 				"n/a", "$6.50");
 
 		menuItemRepo.save(baconCheeseFries);
+
+		MenuItem kitchenSink = new MenuItem("Kitchen Sink", qsBombBistro,
+				"Two eggs, Home fries, veggie sausage and toast served with three slices of french toast", "4.3",
+				"$7.50");
+		MenuItem gingeredCarrot = new MenuItem("Gingered Carrot Soup with Crème Fraîche", qsBombBistro,
+				"The crème fraîche adds a touch of creativity to this flavorful gingered carrot soup.", "4.25",
+				"$6.50");
+		MenuItem sesameSalmon = new MenuItem("Sesame Encusted Salmon", qsBombBistro,
+				"Shrimp, Andouille, Onion, Tomato, Peppers, Jasmine Rice", "4.80", "$22.99");
+		MenuItem freshRolls = new MenuItem("Fresh Rolls", qsBombBistro,
+				"Two rice wrapper rolls stuffed with rice noodles, mint leaves, cucumber, bean sprouts and crushed peanuts. Served with a sweet hoisin sauce and topped with crushed peanuts. Served cold.",
+				"4.75", "$7.95");
+		MenuItem peachGingerBeer = new MenuItem("Peach Ginger Beer", qsBombBistro,
+				"The traditional cocktail of vodka + ginger beer + lime juice with a refreshing summer twist with peach vodka, fresh basil and lemon juice.",
+				"4.52", "$9.00");
+
+		menuItemRepo.save(kitchenSink);
+		menuItemRepo.save(gingeredCarrot);
+		menuItemRepo.save(sesameSalmon);
+		menuItemRepo.save(freshRolls);
+		menuItemRepo.save(peachGingerBeer);
 	}
 
 }

@@ -13,6 +13,9 @@ public class RestaurantPopulator implements CommandLineRunner {
 
 	@Resource
 	private CategoryRepository catRepo;
+	
+	@Resource
+	private MenuItemRepository menuItemRepo; 
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -57,6 +60,12 @@ public class RestaurantPopulator implements CommandLineRunner {
 		restRepo.save(luckyDragon);
 		restRepo.save(coopersHawk);
 		restRepo.save(qsBombBistro);
+
+		MenuItem baconCheeseFries = new MenuItem("Bacon Cheese Fries", blackDiamond,
+				"Crispy crinkle cut fries topped with melted cheddar cheese, bacon, green onions, freshly cracked pepper and a side of sour cream and vinegar.",
+				"n/a", "$6.50");
+
+		menuItemRepo.save(baconCheeseFries);
 	}
 
 }

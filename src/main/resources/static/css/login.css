@@ -5,23 +5,8 @@ body,html,img {
     color: #18121e;
     background-color: #dfdce3;
 }
-
 .maincontent{
-	margin: auto;
-	max-width: 800px;
-	padding: 20px;
 	margin-top: 50px;
-}
-
-.maincontent img{
-	margin: 20px 20px 20px 20px;
-	max-width: 300px;
-	float: right;
-	padding-left: 20px;
-}
-
-.maincontent h1{
-	margin-bottom: 50px;
 }
 
 .navbar {
@@ -56,9 +41,25 @@ button .icon-bar{
 .nav li a:hover{
 	background-color: #233237;
 }
-.maincontent {
-	margin-top: 50px;
+.panel-info .panel-heading{
+	background-color: #233237;
+	color: white;
 }
-a:hover{
+.panel-info .panel-heading a{
+	color: white;
+}
+.panel-info .panel-heading a:hover{
 	text-decoration: none;
+	color: blue;
+}
+#btn-login{
+	background-color: #233237;
+	border: black solid 1px;
+}
+#btn-signup{
+	background-color: #233237;
+	border: black solid 1px;
+}
+.panel-info{
+	border: black solid 1px;
 }

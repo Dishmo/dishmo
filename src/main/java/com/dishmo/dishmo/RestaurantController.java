@@ -52,4 +52,8 @@ public class RestaurantController {
 	public String fetchSubmit(Model model) {
 		return "form-submit";
 	}
+	@RequestMapping("/login")
+	public String fetchLogin(Model model) {
+		return "login";
+	}
 }

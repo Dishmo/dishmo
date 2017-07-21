@@ -59,7 +59,6 @@ a:hover {
 }
 .navbar-nav li a:hover {
 	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
 }
 .navbar-brand, h3 {
 	color: #eac67a;
@@ -82,4 +81,7 @@ button .icon-bar{
 .nav li a:hover{
 	background-color: black;
 }
+
+
+
 

@@ -19,6 +19,7 @@
 	
 	<h1>All dishmo Restaurants</h1>
 <article>
+
 	<ol type="1" th:each="currentRestaurant: ${restaurantIn}">
 		<li><a
 			th:href="@{/restaurant(id=${currentRestaurant.restaurantId})}"

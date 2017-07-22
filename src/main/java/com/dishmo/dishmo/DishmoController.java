@@ -12,6 +12,9 @@ public class DishmoController {
 
 	@Resource
 	private BreakfastRepository breakfastRepo;
+	
+	@Resource
+	private ReviewRepository reviewRepo;
 
 	@RequestMapping("/sampleMenu")
 	public String fetchSampleMenu(Model model) {
@@ -21,7 +24,7 @@ public class DishmoController {
 	
 	@RequestMapping("/reviews")
 	public String fetchReviews(@RequestParam("id") long id, Model model) {
-		model.addAttribute("selectedBreakfast", breakfastRepo.findOne(id));
+		model.addAttribute("selectedBreakfast", reviewRepo.findOne(id));
 		return "reviews";
 	}
 	

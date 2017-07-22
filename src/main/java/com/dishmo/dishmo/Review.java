@@ -16,12 +16,14 @@ public class Review {
 	private String userReview;
 	private String userImageUrl;
 
-	
+	@ManyToOne
+	private SampleMenu sampleMenu;
 
-	public Review(String reviewTitle, String userReview, String userImageUrl) {
+	public Review(String reviewTitle, String userReview, String userImageUrl, SampleMenu sampleMenu) {
 		this.reviewTitle = reviewTitle;
 		this.userReview = userReview;
 		this.userImageUrl = userImageUrl;
+		this.sampleMenu = sampleMenu;
 		
 	}
 	private Review() {
@@ -38,6 +40,10 @@ public class Review {
 
 	public String getUserImageUrl() {
 		return userImageUrl;
+	}
+	
+	public SampleMenu getSamplemenu() {
+		return sampleMenu;
 	}
 
 }

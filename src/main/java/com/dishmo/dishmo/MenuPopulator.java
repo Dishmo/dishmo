@@ -34,7 +34,7 @@ public class MenuPopulator implements CommandLineRunner {
 	breakfastRepo.save(pancakes);
 	breakfastRepo.save(hashbrowns);
 	
-	Review eggsReview = new Review("These eggs stink", "I went to the restaurant and my eggs literally stunk like a skunk.", "");
+	Review eggsReview = new Review("These eggs stink", "I went to the restaurant and my eggs literally stunk like a skunk.", "", breakfast);
 	
 	reviewRepo.save(eggsReview);
 	

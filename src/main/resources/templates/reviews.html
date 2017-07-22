@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>dishmo | Home</title>
 	<meta name="google-signin-client_id" content="256512007537-5cnmmm9f2chrk9oec5n7jgpul06bvalt.apps.googleusercontent.com"></meta>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto" rel="stylesheet"></link>
-  	<link rel="stylesheet" type="text/css" href="/css/homepage.css"></link>
+  	<link rel="stylesheet" type="text/css" href="/css/reviews.css"></link>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
   	<script>
@@ -18,21 +18,16 @@
 
 <div id="dishmonav"></div>
 
- <div class="container">
- 	<div class="row">
- 		<div class="col-lg-12">
- 			<div class="content">
- 				<h1><img src="/images/logo-resize.png"></img></h1>
- 				<h3>please your palate</h3>
- 				<hr></hr>
- 				<button class="btn btn-default btn-lg"><i class="fa fa-cutlery"></i><a class="view-restaurants-button" href="http://localhost:8080/sampleMenu"> View Sample Menu</a></button>
- 			</div>
- 		</div>
- 	</div>
- </div>
+<div class="review" th:each="current: ${selectedBreakfast}">
 
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<p th:text="${current.reviewTitle}"></p>
+<p th:text="${current.userReview}"></p>
+
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
 </body>

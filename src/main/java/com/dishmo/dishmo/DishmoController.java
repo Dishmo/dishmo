@@ -8,25 +8,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class RestaurantController {
+public class DishmoController {
 
 	@Resource
-	private RestaurantRepository restRepo;
+	private BreakfastRepository breakfastRepo;
 
-	@Resource
-	private CategoryRepository catRepo;
-
-	@RequestMapping("/restaurant")
-	public String fetchRestaurantDetail(@RequestParam("id") Long id, Model model) {
-		model.addAttribute("restaurantIn", restRepo.findOne(id));
-		return "restaurant";
+	@RequestMapping("/sampleMenu")
+	public String fetchSampleMenu(Model model) {
+		model.addAttribute("breakfasts", breakfastRepo.findAll());
+		return "sample-menu";
 	}
-
-	@RequestMapping("/restaurants")
-	public String fetchRestaurants(Model model) {
-		model.addAttribute("restaurantIn", restRepo.findAll());
-		return "restaurants";
+	
+	@RequestMapping("/reviews")
+	public String fetchReviews(@RequestParam("id") long id, Model model) {
+		model.addAttribute("selectedBreakfast", breakfastRepo.findOne(id));
+		return "reviews";
 	}
+	
 
 	@RequestMapping("/home")
 	public String fetchHome(Model model) {
@@ -51,9 +49,5 @@ public class RestaurantController {
 	@RequestMapping("/form-submit")
 	public String fetchSubmit(Model model) {
 		return "form-submit";
-	}
-	@RequestMapping("/login")
-	public String fetchLogin(Model model) {
-		return "login";
 	}
 }

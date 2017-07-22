@@ -1,9 +1,27 @@
-body,html {
+body,html,img {
     width: 100%;
     height: 100%;
     font-family: "Comfortaa";
     color: #18121e;
     background-color: #dfdce3;
+}
+
+.maincontent{
+	margin: auto;
+	max-width: 800px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.maincontent img{
+	margin: 20px 20px 20px 20px;
+	max-width: 300px;
+	float: right;
+	padding-left: 20px;
+}
+
+.maincontent h1{
+	margin-bottom: 50px;
 }
 
 .navbar {
@@ -38,16 +56,9 @@ button .icon-bar{
 .nav li a:hover{
 	background-color: #233237;
 }
-
-
-article ol li {
-	background-color: ivory;
-	border: solid black 1px;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
-	margin:auto;
+.maincontent {
+	margin-top: 50px;
 }
-
-
-"src/main/java/com/dishmo/dishmo/RestaurantController.java"
+a:hover{
+	text-decoration: none;
+}

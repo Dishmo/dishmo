@@ -10,21 +10,18 @@ public class Review {
 	
 	@Id
 	@GeneratedValue
-
+	private Long Id;
+	
 	private String reviewTitle;
-
 	private String userReview;
-
 	private String userImageUrl;
 
-	@ManyToOne
-	private MenuItem menuItem;
+	
 
-	public Review(String reviewTitle, String userReview, String userImageUrl, MenuItem menuItem) {
+	public Review(String reviewTitle, String userReview, String userImageUrl) {
 		this.reviewTitle = reviewTitle;
 		this.userReview = userReview;
 		this.userImageUrl = userImageUrl;
-		this.menuItem = menuItem;
 		
 	}
 	private Review() {
@@ -41,10 +38,6 @@ public class Review {
 
 	public String getUserImageUrl() {
 		return userImageUrl;
-	}
-
-	public MenuItem getMenuItem() {
-		return menuItem;
 	}
 
 }

@@ -63,12 +63,5 @@ public class SampleMenu {
 	public SampleMenu() {
 		
 	}
-
-	
-	
-	
-	
-	
-
 	
 }

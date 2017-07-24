@@ -44,3 +44,6 @@ button .icon-bar{
 a:hover{
 	text-decoration: none;
 }
+.fb-comments{
+	border: 1px solid black;
+}

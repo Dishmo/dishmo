@@ -7,51 +7,52 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Dessert {
-	
-		@Id
-		@GeneratedValue
-		private Long dessertId;
-		private String name;
-		private String description;
-		private String price;
-		
-		@ManyToOne
-		private SampleMenu sampleMenu;
 
-		public Long getDessertId() {
-			return dessertId;
-		}
+	@Id
+	@GeneratedValue
+	private Long dessertId;
+	private String name;
+	private String description;
+	private String price;
+	private String imageUrl;
 
-		public String getName() {
-			return name;
-		}
+	@ManyToOne
+	private SampleMenu sampleMenu;
 
-		public String getDescription() {
-			return description;
-		}
+	public Long getDessertId() {
+		return dessertId;
+	}
 
-		public String getPrice() {
-			return price;
-		}
+	public String getName() {
+		return name;
+	}
 
-		public SampleMenu getSampleMenu() {
-			return sampleMenu;
-		}
+	public String getDescription() {
+		return description;
+	}
 
-		private Dessert() {
-		
-		}
+	public String getPrice() {
+		return price;
+	}
 
-		public Dessert(String name, String description, String price, SampleMenu sampleMenu) {
-			this.name = name;
-			this.description = description;
-			this.price = price;
-			this.sampleMenu = sampleMenu;
-		}
-		
-		
-		
-		
-		
+	public SampleMenu getSampleMenu() {
+		return sampleMenu;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	private Dessert() {
+
+	}
+
+	public Dessert(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.sampleMenu = sampleMenu;
+		this.imageUrl = imageUrl;
+	}
 
 }

@@ -1,55 +1,58 @@
 package com.dishmo.dishmo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
-	import javax.persistence.Entity;
-	import javax.persistence.GeneratedValue;
-	import javax.persistence.Id;
-	import javax.persistence.ManyToOne;
-	
-	@Entity
-	public class Dinner {
-		
-		@Id
-		@GeneratedValue
-		private Long dinnerId;
+@Entity
+public class Dinner {
 
-		private String name;
-		private String description;
-		private String price;
-		
-		@ManyToOne
-		private SampleMenu sampleMenu;
+	@Id
+	@GeneratedValue
+	private Long dinnerId;
 
-		public Long getDinnerId() {
-			return dinnerId;
-		}
+	private String name;
+	private String description;
+	private String price;
+	private String imageUrl;
 
-		public String getName() {
-			return name;
-		}
+	@ManyToOne
+	private SampleMenu sampleMenu;
 
-		public String getDescription() {
-			return description;
-		}
-
-		public String getPrice() {
-			return price;
-		}
-
-		public SampleMenu getSampleMenu() {
-			return sampleMenu;
-		}
-
-		private Dinner() {
-		
-		}
-
-		public Dinner(String name, String description, String price, SampleMenu sampleMenu) {
-			this.name = name;
-			this.description = description;
-			this.price = price;
-			this.sampleMenu = sampleMenu;
-		}
+	public Long getDinnerId() {
+		return dinnerId;
 	}
 
+	public String getName() {
+		return name;
+	}
 
+	public String getDescription() {
+		return description;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public SampleMenu getSampleMenu() {
+		return sampleMenu;
+	}
+
+	public String imageUrl() {
+		return imageUrl;
+	}
+
+	private Dinner() {
+
+	}
+
+	public Dinner(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.sampleMenu = sampleMenu;
+		this.imageUrl = imageUrl;
+	}
+}

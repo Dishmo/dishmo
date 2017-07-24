@@ -2,6 +2,6 @@ package com.dishmo.dishmo;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface CategoryRepository extends CrudRepository<Category, Long> {
+public interface DinnerRepository extends CrudRepository<Dinner,Long>{
 
 }

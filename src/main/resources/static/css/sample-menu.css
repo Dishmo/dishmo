@@ -5,9 +5,6 @@ body,html,img {
     color: #18121e;
     background-color: #dfdce3;
 }
-.maincontent{
-	margin-top: 50px;
-}
 
 .navbar {
 	background-color: #233237;
@@ -41,25 +38,9 @@ button .icon-bar{
 .nav li a:hover{
 	background-color: #233237;
 }
-.panel-info .panel-heading{
-	background-color: #233237;
-	color: white;
+.breakfastmenu {
+	margin-top: 100px;
 }
-.panel-info .panel-heading a{
-	color: white;
-}
-.panel-info .panel-heading a:hover{
+a:hover{
 	text-decoration: none;
-	color: blue;
-}
-#btn-login{
-	background-color: #233237;
-	border: black solid 1px;
-}
-#btn-signup{
-	background-color: #233237;
-	border: black solid 1px;
-}
-.panel-info{
-	border: black solid 1px;
 }

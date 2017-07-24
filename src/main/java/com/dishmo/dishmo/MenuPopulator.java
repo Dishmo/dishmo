@@ -14,9 +14,6 @@ public class MenuPopulator implements CommandLineRunner {
 	@Resource
 	private SampleMenuRepository sampleMenuRepo;
 	
-	@Resource
-	private ReviewRepository reviewRepo;
-
 	@Override
 	public void run(String... args) throws Exception {
 	
@@ -33,10 +30,6 @@ public class MenuPopulator implements CommandLineRunner {
 	breakfastRepo.save(bacon);
 	breakfastRepo.save(pancakes);
 	breakfastRepo.save(hashbrowns);
-	
-	Review eggsReview = new Review("These eggs stink", "I went to the restaurant and my eggs literally stunk like a skunk.", "", breakfast);
-	
-	reviewRepo.save(eggsReview);
 	
 	}
 

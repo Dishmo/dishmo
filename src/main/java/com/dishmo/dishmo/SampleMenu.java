@@ -9,35 +9,28 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class SampleMenu {
-	
+
 	@Id
 	@GeneratedValue
 	private Long sampleMenuId;
-	
+
 	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Appetizer> appetizer;
-	
+
 	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Lunch> lunch;
-	
+
 	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Dinner> dinner;
-	
+
 	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Breakfast> breakfast;
-	
-	@OneToMany(mappedBy= "sampleMenu")
+
+	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Dessert> dessert;
-	
-	@OneToMany(mappedBy= "sampleMenu")
-	private Set<Review> review;
 
 	public Long getSampleMenuId() {
 		return sampleMenuId;
-	}
-	
-	public Set<Review> getReview(){
-		return review;
 	}
 
 	public Set<Appetizer> getAppetizer() {
@@ -61,7 +54,7 @@ public class SampleMenu {
 	}
 
 	public SampleMenu() {
-		
+
 	}
-	
+
 }

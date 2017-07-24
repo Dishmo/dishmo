@@ -7,7 +7,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Lunch {
-	
+
 	@Id
 	@GeneratedValue
 	private Long lunchId;
@@ -15,7 +15,8 @@ public class Lunch {
 	private String name;
 	private String description;
 	private String price;
-	
+	private String imageUrl;
+
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
@@ -39,14 +40,19 @@ public class Lunch {
 		return sampleMenu;
 	}
 
-	private Lunch() {
-	
+	public String imageUrl() {
+		return imageUrl;
 	}
 
-	public Lunch(String name, String description, String price, SampleMenu sampleMenu) {
+	private Lunch() {
+
+	}
+
+	public Lunch(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
+		this.imageUrl = imageUrl;
 	}
 }

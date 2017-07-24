@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Breakfast{
-	
+public class Breakfast {
+
 	@Id
 	@GeneratedValue
 	private Long breakfastId;
@@ -15,7 +15,8 @@ public class Breakfast{
 	private String name;
 	private String description;
 	private String price;
-	
+	private String imageUrl;
+
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
@@ -39,15 +40,20 @@ public class Breakfast{
 		return sampleMenu;
 	}
 
-	private Breakfast() {
-	
+	public String imageUrl() {
+		return imageUrl;
 	}
 
-	public Breakfast(String name, String description, String price, SampleMenu sampleMenu) {
+	private Breakfast() {
+
+	}
+
+	public Breakfast(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
+		this.imageUrl = imageUrl;
 	}
 
 }

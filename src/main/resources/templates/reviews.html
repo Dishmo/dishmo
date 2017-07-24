@@ -20,7 +20,6 @@
 </script>
 </head>
 <body>
-
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -40,20 +39,12 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
+	<div id="dishmonav"></div>
+	
 	<div id="fb-root"></div>
 
-	<div id="dishmonav"></div>
-
-	<div class="review" th:each="current: ${selectedBreakfast}">
-
-		<div class="fb-comments" data-href="http://localhost:8080/reviews"
+		<div class="fb-comments" data-href=""
 			data-width="600" data-numposts="10"></div>
-
-		<p th:text="${current.reviewTitle}"></p>
-		<p th:text="${current.userReview}"></p>
-
-
-	</div>
 
 
 	<script type="text/javascript"

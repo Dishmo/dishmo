@@ -192,8 +192,8 @@ public class MenuPopulator implements CommandLineRunner {
 		 sampleMenuRepo.save(dessert);
 		
 //		 Dessert something = new Dessert("name", "price", dessert, "/images/Dessert/");
-		 Dessert peanutButterCookie = new Dessert("Peanut Butter Cookie", "3", dessert, "/images/Dessert/");
-		 Dessert darkChocolateTruffleCookie = new Dessert("Dark Chocolate Truffle Cookie", "3", dessert, "/images/Dessert/");
+		 Dessert peanutButterCookie = new Dessert("Peanut Butter Cookie", "3", dessert, "/images/Dessert/peanut-butter-cookie.jpeg");
+		 Dessert darkChocolateTruffleCookie = new Dessert("Dark Chocolate Truffle Cookie", "3", dessert, "/images/Dessert/dark-chocolate-truffle-cookie.jpg");
 		
 		 dessertRepo.save(peanutButterCookie);
 		 dessertRepo.save(darkChocolateTruffleCookie);
@@ -203,8 +203,8 @@ public class MenuPopulator implements CommandLineRunner {
 		 sampleMenuRepo.save(appetizer);
 		
 //		 Appetizer something = new Appetizer("name", "price", dessert, "/images/Dessert/");
-		 Appetizer pimentoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer, "/images/Dessert/");
-		 Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer, "/images/Dessert/");
+		 Appetizer pimentoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer, "/images/Dessert/pimento-cheese-dip.jpeg");
+		 Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer, "/images/Dessert/made-to-order-guacamole.jpg");
 		
 		 appetizerRepo.save(pimentoCheeseDip);
 		 appetizerRepo.save(madeToOrderGuacamole);

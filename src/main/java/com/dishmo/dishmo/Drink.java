@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class AlcoholicBeverage {
+public class Drink {
 
 	@Id
 	@GeneratedValue
@@ -20,7 +20,7 @@ public class AlcoholicBeverage {
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
-	public long getAlcoholicBeverageId() {
+	public long getDrinkId() {
 		return drinkId;
 	}
 
@@ -40,7 +40,7 @@ public class AlcoholicBeverage {
 		return imageUrl;
 	}
 
-	private AlcoholicBeverage() {
+	private Drink() {
 
 	}
 
@@ -48,11 +48,11 @@ public class AlcoholicBeverage {
 		return sampleMenu;
 	}
 
-	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
+	public Drink(String name, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
-		this.whereFrom = whereFrom;
 		this.price = price;
 		this.imageUrl = imageUrl;
 	}
 
 }
+

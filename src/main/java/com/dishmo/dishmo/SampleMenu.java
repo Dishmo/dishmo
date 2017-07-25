@@ -29,6 +29,13 @@ public class SampleMenu {
 	@OneToMany(mappedBy = "sampleMenu")
 	private Set<Dessert> dessert;
 
+	@OneToMany(mappedBy = "sampleMenu")
+	private Set<Drink> drink;
+
+	public Set<Drink> getDrink() {
+		return drink;
+	}
+
 	public Long getSampleMenuId() {
 		return sampleMenuId;
 	}

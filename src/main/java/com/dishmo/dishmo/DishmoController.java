@@ -14,26 +14,44 @@ public class DishmoController {
 	private BreakfastRepository breakfastRepo;
 	
 	@Resource
-	private ReviewRepository reviewRepo;
+	private BreakfastRepository lunchRepo;
+	
+	@Resource
+	private BreakfastRepository dinnerRepo;
+	
+	@Resource
+	private BreakfastRepository appetizerRepo;
+	
+	@Resource
+	private BreakfastRepository drinkRepo;
+	
+	@Resource
+	private BreakfastRepository dessertRepo;
 
 	@RequestMapping("/sampleMenu")
 	public String fetchSampleMenu(Model model) {
 		model.addAttribute("breakfasts", breakfastRepo.findAll());
+		model.addAttribute("lunches", lunchRepo.findAll());
+		model.addAttribute("dinners", dinnerRepo.findAll());
+		model.addAttribute("appetizers", appetizerRepo.findAll());
+		model.addAttribute("drinks", drinkRepo.findAll());
+		model.addAttribute("desserts", dessertRepo.findAll());
 		return "sample-menu";
 	}
-	
+
 	@RequestMapping("/reviews")
-	public String fetchReviews(@RequestParam("id") long id, Model model) {
-		model.addAttribute("selectedBreakfast", reviewRepo.findOne(id));
+	public String fetchReview(@RequestParam("id") Long id, Model model) {
+		Breakfast selectedReview = breakfastRepo.findOne(id);
+		model.addAttribute(selectedReview);
 		return "reviews";
 	}
-	
 
 	@RequestMapping("/home")
 	public String fetchHome(Model model) {
 		return "dishmohome";
 
 	}
+
 	@RequestMapping("/dishmonav")
 	public String fetchNav(Model model) {
 		return "dishmonav";
@@ -44,11 +62,13 @@ public class DishmoController {
 		return "about";
 
 	}
+
 	@RequestMapping("/contact")
 	public String fetchContact(Model model) {
 		return "contact";
 
 	}
+
 	@RequestMapping("/form-submit")
 	public String fetchSubmit(Model model) {
 		return "form-submit";

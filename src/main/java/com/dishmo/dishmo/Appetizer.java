@@ -15,6 +15,7 @@ public class Appetizer {
 	private String name;
 	private String description;
 	private String price;
+	private String imageUrl;
 	
 	@ManyToOne
 	private SampleMenu sampleMenu;
@@ -38,16 +39,21 @@ public class Appetizer {
 	public SampleMenu getSampleMenu() {
 		return sampleMenu;
 	}
+	
+	public String getImageUrl() {
+		return imageUrl;
+	}
 
 	private Appetizer() {
 	
 	}
 
-	public Appetizer(String name, String description, String price, SampleMenu sampleMenu) {
+	public Appetizer(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
+		this.imageUrl = imageUrl;
 	}
 	
 	

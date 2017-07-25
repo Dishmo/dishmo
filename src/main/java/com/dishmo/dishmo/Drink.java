@@ -6,53 +6,52 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Breakfast {
+public class Drink {
 
 	@Id
 	@GeneratedValue
-	private Long breakfastId;
+	private long drinkId;
 
 	private String name;
-	private String description;
+	private String whereFrom;
 	private String price;
 	private String imageUrl;
 
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
-	public Long getBreakfastId() {
-		return breakfastId;
+	public long getDrinkId() {
+		return drinkId;
 	}
 
 	public String getName() {
 		return name;
 	}
-
-	public String getDescription() {
-		return description;
+	
+	public String getWhereFrom() {
+		return whereFrom;
 	}
 
 	public String getPrice() {
 		return price;
 	}
 
-	public SampleMenu getSampleMenu() {
-		return sampleMenu;
-	}
-
 	public String getImageUrl() {
 		return imageUrl;
 	}
 
-	private Breakfast() {
+	private Drink() {
 
 	}
 
-	public Breakfast(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
+	public SampleMenu getSampleMenu() {
+		return sampleMenu;
+	}
+
+	public Drink(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
-		this.description = description;
+		this.whereFrom = whereFrom;
 		this.price = price;
-		this.sampleMenu = sampleMenu;
 		this.imageUrl = imageUrl;
 	}
 

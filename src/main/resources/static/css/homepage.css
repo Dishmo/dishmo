@@ -1,6 +1,6 @@
 body  {
 	background-image: linear-gradient(rgba(0, 0, 0, .75),
-		rgba(255, 255, 255, .1)), url("../images/dishmobackground3.jpg");
+		rgba(255, 255, 255, .1)), url("../images/new-homepage.jpg");
 	background-size: cover;
 	background-position: center; 
 }
@@ -80,6 +80,9 @@ button .icon-bar{
 }
 .nav li a:hover{
 	background-color: black;
+}
+.content h1{
+
 }
 
 

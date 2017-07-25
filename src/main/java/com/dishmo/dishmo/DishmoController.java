@@ -14,19 +14,19 @@ public class DishmoController {
 	private BreakfastRepository breakfastRepo;
 	
 	@Resource
-	private BreakfastRepository lunchRepo;
+	private LunchRepository lunchRepo;
 	
 	@Resource
-	private BreakfastRepository dinnerRepo;
+	private DinnerRepository dinnerRepo;
 	
 	@Resource
-	private BreakfastRepository appetizerRepo;
+	private AppetizerRepository appetizerRepo;
 	
 	@Resource
-	private BreakfastRepository drinkRepo;
+	private DrinkRepository drinkRepo;
 	
 	@Resource
-	private BreakfastRepository dessertRepo;
+	private DessertRepository dessertRepo;
 
 	@RequestMapping("/sampleMenu")
 	public String fetchSampleMenu(Model model) {

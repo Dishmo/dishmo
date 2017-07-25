@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<div id="dishmonav"></div>
+	<div id="dishmonav"></div>
 
 
 
@@ -54,8 +54,8 @@
 									<a href="#" class="rm-button-open">View the Menu</a>
 									<div class="rm-info">
 										<p>
-											4241 North High Street Columbus ,
-											Ohio 43214 <strong>Phone</strong> 614.784.2233
+											4241 North High Street Columbus , Ohio 43214 <strong>Phone</strong>
+											614.784.2233
 										</p>
 									</div>
 
@@ -69,8 +69,9 @@
 									<h4>Breakfast</h4>
 									<dl class="breakfastmenu" th:each="current: ${breakfasts}">
 
-										<dt class="name"><a th:href="@{/reviews(id=${current.breakfastId})}"
-											th:text="${current.name}"></a>
+										<dt class="name">
+											<a th:href="@{/reviews(id=${current.breakfastId})}"
+												th:text="${current.name}"></a>
 										</dt>
 										<span class="price" th:text="${current.price}"></span>
 										<dd class="description" th:text="${current.description}"></dd>
@@ -274,12 +275,12 @@
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript">
-			$(function() {
+		$(function() {
 
-				Menu.init();
-			
-			});
-		</script>
+			Menu.init();
+
+		});
+	</script>
 
 
 </body>

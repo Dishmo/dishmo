@@ -1,11 +1,13 @@
 body,html {
-    width: 100%;
-    height: 100%;
     font-family: "Comfortaa";
     color: #18121e;
     background-color: #dfdce3;
 }
-
+.container{
+	margin: auto;
+	max-width: 600px;
+	vertical-align: center;
+}
 .navbar {
 	background-color: #233237;
 }
@@ -46,19 +48,13 @@ a:hover{
 }
 .fb-comments{
 	border: 1px solid #233237;
-}
-#facebook{
-	margin:auto;
+	margin-bottom: 50px;
 }
 .review-content {
 	margin-top: 100px;
 }
-.review-content p{
-	margin: auto;
-}
 #myCarousel{
-	max-width: 500px;
-	
+	max-width: 400px;	
 }
 .carousel-inner{
 	max-width: 500px;
@@ -66,7 +62,4 @@ a:hover{
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border: 1px solid #233237;
-}
-.page-content{
-	margin: auto;
 }

@@ -1,8 +1,3 @@
 # dishmo
-## Entypo
-
-   Copyright (C) 2012 by Daniel Bruce
-
-   Author:    Daniel Buce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+“Fresh Guacamole” by Hungry Dudes is licensed under CC BY 2.0
+“sweet potato hash recipe // bexadiary.com” by Rebecca McLennan is licensed under CC BY 2.0

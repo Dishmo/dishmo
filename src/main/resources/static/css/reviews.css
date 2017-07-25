@@ -1,52 +1,97 @@
-body,html,img {
-    width: 100%;
-    height: 100%;
-    font-family: "Comfortaa";
-    color: #18121e;
-    background-color: #dfdce3;
+body, html {
+	font-family: "Comfortaa";
+	color: white;
+	background-color: #dfdce3;
+}
+
+.container .review-content {
+	margin-top: 75px;
+	max-width: 800px;
+	vertical-align: center;
+	background-color: #233237;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .navbar {
 	background-color: #233237;
 }
+
 .navbar-nav li a {
 	color: white;
 	font-size: 16px;
 }
+
 .navbar-nav li a:hover {
 	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
+
 .navbar-brand, h3 {
 	color: #eac67a;
+	text-align: center;
 }
+
+.navbar-brand, h4 {
+	text-align: center;
+}
+
 .navbar-toggle {
 	background: #233237;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
 	color: #eac67a;
 	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
-button .icon-bar{
+
+button .icon-bar {
 	background-color: #eac67a;
 }
+
 .navbar-collapse.in {
 	width: 100px;
 	background-color: #233237;
 }
-.nav li a:hover{
+
+.nav li a:hover {
 	background-color: #233237;
 }
+
 .review {
 	margin-top: 75px;
 }
-a:hover{
+
+a:hover {
 	text-decoration: none;
 }
-.fb-comments{
-	border: 1px solid black;
+
+.fb-comments {
+	border: 1px solid #233237;
+	margin-bottom: 50px;
+	background-color: #dfdce3;
+	width: 100% !important;
 }
+
+.fb-comments, .fb-comments iframe[style], .fb-comments span[style] {
+	width: 100% !important;
+	}
+
 .review-content {
-	margin-top: 55px
+	margin-top: 60px;
+	margin: auto;
+}
+
+#myCarousel {
+	max-width: 400px;
+	margin: auto;
+}
+
+.carousel-inner {
+	max-width: 500px;
+	max-height: 500px !important;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px solid white;
 }

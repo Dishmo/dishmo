@@ -49,7 +49,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"$13", breakfast, "/images/Breakfast/cowboy-breakfast.jpg");
 		Breakfast theStandardEggSandwich = new Breakfast("The Standard Egg Sandwich",
 				"Warm from the oven buttermilk buscuit topped with two over-medium eggs* and aged white cheddar",
-				"$9.5", breakfast, "imageUrl");
+				"$9.5", breakfast, "/images/Breakfast/the-standard-egg-sandwich.jpeg");
 
 		breakfastRepo.save(housemadeGranola);
 		breakfastRepo.save(prosciuttoAndPoachedEggs);

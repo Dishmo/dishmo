@@ -41,20 +41,20 @@
 
 	<div id="dishmonav"></div>
 	
-	<img th:src="${breakfast.imageUrl}"/>
+	<div class="review-content"><p th:text="${breakfast.name}"></p>
+		<p th:text="'Description: ' + ${breakfast.description}"></p>
 
-	<p th:text="${breakfast.name}"></p>
-	<p th:text="'Description: ' + ${breakfast.description}"></p>
-	
-	<div id="fb-root"></div>
+		<img th:src="${breakfast.imageUrl}"/></div>
 
-	<div class="fb-comments" data-href=""
-	data-width="600" data-numposts="10"></div>
+		<div id="fb-root"></div>
 
-	<script type="text/javascript"
-	src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script type="text/javascript"
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<div class="fb-comments" data-href=""
+		data-width="600" data-numposts="10"></div>
 
-</body>
-</html>
+		<script type="text/javascript"
+		src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript"
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	</body>
+	</html>

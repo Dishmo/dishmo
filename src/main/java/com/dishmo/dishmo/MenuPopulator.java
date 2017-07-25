@@ -18,10 +18,16 @@ public class MenuPopulator implements CommandLineRunner {
 	private DinnerRepository dinnerRepo;
 	
 	@Resource
+	private DessertRepository dessertRepo;
+	
+	@Resource
 	private DrinkRepository drinkRepo;
 	
 	@Resource
 	private AlcoholicBeverageRepository alcBevRepo;
+	
+	@Resource
+	private AppetizerRepository appetizerRepo;
 
 	@Resource
 	private SampleMenuRepository sampleMenuRepo;
@@ -144,7 +150,7 @@ public class MenuPopulator implements CommandLineRunner {
 		 dinnerRepo.save(smokedGoudaAndChickenD);
 		 dinnerRepo.save(highStreetVegetableD);
 		 
-//		 Drinks
+//		 Alcoholic Beverages
 		 SampleMenu alcoholicBeverage = new SampleMenu();
 		 sampleMenuRepo.save(alcoholicBeverage);
 		 
@@ -153,13 +159,13 @@ public class MenuPopulator implements CommandLineRunner {
 		 AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5", alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg");
 		 AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9", alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg");
 		 AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10", alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg");
-		 
-		 
+		 		 
 		 alcBevRepo.save(rhinegeistCougarBlondeAle);
 		 alcBevRepo.save(northHighMilkStout);
 		 alcBevRepo.save(buehlerChardonnay);
 		 alcBevRepo.save(smithAndHookCabernet);
 		
+//		 Drinks
 		 SampleMenu drink = new SampleMenu();
 		 sampleMenuRepo.save(drink);
 		
@@ -173,7 +179,7 @@ public class MenuPopulator implements CommandLineRunner {
 		 Drink coldBrewedIcedCoffee = new Drink("Cold-Brewed Iced Coffee", "3.5", drink, "/images/Drink/cold-brewed-iced-coffee.jpeg");
 		 Drink mintIcedCoffee = new Drink("Mint Iced Coffee", "4.5", drink, "/images/Drink/mint-iced-tea.jpeg");
 		 Drink singleOriginCoffee = new Drink("Single Origin Coffee", "3", drink, "/images/Drink/single-origin-coffee.jpeg");
-		 Drink hotTea = new Drink("Hot Tea", "3", drink, "/images/Drink/mint-iced-tea.jpeg");
+		 Drink hotTea = new Drink("Hot Tea", "3", drink, "/images/Drink/hot-tea.jpeg");
 		 
 		 drinkRepo.save(shootingStar);
 		 drinkRepo.save(orangeJuice);
@@ -186,25 +192,27 @@ public class MenuPopulator implements CommandLineRunner {
 		 drinkRepo.save(singleOriginCoffee);
 		 drinkRepo.save(hotTea);
 		 
-		 // Dessert
-		// SampleMenu breakfast = new SampleMenu();
-		// sampleMenuRepo.save(breakfast);
-		//
-		// Breakfast eggs = new Breakfast("Egg Breakfast", "2 eggs cooked to your
-		// preference", "5", breakfast, "");
-		// Breakfast bacon = new Breakfast("Bacon Breakfast", "3 slices of crispy
-		// bacon", "3", breakfast, "");
-		// Breakfast pancakes = new Breakfast("Pancake Breakfast", "3 fluffy pancakes",
-		// "5", breakfast, "");
-		// Breakfast hashbrowns = new Breakfast("Hashbrowns Breakfast", "2 fried
-		// hashbrown patties", "3", breakfast, "");
-		//
-		// breakfastRepo.save(eggs);
-		// breakfastRepo.save(bacon);
-		// breakfastRepo.save(pancakes);
-		// breakfastRepo.save(hashbrowns);
-		//
+//		 Dessert
+		 SampleMenu dessert = new SampleMenu();
+		 sampleMenuRepo.save(dessert);
+		
+//		 Dessert something = new Dessert("name", "price", dessert, "/images/Dessert/");
+		 Dessert peanutButterCookie = new Dessert("Peanut Butter Cookie", "3", dessert, "/images/Dessert/");
+		 Dessert darkChocolateTruffleCookie = new Dessert("Dark Chocolate Truffle Cookie", "3", dessert, "/images/Dessert/");
+		
+		 dessertRepo.save(peanutButterCookie);
+		 dessertRepo.save(darkChocolateTruffleCookie);
 
+//		 Appetizer
+		 SampleMenu appetizer = new SampleMenu();
+		 sampleMenuRepo.save(appetizer);
+		
+//		 Appetizer something = new Appetizer("name", "price", dessert, "/images/Dessert/");
+		 Appetizer pimentoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer, "/images/Dessert/");
+		 Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer, "/images/Dessert/");
+		
+		 appetizerRepo.save(pimentoCheeseDip);
+		 appetizerRepo.save(madeToOrderGuacamole);
 	}
 
 }

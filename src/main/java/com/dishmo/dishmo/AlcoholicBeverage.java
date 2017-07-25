@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Drink {
+public class AlcoholicBeverage {
 
 	@Id
 	@GeneratedValue
@@ -40,7 +40,7 @@ public class Drink {
 		return imageUrl;
 	}
 
-	private Drink() {
+	private AlcoholicBeverage() {
 
 	}
 
@@ -48,7 +48,7 @@ public class Drink {
 		return sampleMenu;
 	}
 
-	public Drink(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
+	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
 		this.whereFrom = whereFrom;
 		this.price = price;

@@ -30,11 +30,7 @@ public class SampleMenu {
 	private Set<Dessert> dessert;
 
 	@OneToMany(mappedBy = "sampleMenu")
-	private Set<Drink> drink;
-
-	public Set<Drink> getDrink() {
-		return drink;
-	}
+	private Set<AlcoholicBeverage> alcoholicBeverage;
 
 	public Long getSampleMenuId() {
 		return sampleMenuId;
@@ -58,6 +54,10 @@ public class SampleMenu {
 
 	public Set<Dessert> getDessert() {
 		return dessert;
+	}
+
+	public Set<AlcoholicBeverage> getAlcoholicBeverage() {
+		return alcoholicBeverage;
 	}
 
 	public SampleMenu() {

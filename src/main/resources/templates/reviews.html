@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>dishmo | Home</title>
-<meta name="google-signin-client_id"
+	<title>dishmo | Home</title>
+	<meta name="google-signin-client_id"
 	content="256512007537-5cnmmm9f2chrk9oec5n7jgpul06bvalt.apps.googleusercontent.com"></meta>
-<link rel="stylesheet" type="text/css"
+	<link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
-<link
+	<link
 	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
 	rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="/css/reviews.css"></link>
-<script
+	<link rel="stylesheet" type="text/css" href="/css/reviews.css"></link>
+	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
-<script>
-	$(function() {
-		$("#dishmonav").load("/dishmonav.html");
-	});
-</script>
+	<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+	<script>
+		$(function() {
+			$("#dishmonav").load("/dishmonav.html");
+		});
+	</script>
 </head>
 <body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '670429023147344',
-      xfbml      : true,
-      version    : 'v2.10'
-    });
-    FB.AppEvents.logPageView();
-  };
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '670429023147344',
+				xfbml      : true,
+				version    : 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		};
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<div id="dishmonav"></div>
 	
+	<img th:src="${breakfast.imageUrl}"/>
+
+	<p th:text="${breakfast.name}"></p>
+	<p th:text="'Description: ' + ${breakfast.description}"></p>
+	
 	<div id="fb-root"></div>
 
-		<div class="fb-comments" data-href=""
-			data-width="600" data-numposts="10"></div>
-
+	<div class="fb-comments" data-href=""
+	data-width="600" data-numposts="10"></div>
 
 	<script type="text/javascript"
-		src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<script type="text/javascript"
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -20,7 +20,9 @@ public class DishmoController {
 	}
 
 	@RequestMapping("/reviews")
-	public String fetchReviews(Model model) {
+	public String fetchReview(@RequestParam("id") Long id, Model model) {
+		Breakfast selectedReview = breakfastRepo.findOne(id);
+		model.addAttribute(selectedReview);
 		return "reviews";
 	}
 

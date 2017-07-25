@@ -2,7 +2,7 @@ body,html,img {
     width: 100%;
     height: 100%;
     font-family: "Comfortaa";
-    color: #18121e;
+    color: white;
     background-color: #dfdce3;
 }
 
@@ -10,7 +10,8 @@ body,html,img {
 	margin: auto;
 	max-width: 800px;
 	padding: 20px;
-	margin-top: 50px;
+	margin-top: 75px;
+	background-color: #233237;
 }
 
 .maincontent img{
@@ -55,9 +56,6 @@ button .icon-bar{
 }
 .nav li a:hover{
 	background-color: #233237;
-}
-.maincontent {
-	margin-top: 50px;
 }
 a:hover{
 	text-decoration: none;

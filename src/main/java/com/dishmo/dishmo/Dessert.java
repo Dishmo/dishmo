@@ -11,8 +11,8 @@ public class Dessert {
 	@Id
 	@GeneratedValue
 	private Long dessertId;
+	
 	private String name;
-	private String description;
 	private String price;
 	private String imageUrl;
 
@@ -25,10 +25,6 @@ public class Dessert {
 
 	public String getName() {
 		return name;
-	}
-
-	public String getDescription() {
-		return description;
 	}
 
 	public String getPrice() {
@@ -47,9 +43,8 @@ public class Dessert {
 
 	}
 
-	public Dessert(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
+	public Dessert(String name, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
-		this.description = description;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
 		this.imageUrl = imageUrl;

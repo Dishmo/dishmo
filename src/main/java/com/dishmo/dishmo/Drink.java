@@ -13,6 +13,7 @@ public class Drink {
 	private long drinkId;
 
 	private String name;
+	private String whereFrom;
 	private String price;
 	private String imageUrl;
 
@@ -25,6 +26,10 @@ public class Drink {
 
 	public String getName() {
 		return name;
+	}
+	
+	public String getWhereFrom() {
+		return whereFrom;
 	}
 
 	public String getPrice() {
@@ -43,8 +48,9 @@ public class Drink {
 		return sampleMenu;
 	}
 
-	public Drink(String name, String price, String imageUrl) {
+	public Drink(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
+		this.whereFrom = whereFrom;
 		this.price = price;
 		this.imageUrl = imageUrl;
 	}

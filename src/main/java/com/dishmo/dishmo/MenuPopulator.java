@@ -18,7 +18,7 @@ public class MenuPopulator implements CommandLineRunner {
 	private DinnerRepository dinnerRepo;
 	
 	@Resource
-	private DrinkRepository drinkRepo;
+	private AlcoholicBeverageRepository drinkRepo;
 
 	@Resource
 	private SampleMenuRepository sampleMenuRepo;
@@ -146,10 +146,12 @@ public class MenuPopulator implements CommandLineRunner {
 		 sampleMenuRepo.save(drink);
 		 
 //		 Drink something = new Drink("name", "whereFrom", "price", drink, "/images/Drink/");
-		 Drink rhinegeistCougarBlondeAle = new Drink("Rhinegeist Cougar Blonde Ale", "Ohio", "5", drink, "/images/Drink/");
-		 Drink northHighMilkStout = new Drink("North High Milk Stout", "Ohio", "5", drink, "/images/Drink/");
-		 Drink buehlerChardonnay = new Drink("Buehler Chardonnay", "Napa", "9", drink, "/images/Drink/");
-		 Drink smithAndHookCabernet = new Drink("Smith & Hook Cabernet", "Monterey", "10", drink, "/images/Drink/");
+		 AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5", drink, "/images/Drink/");
+		 AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5", drink, "/images/Drink/");
+		 AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9", drink, "/images/Drink/");
+		 AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10", drink, "/images/Drink/");
+//		 AlcoholicBeverage something = new AlcoholicBeverage("name", "whereFrom", "price", drink, "/images/Drink/");
+		 
 		 
 		 drinkRepo.save(rhinegeistCougarBlondeAle);
 		 drinkRepo.save(northHighMilkStout);

@@ -12,10 +12,30 @@ public class DishmoController {
 
 	@Resource
 	private BreakfastRepository breakfastRepo;
+	
+	@Resource
+	private BreakfastRepository lunchRepo;
+	
+	@Resource
+	private BreakfastRepository dinnerRepo;
+	
+	@Resource
+	private BreakfastRepository appetizerRepo;
+	
+	@Resource
+	private BreakfastRepository drinkRepo;
+	
+	@Resource
+	private BreakfastRepository dessertRepo;
 
 	@RequestMapping("/sampleMenu")
 	public String fetchSampleMenu(Model model) {
 		model.addAttribute("breakfasts", breakfastRepo.findAll());
+		model.addAttribute("lunches", lunchRepo.findAll());
+		model.addAttribute("dinners", dinnerRepo.findAll());
+		model.addAttribute("appetizers", appetizerRepo.findAll());
+		model.addAttribute("drinks", drinkRepo.findAll());
+		model.addAttribute("desserts", dessertRepo.findAll());
 		return "sample-menu";
 	}
 

@@ -18,7 +18,10 @@ public class MenuPopulator implements CommandLineRunner {
 	private DinnerRepository dinnerRepo;
 	
 	@Resource
-	private AlcoholicBeverageRepository drinkRepo;
+	private DrinkRepository drinkRepo;
+	
+	@Resource
+	private AlcoholicBeverageRepository alcBevRepo;
 
 	@Resource
 	private SampleMenuRepository sampleMenuRepo;
@@ -142,23 +145,48 @@ public class MenuPopulator implements CommandLineRunner {
 		 dinnerRepo.save(highStreetVegetableD);
 		 
 //		 Drinks
+		 SampleMenu alcoholicBeverage = new SampleMenu();
+		 sampleMenuRepo.save(alcoholicBeverage);
+		 
+//		 AlcoholicBeverage something = new AlcoholicBeverage("name", "whereFrom", "price", drink, "/images/Drink/");
+		 AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5", alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg");
+		 AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5", alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg");
+		 AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9", alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg");
+		 AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10", alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg");
+		 
+		 
+		 alcBevRepo.save(rhinegeistCougarBlondeAle);
+		 alcBevRepo.save(northHighMilkStout);
+		 alcBevRepo.save(buehlerChardonnay);
+		 alcBevRepo.save(smithAndHookCabernet);
+		
 		 SampleMenu drink = new SampleMenu();
 		 sampleMenuRepo.save(drink);
+		
+//		 Drink something = new Drink("name", "price", drink, "/images/Drink/");
+		 Drink shootingStar = new Drink("Shooting Star", "5", drink, "/images/Drink/shooting-star.jpeg");
+		 Drink orangeJuice = new Drink("Orange Juice", "4.5", drink, "/images/Drink/orange-juice.jpeg");
+		 Drink organicCarrotJuice = new Drink("Organic Carrot Juice", "5", drink, "/images/Drink/organic-carrot-juice.jpeg");
+		 Drink strawberrySmoothie = new Drink("Strawberry Smoothie", "6", drink, "/images/Drink/strawberry-smoothie.jpeg");
+		 Drink blueberrySmoothie = new Drink("Blueberry Smoothie", "6", drink, "/images/Drink/blueberry-smoothie.jpeg");
+		 Drink gingerAle = new Drink("Ginger Ale", "4", drink, "/images/Drink/gingerale.jpg");
+		 Drink coldBrewedIcedCoffee = new Drink("Cold-Brewed Iced Coffee", "3.5", drink, "/images/Drink/cold-brewed-iced-coffee.jpeg");
+		 Drink mintIcedCoffee = new Drink("Mint Iced Coffee", "4.5", drink, "/images/Drink/mint-iced-tea.jpeg");
+		 Drink singleOriginCoffee = new Drink("Single Origin Coffee", "3", drink, "/images/Drink/single-origin-coffee.jpeg");
+		 Drink hotTea = new Drink("Hot Tea", "3", drink, "/images/Drink/mint-iced-tea.jpeg");
 		 
-//		 Drink something = new Drink("name", "whereFrom", "price", drink, "/images/Drink/");
-		 AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5", drink, "/images/Drink/");
-		 AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5", drink, "/images/Drink/");
-		 AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9", drink, "/images/Drink/");
-		 AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10", drink, "/images/Drink/");
-//		 AlcoholicBeverage something = new AlcoholicBeverage("name", "whereFrom", "price", drink, "/images/Drink/");
+		 drinkRepo.save(shootingStar);
+		 drinkRepo.save(orangeJuice);
+		 drinkRepo.save(organicCarrotJuice);
+		 drinkRepo.save(strawberrySmoothie);
+		 drinkRepo.save(blueberrySmoothie);
+		 drinkRepo.save(gingerAle);
+		 drinkRepo.save(coldBrewedIcedCoffee);
+		 drinkRepo.save(mintIcedCoffee);
+		 drinkRepo.save(singleOriginCoffee);
+		 drinkRepo.save(hotTea);
 		 
-		 
-		 drinkRepo.save(rhinegeistCougarBlondeAle);
-		 drinkRepo.save(northHighMilkStout);
-		 drinkRepo.save(buehlerChardonnay);
-		 drinkRepo.save(smithAndHookCabernet);
-		 
-		// Dessert
+		 // Dessert
 		// SampleMenu breakfast = new SampleMenu();
 		// sampleMenuRepo.save(breakfast);
 		//

@@ -18,6 +18,9 @@ public class MenuPopulator implements CommandLineRunner {
 	private DinnerRepository dinnerRepo;
 	
 	@Resource
+	private DrinkRepository drinkRepo;
+
+	@Resource
 	private SampleMenuRepository sampleMenuRepo;
 
 	@Override
@@ -137,6 +140,21 @@ public class MenuPopulator implements CommandLineRunner {
 		 dinnerRepo.save(housemadeSausageD);
 		 dinnerRepo.save(smokedGoudaAndChickenD);
 		 dinnerRepo.save(highStreetVegetableD);
+		 
+//		 Drinks
+		 SampleMenu drink = new SampleMenu();
+		 sampleMenuRepo.save(drink);
+		 
+//		 Drink something = new Drink("name", "whereFrom", "price", drink, "/images/Drink/");
+		 Drink rhinegeistCougarBlondeAle = new Drink("Rhinegeist Cougar Blonde Ale", "Ohio", "5", drink, "/images/Drink/");
+		 Drink northHighMilkStout = new Drink("North High Milk Stout", "Ohio", "5", drink, "/images/Drink/");
+		 Drink buehlerChardonnay = new Drink("Buehler Chardonnay", "Napa", "9", drink, "/images/Drink/");
+		 Drink smithAndHookCabernet = new Drink("Smith & Hook Cabernet", "Monterey", "10", drink, "/images/Drink/");
+		 
+		 drinkRepo.save(rhinegeistCougarBlondeAle);
+		 drinkRepo.save(northHighMilkStout);
+		 drinkRepo.save(buehlerChardonnay);
+		 drinkRepo.save(smithAndHookCabernet);
 		 
 		// Dessert
 		// SampleMenu breakfast = new SampleMenu();

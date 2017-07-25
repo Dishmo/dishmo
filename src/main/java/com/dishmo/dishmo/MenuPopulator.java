@@ -77,10 +77,10 @@ public class MenuPopulator implements CommandLineRunner {
 		 Lunch chickenAndAvoSandwich = new Lunch("Chicken & Avocado Sandwich", "Roasted Bell & Evans chicken, avocado, smoked gouda, roasted red peppers and greens with cayenne aioli + sweet potato fries", "15", lunch, "/images/Lunch/chicken-and-avocado-sandwich.jpg");
 		 Lunch thaiburrito = new Lunch("Thai Burrito", "Seared organic tofu or roasted chicken with peanut sauce, crunchy slaw and brown rice + tortilla chips & Thai dipping sauce", "12.5", lunch, "/images/Lunch/thai-burrito.jpg");
 		 Lunch sweetBasilBurrito = new Lunch("Sweet Basil Burrito", "Rotisserie roasted chicken or seared tofu with creamy pesto, sautéed veggies and brown rice + tortilla chips & Northstar’s salsa", "13", lunch, "/images/Lunch/sweet-basil-burrito.jpg");
-		 Lunch spicyHarvest = new Lunch("Spicy Harvest", "Smoked gouda, pepperoni, corn, jalapeños with organic tomato sauce on a whole wheat crust", "14", lunch, "/images/Lunch/spicy-harvest.");
-		 Lunch housemadeSausage = new Lunch("Housemade Sausage", "Crumbled sausace and Mamma Lil’s Peppers paired with organic tomato sauce, provolone and parmesan", "14", lunch, "/images/Lunch/housemade-sausage.");
-		 Lunch smokedGoudaAndChicken = new Lunch("Smoked Gouda + Chicken", "Rotisserie roasted chicken, Northstar’s BBQ sauce, red peppers, onions, cilantro and peanuts", "14", lunch, "/images/Lunch/smoked-gouda-and-chicken.");
-		 Lunch highStreetVegetable = new Lunch("High Street Vegetable", "Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano", "12", lunch, "/images/Lunch/high-street-vegetable.");
+		 Lunch spicyHarvest = new Lunch("Spicy Harvest", "Smoked gouda, pepperoni, corn, jalapeños with organic tomato sauce on a whole wheat crust", "14", lunch, "/images/Lunch/spicy-harvest-pizza.jpg");
+		 Lunch housemadeSausage = new Lunch("Housemade Sausage", "Crumbled sausace and Mamma Lil’s Peppers paired with organic tomato sauce, provolone and parmesan", "14", lunch, "/images/Lunch/housemade-sausage-pizza.jpg");
+		 Lunch smokedGoudaAndChicken = new Lunch("Smoked Gouda + Chicken", "Rotisserie roasted chicken, Northstar’s BBQ sauce, red peppers, onions, cilantro and peanuts", "14", lunch, "/images/Lunch/smoked-gouda-and-chicken-pizza.jpg");
+		 Lunch highStreetVegetable = new Lunch("High Street Vegetable", "Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano", "12", lunch, "/images/Lunch/high-street-vegetable-pizza.jpeg");
 		 
 		 lunchRepo.save(simpleSalad);
 		 lunchRepo.save(choppedSalad);
@@ -116,10 +116,10 @@ public class MenuPopulator implements CommandLineRunner {
 		 Dinner chickenAndAvoSandwichD = new Dinner("Chicken & Avocado Sandwich", "Roasted Bell & Evans chicken, avocado, smoked gouda, roasted red peppers and greens with cayenne aioli + sweet potato fries", "15", dinner, "/images/Dinner/chicken-and-avocado-sandwich.jpg");
 		 Dinner thaiburritoD = new Dinner("Thai Burrito", "Seared organic tofu or roasted chicken with peanut sauce, crunchy slaw and brown rice + tortilla chips & Thai dipping sauce", "12.5", dinner, "/images/Dinner/thai-burrito.jpg");
 		 Dinner sweetBasilBurritoD = new Dinner("Sweet Basil Burrito", "Rotisserie roasted chicken or seared tofu with creamy pesto, sautéed veggies and brown rice + tortilla chips & Northstar’s salsa", "13", dinner, "/images/Dinner/sweet-basil-burrito.jpg");
-		 Dinner spicyHarvestD = new Dinner("Spicy Harvest", "Smoked gouda, pepperoni, corn, jalapeños with organic tomato sauce on a whole wheat crust", "14", dinner, "/images/Dinner/spicy-harvest.");
-		 Dinner housemadeSausageD = new Dinner("Housemade Sausage", "Crumbled sausace and Mamma Lil’s Peppers paired with organic tomato sauce, provolone and parmesan", "14", dinner, "/images/Dinner/housemade-sausage.");
-		 Dinner smokedGoudaAndChickenD = new Dinner("Smoked Gouda + Chicken", "Rotisserie roasted chicken, Northstar’s BBQ sauce, red peppers, onions, cilantro and peanuts", "14", dinner, "/images/Dinner/smoked-gouda-and-chicken.");
-		 Dinner highStreetVegetableD = new Dinner("High Street Vegetable", "Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano", "12", dinner, "/images/Dinner/high-street-vegetable.");
+		 Dinner spicyHarvestD = new Dinner("Spicy Harvest", "Smoked gouda, pepperoni, corn, jalapeños with organic tomato sauce on a whole wheat crust", "14", dinner, "/images/Dinner/spicy-harvest-pizza.jpg");
+		 Dinner housemadeSausageD = new Dinner("Housemade Sausage", "Crumbled sausace and Mamma Lil’s Peppers paired with organic tomato sauce, provolone and parmesan", "14", dinner, "/images/Dinner/housemade-sausage-pizza.jpg");
+		 Dinner smokedGoudaAndChickenD = new Dinner("Smoked Gouda + Chicken", "Rotisserie roasted chicken, Northstar’s BBQ sauce, red peppers, onions, cilantro and peanuts", "14", dinner, "/images/Dinner/smoked-gouda-and-chicken-pizza.jpeg");
+		 Dinner highStreetVegetableD = new Dinner("High Street Vegetable", "Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano", "12", dinner, "/images/Dinner/high-street-vegetable-pizza.jpeg");
 		 
 		 dinnerRepo.save(simpleSaladD);
 		 dinnerRepo.save(choppedSaladD);

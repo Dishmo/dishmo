@@ -2,15 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>dishmo | Sample Menu</title>
+<base target="_parent"></base>
 <link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
-<meta name="google-signin-client_id"
-	content="256512007537-5cnmmm9f2chrk9oec5n7jgpul06bvalt.apps.googleusercontent.com"></meta>
 <link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
 <link
 	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
 	rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="/css/adam-menu.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/adam-menu-styles/adam-menu-content.css"></link>
 
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 <script
@@ -18,6 +17,14 @@
 <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
 </head>
 <body>
-<h1>hello world!</h1>
+<h2>Breakfast</h2>
+	<div th:each="currentBreakfast: ${breakfasts}">
+		<div class="breakfasts">
+			<h3> <a class="name" th:href="@{/reviews(id=${currentBreakfast.breakfastId})}"
+				th:text="${currentBreakfast.name}"></a></h3>
+			<p class="price" th:text="${currentBreakfast.price}"></p>
+			<p class="description" th:text="${currentBreakfast.description}"></p>
+		</div>
+	</div>
 </body>
 </html>

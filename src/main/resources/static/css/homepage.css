@@ -1,6 +1,5 @@
 body  {
-	background-image: linear-gradient(rgba(0, 0, 0, .75),
-		rgba(255, 255, 255, .1)), url("../images/new-homepage.jpg");
+	background-image: url("../images/new-homepage.jpg");
 	background-size: cover;
 	background-position: center; 
 }
@@ -62,9 +61,6 @@ a:hover {
 }
 .navbar-brand, h3 {
 	color: #eac67a;
-}
-.navbar-toggle {
-	background: black;
 }
 .navbar-brand:hover{
 	color: #eac67a;

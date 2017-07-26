@@ -40,7 +40,7 @@ public class AdamMenuController {
 			model.addAttribute("alcoholicBeverages", alcoholicBeverageRepo.findAll());
 			return "/adam-menu-categories/adam-menu-drinks";
 		}
-		@RequestMapping("/adam-menu-apps")
+		@RequestMapping("/adam-menu-appetizers")
 		public String fetchAdamMenuApps(Model model) {
 			model.addAttribute("appetizers", appetizerRepo.findAll());
 			return "/adam-menu-categories/adam-menu-appetizers";

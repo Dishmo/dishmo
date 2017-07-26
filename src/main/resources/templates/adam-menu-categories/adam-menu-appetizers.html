@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>dishmo | Sample Menu</title>
+<base target="_parent"></base>
 <link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
 <link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
@@ -16,6 +17,13 @@
 <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
 </head>
 <body>
-<h1>hello world!</h1>
+	<h2>Appetizers</h2>
+	<div th:each="currentAppetizer: ${appetizers}">
+		<div class="appetizers">
+		<h3><a th:href="@{/reviews(id=${currentAppetizer.appetizerId})}"
+				th:text="${currentAppetizer.name}" ></a></h3>
+			<p th:text="${currentAppetizer.price}"></p>
+		</div>
+	</div>
 </body>
 </html>

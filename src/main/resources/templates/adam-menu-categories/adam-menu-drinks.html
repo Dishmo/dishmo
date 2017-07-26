@@ -22,15 +22,16 @@
 	<div th:each="currentDrink: ${drinks}">
 		<div class="drinks">
 			<a th:href="@{/reviews(id=${currentDrink.drinkId})}"
-				th:text="${currentDrink.name}" ></a>
+				th:text="${currentDrink.name}"></a>
 			<p th:text="${currentDrink.price}"></p>
 		</div>
 	</div>
 	<h2>Alcoholic Beverages</h2>
 	<div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
 		<div class="drinks">
-			<a th:href="@{/reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
-				th:text="${currentAlcoholicBeverage.name}" ></a>
+			<a
+				th:href="@{/reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
+				th:text="${currentAlcoholicBeverage.name}"></a>
 			<p th:text="${currentAlcoholicBeverage.price}"></p>
 		</div>
 	</div>

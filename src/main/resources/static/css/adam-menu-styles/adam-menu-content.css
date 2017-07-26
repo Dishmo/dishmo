@@ -17,6 +17,6 @@ h2 {
 	color: #eac67a;
 	text-align: center;
 }
-.drinks p{
-	display: inline-block;
+.name{
+	padding-right: 20px;
 }

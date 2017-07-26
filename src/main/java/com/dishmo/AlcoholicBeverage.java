@@ -10,7 +10,7 @@ public class AlcoholicBeverage {
 
 	@Id
 	@GeneratedValue
-	private long drinkId;
+	private long alcoholicDrinkId;
 
 	private String name;
 	private String whereFrom;
@@ -20,8 +20,8 @@ public class AlcoholicBeverage {
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
-	public long getAlcoholicBeverageId() {
-		return drinkId;
+	public long getAlcoholicDrinkId() {
+		return alcoholicDrinkId;
 	}
 
 	public String getName() {

@@ -1,4 +1,4 @@
-package com.dishmo.dishmo;
+package com.dishmo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

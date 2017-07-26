@@ -17,6 +17,15 @@
 <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
 </head>
 <body>
-<h1>hello world!</h1>
+<h2>Dessert</h2>
+	<div th:each="currentDessert: ${desserts}">
+		<div class="desserts">
+			<h3>
+				<a class="name" th:href="@{/reviews(id=${currentDessert.dessertId})}"
+					th:text="${currentDessert.name}"></a>
+			</h3>
+			<p class="price" th:text="${currentDessert.price}"></p>
+		</div>
+	</div>
 </body>
 </html>

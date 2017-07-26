@@ -29,10 +29,10 @@
 	<h2>Alcoholic Beverages</h2>
 	<div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
 		<div class="drinks">
-			<a
+			<a class="name"
 				th:href="@{/reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
 				th:text="${currentAlcoholicBeverage.name}"></a>
-			<p th:text="${currentAlcoholicBeverage.price}"></p>
+			<p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
 		</div>
 	</div>
 </body>

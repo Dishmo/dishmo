@@ -57,7 +57,7 @@ public class AdamMenuController {
 		}
 		@RequestMapping("/adam-menu-dinners")
 		public String fetchAdamMenuDinners(Model model) {
-			model.addAttribute("dinners", breakfastRepo.findAll());
+			model.addAttribute("dinners", dinnerRepo.findAll());
 			return "/adam-menu-categories/adam-menu-dinners";
 		}
 		@RequestMapping("/adam-menu-desserts")

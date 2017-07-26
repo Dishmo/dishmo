@@ -39,5 +39,11 @@ button .icon-bar{
 	background-color: #233237;
 }
 .maincontent {
-	margin-top: 100px;
+	margin-top: 150px;
+	background-color: #233237;
+}
+.maincontent h4{
+	color:#eac67a;
+	padding: 30px;	
+	text-align: center;
 }

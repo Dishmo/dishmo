@@ -41,8 +41,18 @@ public class DishmoController {
 
 	@RequestMapping("/reviews")
 	public String fetchReview(@RequestParam("id") Long id, Model model) {
-		Breakfast selectedReview = breakfastRepo.findOne(id);
-		model.addAttribute(selectedReview);
+		Breakfast selectedBreakfastReview = breakfastRepo.findOne(id);
+		model.addAttribute(selectedBreakfastReview);
+		Lunch selectedLunchReview = lunchRepo.findOne(id);
+		model.addAttribute(selectedLunchReview);
+		Dinner selectedDinnerReview = dinnerRepo.findOne(id);
+		model.addAttribute(selectedDinnerReview);
+		Appetizer selectedAppetizerReview = appetizerRepo.findOne(id);
+		model.addAttribute(selectedAppetizerReview);
+		Drink selectedDrinkReview = drinkRepo.findOne(id);
+		model.addAttribute(selectedDrinkReview);
+		Dessert selectedDessertReview = dessertRepo.findOne(id);
+		model.addAttribute(selectedDessertReview);
 		return "reviews";
 	}
 

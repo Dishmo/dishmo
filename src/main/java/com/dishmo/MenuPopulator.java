@@ -187,7 +187,8 @@ public class MenuPopulator implements CommandLineRunner {
 				"Rotisserie roasted chicken, Northstar's BBQ sauce, red peppers, onions, cilantro and peanuts.", "14",
 				dinner, "/images/Dinner/smoked-gouda-and-chicken-pizza.jpeg");
 		Dinner highStreetVegetableD = new Dinner("High Street Vegetable",
-				"Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano.",
+
+				"Crunchy veggies, tomatoes, mushrooms, jalapeÃ±os, sunflower seeds, aged provolone and Grana Padano.",
 				"12", dinner, "/images/Dinner/high-street-vegetable-pizza.jpeg");
 
 		dinnerRepo.save(simpleSaladD);

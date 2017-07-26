@@ -32,7 +32,7 @@ public class AdamMenuController {
 		
 		@RequestMapping("/adam-menu")
 		public String fetchAdamMenu(Model model) {
-			return "adam-menu";
+			return "/adam-menu-categories/adam-menu";
 		}
 		@RequestMapping("/adam-menu-drinks")
 		public String fetchAdamMenuDrinks(Model model) {

@@ -1,4 +1,4 @@
-package com.dishmo.dishmo;
+package com.dishmo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,25 +6,30 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Dessert {
+public class Lunch {
 
 	@Id
 	@GeneratedValue
-	private Long dessertId;
-	
+	private Long lunchId;
+
 	private String name;
+	private String description;
 	private String price;
 	private String imageUrl;
 
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
-	public Long getDessertId() {
-		return dessertId;
+	public Long getLunchId() {
+		return lunchId;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public String getDescription() {
+		return description;
 	}
 
 	public String getPrice() {
@@ -35,19 +40,19 @@ public class Dessert {
 		return sampleMenu;
 	}
 
-	public String getImageUrl() {
+	public String imageUrl() {
 		return imageUrl;
 	}
 
-	private Dessert() {
+	private Lunch() {
 
 	}
 
-	public Dessert(String name, String price, SampleMenu sampleMenu, String imageUrl) {
+	public Lunch(String name, String description, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
+		this.description = description;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
 		this.imageUrl = imageUrl;
 	}
-
 }

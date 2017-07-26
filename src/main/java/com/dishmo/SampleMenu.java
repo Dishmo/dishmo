@@ -1,4 +1,4 @@
-package com.dishmo.dishmo;
+package com.dishmo;
 
 import java.util.Set;
 

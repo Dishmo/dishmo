@@ -1,4 +1,4 @@
-package com.dishmo.dishmo;
+package com.dishmo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Drink {
+public class AlcoholicBeverage {
 
 	@Id
 	@GeneratedValue
@@ -20,7 +20,7 @@ public class Drink {
 	@ManyToOne
 	private SampleMenu sampleMenu;
 
-	public long getDrinkId() {
+	public long getAlcoholicBeverageId() {
 		return drinkId;
 	}
 
@@ -40,7 +40,7 @@ public class Drink {
 		return imageUrl;
 	}
 
-	private Drink() {
+	private AlcoholicBeverage() {
 
 	}
 
@@ -48,11 +48,11 @@ public class Drink {
 		return sampleMenu;
 	}
 
-	public Drink(String name, String price, SampleMenu sampleMenu, String imageUrl) {
+	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
 		this.name = name;
+		this.whereFrom = whereFrom;
 		this.price = price;
 		this.imageUrl = imageUrl;
 	}
 
 }
-

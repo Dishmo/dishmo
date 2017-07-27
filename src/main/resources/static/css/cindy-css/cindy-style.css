@@ -30,3 +30,17 @@ button .icon-bar{
 .nav li a:hover{
 	background-color: #233237;
 }
+.main-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20%;
+	text-align: center;
+}
+body{
+	font-family: 'Bellefair', serif; 
+
+}
+h1{
+	font-size: 5em;
+}

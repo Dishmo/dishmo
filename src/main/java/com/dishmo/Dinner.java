@@ -40,7 +40,7 @@ public class Dinner {
 		return sampleMenu;
 	}
 
-	public String imageUrl() {
+	public String getImageUrl() {
 		return imageUrl;
 	}
 

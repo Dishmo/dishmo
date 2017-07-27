@@ -63,7 +63,7 @@
 									<h4>Breakfast</h4>
 									<dl class="breakfastmenu" th:each="currentbreakfast: ${breakfasts}">
 										<dt class="name">
-											<a th:href="@{/reviews(id=${currentbreakfast.breakfastId})}"
+											<a th:href="@{/breakfast-reviews(id=${currentbreakfast.breakfastId})}"
 												th:text="${currentbreakfast.name}"></a>
 
 										</dt>
@@ -73,7 +73,7 @@
 									<h4>Lunch</h4>
 									<dl class="lunchmenu" th:each="currentlunch: ${lunches}">
 										<dt class="name">
-											<a th:href="@{/reviews(id=${currentlunch.lunchId})}"
+											<a th:href="@{/lunch-reviews(id=${currentlunch.lunchId})}"
 												th:text="${currentlunch.name}"></a>
 										</dt>
 										<span class="price" th:text="${currentlunch.price}"></span>
@@ -92,7 +92,7 @@
 									<h4>Dinner</h4>
 									<dl class="dinnermenu" th:each="currentdinner: ${dinners}">
 										<dt class="name">
-											<a th:href="@{/reviews(id=${currentdinner.dinnerId})}"
+											<a th:href="@{/dinner-reviews(id=${currentdinner.dinnerId})}"
 												th:text="${currentdinner.name}"></a>
 										</dt>
 										<span class="price" th:text="${currentdinner.price}"></span>
@@ -117,7 +117,7 @@
 									<dl class="drinkmenu" th:each="currentdrink: ${drinks}">
 
 										<dt class="name">
-											<a th:href="@{/reviews(id=${currentdrink.drinkId})}"
+											<a th:href="@{/drink-reviews(id=${currentdrink.drinkId})}"
 												th:text="${currentdrink.name}"></a>
 										</dt>
 										<span class="price" th:text="${currentdrink.price}"></span>
@@ -127,7 +127,7 @@
 									<dl class="dessertmenu" th:each="currentdessert: ${desserts}">
 
 										<dt class="name">
-											<a th:href="@{/reviews(id=${currentdessert.dessertId})}"
+											<a th:href="@{/dessert-reviews(id=${currentdessert.dessertId})}"
 												th:text="${currentdessert.name}"></a>
 										</dt>
 										<span class="price" th:text="${currentdessert.price}"></span>

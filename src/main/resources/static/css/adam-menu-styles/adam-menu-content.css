@@ -4,19 +4,36 @@ body {
 	color: white;
 	font-size: 24px;
 }
+
 a {
 	text-decoration: none;
 	color: white;
 }
+
 a:hover {
-	font-size:26px;
+	font-size: 26px;
 	text-decoration: none;
 	color: white;
 }
-h2 {
+
+h2, h4 {
 	color: #eac67a;
 	text-align: center;
 }
-.name{
+
+h4 {
+	font-size: 14px;
+}
+
+.name {
 	padding-right: 20px;
+}
+
+.price {
+	display: flex;
+	display: inline-flex;
+	color: #eac67a;
+}
+.description, .origin{
+	font-size: 15px;
 }

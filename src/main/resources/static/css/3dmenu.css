@@ -510,3 +510,5 @@ table {
 /* Apply a natural box layout model to all elements */
 /* Read this post by Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+ .rm-middle {
+ overflow: auto;}

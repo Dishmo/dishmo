@@ -88,7 +88,7 @@ strong {
 	margin: 0;
 	position: relative;
 	font-weight: 700;
-	text-transform: uppercase;
+	
 	font-family: 'Arvo', Arial, sans-serif;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -174,5 +174,8 @@ strong {
 @media screen and (max-width: 960px) {
 	.demo-note {
 		display: block;
+	}
+	.rm-back .rm-front{
+	overflow: auto;
 	}
 }

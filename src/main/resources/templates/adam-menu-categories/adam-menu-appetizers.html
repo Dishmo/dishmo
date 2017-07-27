@@ -23,7 +23,7 @@
 	<div th:each="currentAppetizer: ${appetizers}">
 		<div class="appetizers">
 			<a class="name"
-				th:href="@{/reviews(id=${currentAppetizer.appetizerId})}"
+				th:href="@{/appetizer-reviews(id=${currentAppetizer.appetizerId})}"
 				th:text="${currentAppetizer.name}"></a>
 			<p class="price" th:text="${currentAppetizer.price}"></p>
 		</div>

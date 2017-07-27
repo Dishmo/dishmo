@@ -22,7 +22,7 @@
 	<h4>Click on menu item to see more!</h4>
 	<div th:each="currentLunch: ${lunches}">
 		<div class="lunches">
-				<a class="name" th:href="@{/reviews(id=${currentLunch.lunchId})}"
+				<a class="name" th:href="@{/lunch-reviews(id=${currentLunch.lunchId})}"
 					th:text="${currentLunch.name}"></a>
 			<p class="price" th:text="${currentLunch.price}"></p>
 			<p class="description" th:text="${currentLunch.description}"></p>

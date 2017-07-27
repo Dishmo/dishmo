@@ -1,46 +1,62 @@
-.navbar {
-	background-color: #233237;
+body {
+	font-family: 'Bellefair', serif; 
 }
-.navbar-nav li a {
-	color: white;
-	font-size: 16px;
-}
-.navbar-nav li a:hover {
-	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
-}
-.navbar-brand, h3 {
-	color: #eac67a;
-}
-.navbar-toggle {
-	background: #233237;
-}
-.navbar-brand:hover{
-	color: #eac67a;
-	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
-}
-button .icon-bar{
+
+button .icon-bar {
 	background-color: #eac67a;
 }
-.navbar-collapse.in {
-	width: 100px;
-	background-color: #233237;
+
+h1 {
+	font-size: 2em;
 }
-.nav li a:hover{
-	background-color: #233237;
-}
-.main-content{
+
+.main-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 5%;
 	text-align: center;
 }
-body{
-	font-family: 'Bellefair', serif; 
 
+.meals {
+	margin-left: 50px;
 }
-h1{
-	font-size: 2em;
+
+.navbar {
+	background-color: #233237;
 }
+
+.navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-nav li a:hover {
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+
+.navbar-brand, h3 {
+	color: #eac67a;
+}
+
+.navbar-toggle {
+	background: #233237;
+}
+
+.navbar-brand:hover {
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+
+.navbar-collapse.in {
+	width: 100px;
+	background-color: #233237;
+}
+
+.nav li a:hover {
+	background-color: #233237;
+}
+
+

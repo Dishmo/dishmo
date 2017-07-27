@@ -94,9 +94,11 @@ button .icon-bar {
 }
 iframe {
 	background-color: #233237;
+	background-image: url("../../images/adam-menu-items/northstar-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	 overflow:hidden;
 }
 #drinks {
 	background-image: url("../../images/adam-menu-items/drink-image.jpg");

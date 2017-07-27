@@ -12,19 +12,19 @@ public class DishmoController {
 
 	@Resource
 	private BreakfastRepository breakfastRepo;
-	
+
 	@Resource
 	private LunchRepository lunchRepo;
-	
+
 	@Resource
 	private DinnerRepository dinnerRepo;
-	
+
 	@Resource
 	private AppetizerRepository appetizerRepo;
-	
+
 	@Resource
 	private DrinkRepository drinkRepo;
-	
+
 	@Resource
 	private DessertRepository dessertRepo;
 
@@ -39,21 +39,46 @@ public class DishmoController {
 		return "sample-menu";
 	}
 
-	@RequestMapping("/reviews")
-	public String fetchReview(@RequestParam("id") Long id, Model model) {
+	@RequestMapping("/breakfast-reviews")
+	public String fetchBreakfastReview(@RequestParam("id") Long id, Model model) {
 		Breakfast selectedBreakfastReview = breakfastRepo.findOne(id);
 		model.addAttribute(selectedBreakfastReview);
+		return "breakfast-reviews";
+	}
+
+	@RequestMapping("/lunch-reviews")
+	public String fetchLunchReview(@RequestParam("id") Long id, Model model) {
 		Lunch selectedLunchReview = lunchRepo.findOne(id);
 		model.addAttribute(selectedLunchReview);
+		return "lunch-reviews";
+	}
+
+	@RequestMapping("/dinner-reviews")
+	public String fetchDinnerReview(@RequestParam("id") Long id, Model model) {
 		Dinner selectedDinnerReview = dinnerRepo.findOne(id);
 		model.addAttribute(selectedDinnerReview);
+		return "dinner-reviews";
+	}
+
+	@RequestMapping("/appetizer-reviews")
+	public String fetchAppetizerReview(@RequestParam("id") Long id, Model model) {
 		Appetizer selectedAppetizerReview = appetizerRepo.findOne(id);
 		model.addAttribute(selectedAppetizerReview);
+		return "appetizer-reviews";
+	}
+
+	@RequestMapping("/drink-reviews")
+	public String fetchDrinkReview(@RequestParam("id") Long id, Model model) {
 		Drink selectedDrinkReview = drinkRepo.findOne(id);
 		model.addAttribute(selectedDrinkReview);
+		return "drink-reviews";
+	}
+
+	@RequestMapping("/dessert-reviews")
+	public String fetchDessertReview(@RequestParam("id") Long id, Model model) {
 		Dessert selectedDessertReview = dessertRepo.findOne(id);
 		model.addAttribute(selectedDessertReview);
-		return "reviews";
+		return "dessert-reviews";
 	}
 
 	@RequestMapping("/home")

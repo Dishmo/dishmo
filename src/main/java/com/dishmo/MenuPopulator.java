@@ -164,7 +164,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"14", dinner, "/images/Dinner/northstar-burger.jpeg");
 		Dinner classicCheeseburgerD = new Dinner("Classic Cheeseburger",
 				"Nilman Ranch brisket and chuck*, ground in-house daily, topped with cheddar, lettuce, tomato, onion, pickle + breakfast potatoes.",
-				"15", dinner, "/Dinner/Lunch/classic-cheeseburger.jpeg");
+				"15", dinner, "/images/Dinner/classic-cheeseburger.jpeg");
 		Dinner fishSandwichD = new Dinner("Fish Sandwich",
 				"Grilled barramundi filet with lettuce, tomato, red onion, and herb aioli + simple salad.", "17",
 				dinner, "/images/Dinner/fish-sandwich.jpg");

@@ -44,6 +44,7 @@ button .icon-bar {
 }
 .container .maincontent {
 	padding-left: 20px;
+	padding-right: 20px;
 	margin-top: 75px;
 	margin-bottom: 20px;
 	max-width: 1200px;
@@ -95,7 +96,7 @@ iframe {
 	background-color: #233237;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	
+	 overflow:hidden;
 }
 #drinks {
 	background-image: url("../../images/adam-menu-items/drink-image.jpg");

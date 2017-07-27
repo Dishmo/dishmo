@@ -42,6 +42,11 @@ public class DishmoController {
 		model.addAttribute("desserts", dessertRepo.findAll());
 		return "sample-menu";
 	}
+	
+	@RequestMapping("/sample-menus")
+	public String fetchSampleMenus(Model model) {
+		return "sample-menus";
+	}
 
 	@RequestMapping("/breakfast-reviews")
 	public String fetchBreakfastReview(@RequestParam("id") Long id, Model model) {

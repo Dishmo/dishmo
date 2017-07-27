@@ -19,12 +19,11 @@
 </head>
 <body>
 	<h2>Lunch</h2>
+	<h4>Click on menu item to see more!</h4>
 	<div th:each="currentLunch: ${lunches}">
 		<div class="lunches">
-			<h3>
 				<a class="name" th:href="@{/reviews(id=${currentLunch.lunchId})}"
 					th:text="${currentLunch.name}"></a>
-			</h3>
 			<p class="price" th:text="${currentLunch.price}"></p>
 			<p class="description" th:text="${currentLunch.description}"></p>
 		</div>

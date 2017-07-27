@@ -9,7 +9,8 @@
 <link
 	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
 	rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="/css/adam-menu-styles/adam-menu-content.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="/css/adam-menu-styles/adam-menu-content.css"></link>
 
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 <script
@@ -18,10 +19,12 @@
 </head>
 <body>
 	<h2>Appetizers</h2>
+	<h4>Click on menu item to see more!</h4>
 	<div th:each="currentAppetizer: ${appetizers}">
 		<div class="appetizers">
-		<h3><a class="name" th:href="@{/reviews(id=${currentAppetizer.appetizerId})}"
-				th:text="${currentAppetizer.name}" ></a></h3>
+			<a class="name"
+				th:href="@{/reviews(id=${currentAppetizer.appetizerId})}"
+				th:text="${currentAppetizer.name}"></a>
 			<p class="price" th:text="${currentAppetizer.price}"></p>
 		</div>
 	</div>

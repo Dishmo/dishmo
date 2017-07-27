@@ -9,7 +9,8 @@
 <link
 	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
 	rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="/css/adam-menu-styles/adam-menu-content.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="/css/adam-menu-styles/adam-menu-content.css"></link>
 
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 <script
@@ -17,11 +18,13 @@
 <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
 </head>
 <body>
-<h2>Breakfast</h2>
+	<h2>Breakfast</h2>
+	<h4>Click on menu item to see more!</h4>
 	<div th:each="currentBreakfast: ${breakfasts}">
 		<div class="breakfasts">
-			<h3> <a class="name" th:href="@{/reviews(id=${currentBreakfast.breakfastId})}"
-				th:text="${currentBreakfast.name}"></a></h3>
+			<a class="name"
+				th:href="@{/reviews(id=${currentBreakfast.breakfastId})}"
+				th:text="${currentBreakfast.name}"></a>
 			<p class="price" th:text="${currentBreakfast.price}"></p>
 			<p class="description" th:text="${currentBreakfast.description}"></p>
 		</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>dishmo | Sample Menu</title>
+<link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+<link rel="stylesheet" type="text/css" href="/css/meaghan-menu-styles/meaghan-menu-content.css"></link>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Handlee"
+	rel="stylesheet"></link>
+</head>
+<body>
+	<div class="carousel-inner">
+		<div class="item active">
+			<h2 class="meal-name">Breakfast</h2>
+			<div class="menu-items">
+				<div th:each="currentBreakfast: ${breakfasts}">
+					<div class="breakfasts">
+						<a class="name"
+							th:href="@{/reviews(id=${currentBreakfast.breakfastId})}"
+							th:text="${currentBreakfast.name}"></a>
+						<p class="price" th:text="${currentBreakfast.price}"></p>
+						<p class="description" th:text="${currentBreakfast.description}"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

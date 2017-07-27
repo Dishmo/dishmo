@@ -22,7 +22,7 @@
 	<h4>Click on menu item to see more!</h4>
 	<div th:each="currentDrink: ${drinks}">
 		<div class="drinks">
-			<a class="name" th:href="@{/reviews(id=${currentDrink.drinkId})}"
+			<a class="name" th:href="@{/drink-reviews(id=${currentDrink.drinkId})}"
 				th:text="${currentDrink.name}"></a>
 			<p class="price" th:text="${currentDrink.price}"></p>
 		</div>
@@ -32,7 +32,7 @@
 	<div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
 		<div class="drinks">
 			<a class="name"
-				th:href="@{/reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
+				th:href="@{/alcoholic-beverage-reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
 				th:text="${currentAlcoholicBeverage.name}"></a>
 			<p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
 			<p class="origin" th:text="${currentAlcoholicBeverage.whereFrom}"></p>

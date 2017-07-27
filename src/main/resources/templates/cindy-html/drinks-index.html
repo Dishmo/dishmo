@@ -38,7 +38,31 @@
   </div>
  </nav>
  <div class="main-content">
- <h1>Drinks</h1>
+ <h1>Drinks</h1></div>
+ <div th:each="currentDrink: ${drinks}">
+    <div class="meals">
+     <a class="name"
+     th:href="@{/drink-reviews(id=${currentDrink.drinkId})}"
+     th:text="${currentDrink.name}"></a>
+     <p class="price" th:text="${currentDrink.price}"></p>
+     
+     <hr></hr>
+
+   </div>
+ </div>
+
+ <div class="main-content">
+ <h1>Alcoholic Beverages</h1></div>
+ <div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
+    <div class="meals">
+     <a class="name"
+     th:href="@{/alcoholic-beverage-reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
+     th:text="${currentAlcoholicBeverage.name}"></a>
+     <p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
+     
+     <hr></hr>
+
+   </div>
  </div>
 
 

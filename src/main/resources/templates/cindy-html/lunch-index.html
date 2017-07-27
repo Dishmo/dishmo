@@ -38,7 +38,18 @@
   </div>
  </nav>
  <div class="main-content">
- <h1>Lunch</h1>
+ <h1>Lunch</h1></div>
+ <div th:each="currentLunch: ${lunches}">
+    <div class="meals">
+     <a class="name"
+     th:href="@{/lunch-reviews(id=${currentLunch.lunchId})}"
+     th:text="${currentLunch.name}"></a>
+     <p class="price" th:text="${currentLunch.price}"></p>
+     <p class="description" th:text="${currentLunch.description}"></p>
+
+     <hr></hr>
+
+   </div>
  </div>
 
 

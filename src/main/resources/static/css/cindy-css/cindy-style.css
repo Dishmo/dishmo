@@ -1,0 +1,35 @@
+.navbar {
+	background-color: #233237;
+}
+.navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+.navbar-nav li a:hover {
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+.navbar-brand, h3 {
+	color: #eac67a;
+}
+.navbar-toggle {
+	background: #233237;
+}
+.navbar-brand:hover{
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+button .icon-bar{
+	background-color: #eac67a;
+}
+.navbar-collapse.in {
+	width: 100px;
+	background-color: #233237;
+}
+.nav li a:hover{
+	background-color: #233237;
+}
+body {
+	background-image: 
+}

@@ -22,7 +22,7 @@
 	color: orange;
 }
 
-.meal-name {
+.meal-name, .click-to-see-more {
 	font-family: 'Rock Salt', cursive;
 	color: orange;
 	text-align: center;

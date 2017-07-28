@@ -80,7 +80,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"15", lunch, "/images/Lunch/chopped-salad.jpeg");
 		Lunch beechwoldSalad = new Lunch("Beechwold Salad",
 				"Roasted chicken, dates, avocado, tomatoes, corn, goat cheese, croutons and almonds with champagne vinaigrette.",
-				"14", lunch, "/images/Lunch/beechwald-salad.jpeg");
+				"14", lunch, "/images/Lunch/beechwold-salad.jpeg");
 		Lunch citrusCrunchSalad = new Lunch("Citrus Crunch Salad",
 				"Shredded chicken, crisp vegetables, mango and fresh herbs with tortillas and peanut lime dressing.",
 				"14.5", lunch, "/images/Lunch/citrus-crunch-salad.jpg");
@@ -149,7 +149,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"15", dinner, "/images/Dinner/chopped-salad.jpeg");
 		Dinner beechwoldSaladD = new Dinner("Beechwold Salad",
 				"Roasted chicken, dates, avocado, tomatoes, corn, goat cheese, croutons and almonds with champagne vinaigrette.",
-				"14", dinner, "/images/Dinner/beechwald-salad.jpeg");
+				"14", dinner, "/images/Dinner/beechwold-salad.jpeg");
 		Dinner citrusCrunchSaladD = new Dinner("Citrus Crunch Salad",
 				"Shredded chicken, crisp vegetables, mango and fresh herbs with tortillas and peanut lime dressing.",
 				"14.5", dinner, "/images/Dinner/citrus-crunch-salad.jpg");
@@ -188,7 +188,7 @@ public class MenuPopulator implements CommandLineRunner {
 				dinner, "/images/Dinner/smoked-gouda-and-chicken-pizza.jpeg");
 		Dinner highStreetVegetableD = new Dinner("High Street Vegetable",
 
-				"Crunchy veggies, tomatoes, mushrooms, jalapeños, sunflower seeds, aged provolone and Grana Padano.",
+				"Crunchy veggies, tomatoes, mushrooms, jalapenos, sunflower seeds, aged provolone and Grana Padano.",
 				"12", dinner, "/images/Dinner/high-street-vegetable-pizza.jpeg");
 
 		dinnerRepo.save(simpleSaladD);
@@ -272,12 +272,12 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
 
-		Appetizer pimentoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
+		Appetizer pimientoCheeseDip = new Appetizer("Pimiento Cheese Dip", "7", appetizer,
 				"/images/Appetizer/pimiento-cheese-dip.jpeg");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,
 				"/images/Appetizer/made-to-order-guacamole.jpg");
 
-		appetizerRepo.save(pimentoCheeseDip);
+		appetizerRepo.save(pimientoCheeseDip);
 		appetizerRepo.save(madeToOrderGuacamole);
 	}
 

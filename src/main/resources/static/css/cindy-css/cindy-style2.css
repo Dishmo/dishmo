@@ -10,6 +10,10 @@ h1 {
 	font-size: 2em;
 }
 
+h6 {
+	margin-left: 50px;
+}
+
 .main-content {
 	display: flex;
 	align-items: center;

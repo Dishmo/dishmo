@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>dishmo | Reviews</title>
+<meta property="fb:app_id" content="670429023147344"></meta>
+<link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+<meta name="google-signin-client_id"
+	content="256512007537-5cnmmm9f2chrk9oec5n7jgpul06bvalt.apps.googleusercontent.com"></meta>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+<link
+	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
+	rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="/css/cindy-style2.css"></link>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+<script>
+	$(function() {
+		$("#dishmonav").load("/dishmonav.html");
+	});
+</script>
+</head>
+<body>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId : '670429023147344',
+				xfbml : true,
+				version : 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div id="dishmonav"></div>
+
+	<div class="container">
+		<div class="review-content">
+			<h3 th:text="${appetizer.name}"></h3>
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img th:src="${appetizer.imageUrl}" alt="appetizer image"></img>
+					</div>
+
+					<div class="item">
+						<img th:src="${appetizer.imageUrl}" alt="appetizer image"></img>
+					</div>
+
+					<div class="item">
+						<img th:src="${appetizer.imageUrl}" alt="appetizer image"></img>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel"
+					data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left"></span> <span
+					class="sr-only">Previous</span>
+				</a> <a class="right carousel-control" href="#myCarousel"
+					data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span> <span
+					class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<div id="fb-root"></div>
+
+			<div class="fb-comments" data-href="" data-width="500"
+				data-numposts="10"></div>
+
+			<script type="text/javascript"
+				src="https://code.jquery.com/jquery-2.1.4.js"></script>
+			<script type="text/javascript"
+				src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		</div>
+	</div>
+</body>
+</html>

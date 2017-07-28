@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>dishmo | Simple Menu</title>
+<link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+<link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="/css/cindy-css/cindy-style2.css"></link>
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:8080/cindy-menu">Home</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-breakfasts">Breakfast</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-lunches">Lunch</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-appetizers">Appetizers</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-dinners">Dinner</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-desserts">Dessert</a></li>
+        <li><a href="http://localhost:8080/cindy-menu-drinks">Drinks</a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+ <div class="main-content">
+ <h1>Drinks</h1></div>
+ <div th:each="currentDrink: ${drinks}">
+    <div class="meals">
+     <a class="name"
+     th:href="@{/drink-reviews(id=${currentDrink.drinkId})}"
+     th:text="${currentDrink.name}"></a>
+     <p class="price" th:text="${currentDrink.price}"></p>
+     
+     <hr></hr>
+
+   </div>
+ </div>
+
+ <div class="main-content">
+ <h1>Alcoholic Beverages</h1></div>
+ <div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
+    <div class="meals">
+     <a class="name"
+     th:href="@{/alcoholic-beverage-reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
+     th:text="${currentAlcoholicBeverage.name}"></a>
+     <p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
+     
+     <hr></hr>
+
+   </div>
+ </div>
+
+
+
+
+
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

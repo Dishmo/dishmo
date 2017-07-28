@@ -170,8 +170,13 @@ a:hover {
 .rm-logo, .rm-content h2, .rm-content h4, a.rm-button-open, .rm-modal h5
 	{
 	font-weight: 700;
+<<<<<<< HEAD
 	text-transform: ;
 	font-family: 'Arvo', Arial, sans-serif;
+=======
+	
+	
+>>>>>>> master
 }
 
 .rm-logo {
@@ -199,7 +204,11 @@ a:hover {
 	color: #323b4c;
 	font-weight: 500;
 	border-top: 4px double #323b4c;
+<<<<<<< HEAD
 	text-transform: ;
+=======
+
+>>>>>>> master
 	line-height: 20px;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
@@ -246,7 +255,11 @@ a.rm-button-open:hover {
 
 .rm-content dl dt {
 	font-weight: 500;
+<<<<<<< HEAD
 	text-transform: ;
+=======
+
+>>>>>>> master
 }
 
 .rm-content dl dd {
@@ -560,7 +573,14 @@ a.rm-viewdetails:hover, .rm-modal a:hover {
 		transform: rotateY(0deg);
 		transition-delay: 0s;
 	}
+<<<<<<< HEAD
 	.rm-front{
 	overflow:auto;}
 	
 }
+=======
+	
+}
+
+
+>>>>>>> master

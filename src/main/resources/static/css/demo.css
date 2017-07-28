@@ -1,9 +1,11 @@
 body {
-	-webkit-background-size : cover; -moz-background-size : cover;
-	-o-background-size : cover; background-size : cover;
-	-webkit-font-smoothing : antialiased;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	
+	overflow: auto;
 	font-weight: 300;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -15,36 +17,43 @@ body {
 .navbar {
 	background-color: #233237;
 }
+
 .navbar-nav li a {
 	color: white;
 	font-size: 16px;
 }
+
 .navbar-nav li a:hover {
 	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
+
 .navbar-brand, h3 {
 	color: #eac67a;
 }
+
 .navbar-toggle {
 	background: #233237;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
 	color: #eac67a;
 	border-bottom: 3px solid #984b43;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
-button .icon-bar{
+
+button .icon-bar {
 	background-color: #eac67a;
 }
+
 .navbar-collapse.in {
 	width: 100px;
 	background-color: #233237;
 }
-.nav li a:hover{
+
+.nav li a:hover {
 	background-color: #233237;
 }
-
 
 a {
 	color: #555;
@@ -118,7 +127,7 @@ strong {
 	font-size: 11px;
 	background: #fff;
 	background: rgba(255, 255, 255, 0.8);
-	text-transform: uppercase;
+	
 	z-index: 9999;
 	position: relative;
 	font-family: Cambria, Georgia, serif;
@@ -175,7 +184,16 @@ strong {
 	.demo-note {
 		display: block;
 	}
+<<<<<<< HEAD
+	.rm-back{
+	overflow: auto;}
+	.rm-front{
+	overflow:auto;}
+	
+	
+=======
 	.rm-back .rm-front{
 	overflow: auto;
 	}
+>>>>>>> master
 }

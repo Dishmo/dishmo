@@ -1,12 +1,27 @@
+.breakfasts {
+		text-align: center;
+}
+
 .carousel-indicators {
 	position: absolute; bottom: 0;
 }
 
-.restaurant-name {
+.description {
+	font-family: 'Handlee', cursive;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+.restaurant-name, .price {
 	font-family: 'Rock Salt', cursive;
 	color: white;
-	text-align: center;
 }
+
+.price {
+	color: orange;
+}
+
 .meal-name {
 	font-family: 'Rock Salt', cursive;
 	color: orange;
@@ -18,33 +33,28 @@
 	padding-top: 10px;
 	padding-bottom: 75px;
 	min-height: 500px;
-
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 0px; /* Firefox */
-    column-gap: 0px;
-    -webkit-column-rule: 3px solid orange; /* Chrome, Safari, Opera */
-    -moz-column-rule: 3px solid orange; /* Firefox */
-    column-rule: 3px solid orange;
+	border-bottom: 2px solid orange;
 }
 
-p {
+.name {
 	font-family: 'Handlee', cursive;
-	text-align: center;
-	font-size: 16px;
+	font-size: 30px;
 	color: white;
+	text-align: center;
+}
+
+.orange-line {
+	
+	border: 2px solid orange;
+	
 }
 
 body {
-	background-image: url("images/chalkboard-vertical1280x1920.jpg");
+	background-image: url("../../images/meaghan-menu-images/chalkboard-vertical1280x1920.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center, fixed;
 }
-
 .restaurant-name {
-	text-align: center;
-	color: white;
+		text-align: center;
 }

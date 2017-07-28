@@ -46,7 +46,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"Three organic valley eggs* and La Quercia prosciutto on toasted rosemary focaccia with parmesan.",
 				"13", breakfast, "/images/Breakfast/prosciutto-and-poached-eggs.jpeg");
 		Breakfast cloudNinePancakes = new Breakfast("Cloud Nine Pancakes",
-				"Three ricotta pancakes served with real maple syrup and bananas.", "3", breakfast,
+				"Three ricotta pancakes served with real maple syrup and bananas.", "13", breakfast,
 				"/images/Breakfast/cloud-nine-pancakes.jpeg");
 		Breakfast sweetPotatoAndTurkeyHash = new Breakfast("Sweet Potato and Turkey Hash",
 				"Applewood smoked turkey, red peppers, sweet onions, and two sunny eggs.*", "13", breakfast,

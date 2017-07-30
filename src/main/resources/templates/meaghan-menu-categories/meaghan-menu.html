@@ -37,7 +37,6 @@
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 			<li data-target="#myCarousel" data-slide-to="3"></li>
-			<li data-target="#myCarousel" data-slide-to="4"></li>
 		</ol>
 		<nav id="dishmonav"></nav>
 		<div class="carousel-inner">
@@ -52,6 +51,7 @@
 								th:text="${currentBreakfast.name}"></a>
 							<p class="price" th:text="${currentBreakfast.price}"></p>
 							<p class="description" th:text="${currentBreakfast.description}"></p>
+							<div class="orange-line"></div>
 						</div>
 					</div>
 				</div>
@@ -62,12 +62,13 @@
 				<h4 class="click-to-see-more">Click on a menu item to see more!</h4>
 				<div class="menu-items">
 					<div th:each="currentLunch: ${lunches}">
-						<div class="lunches">
+						<div class="lunches-dinners">
 							<a class="name"
 								th:href="@{/lunch-reviews(id=${currentLunch.lunchId})}"
 								th:text="${currentLunch.name}"></a>
 							<p class="price" th:text="${currentLunch.price}"></p>
 							<p class="description" th:text="${currentLunch.description}"></p>
+							<div class="orange-line"></div>
 						</div>
 					</div>
 				</div>
@@ -109,6 +110,7 @@
 								th:href="@{/appetizer-reviews(id=${currentAppetizer.appetizerId})}"
 								th:text="${currentAppetizer.name}"></a>
 							<p class="price" th:text="${currentAppetizer.price}"></p>
+							<div class="orange-line"></div>
 						</div>
 					</div>
 				</div>

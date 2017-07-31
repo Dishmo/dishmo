@@ -1,13 +1,55 @@
+.name:hover {
+	background-color: orange;
+	color: white;
+}
+
+.breakfasts, .lunches-dinners, .drinks, .appetizers {
+	text-align: center;
+}
+
 .carousel-indicators {
 	position: absolute; bottom: 0;
 }
 
-.restaurant-name {
+.description, .origin {
+	font-family: 'Handlee', cursive;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+.drinks {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	-webkit-column-gap: 100px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 100px; /* Firefox */
+	column-gap: 100px;
+	-webkit-column-width: 100px; /* Chrome, Safari, Opera */
+	-moz-column-width: 100px; /* Firefox */
+	column-width: 100px;
+	-webkit-column-rule: 3px solid orange; /* Chrome, Safari, Opera */
+	-moz-column-rule: 3px solid orange; /* Firefox */
+	column-rule: 3px solid orange;
+}
+
+h2 {
+	-webkit-column-span: all; /* Chrome, Safari, Opera */
+	column-span: all;
+	text-align: center;
+	color: orange;
+}
+
+.restaurant-name, .price {
 	font-family: 'Rock Salt', cursive;
 	color: white;
-	text-align: center;
 }
-.meal-name {
+
+.price {
+	color: orange;
+}
+
+.meal-name, .click-to-see-more {
 	font-family: 'Rock Salt', cursive;
 	color: orange;
 	text-align: center;
@@ -18,33 +60,32 @@
 	padding-top: 10px;
 	padding-bottom: 75px;
 	min-height: 500px;
-
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 0px; /* Firefox */
-    column-gap: 0px;
-    -webkit-column-rule: 3px solid orange; /* Chrome, Safari, Opera */
-    -moz-column-rule: 3px solid orange; /* Firefox */
-    column-rule: 3px solid orange;
 }
 
-p {
+.name {
 	font-family: 'Handlee', cursive;
-	text-align: center;
-	font-size: 16px;
+	font-size: 30px;
 	color: white;
+	text-align: center;
+}
+
+.orange-line {
+	width: 200px;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	background: orange;
+	text-align: center;
+
 }
 
 body {
-	background-image: url("images/chalkboard-vertical1280x1920.jpg");
+	background-image: url("../../images/meaghan-menu-images/chalkboard-vertical1280x1920.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center, fixed;
 }
-
 .restaurant-name {
 	text-align: center;
-	color: white;
 }

@@ -1,0 +1,76 @@
+.backbutton{
+	border: 1px black solid;
+	display: flex;
+	justify-content: flex-start;
+}
+
+body {
+	font-family: 'Bellefair', serif; 
+}
+
+button .icon-bar {
+	background-color: #eac67a;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h6 {
+	margin-left: 50px;
+}
+
+.main-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5%;
+	text-align: center;
+}
+
+.meals {
+	margin-left: 50px;
+}
+
+.navbar {
+	background-color: #233237;
+}
+
+.navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-nav li a:hover {
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+
+.navbar-brand {
+	color: #eac67a;
+}
+
+.navbar-toggle {
+	background: #233237;
+}
+
+.navbar-brand:hover {
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0,0,0,0);
+}
+
+.navbar-collapse.in {
+	width: 100px;
+	background-color: #233237;
+}
+
+.nav li a:hover {
+	background-color: #233237;
+}
+.review-content {
+	margin-top: 60px;
+	color: black;
+}
+
+

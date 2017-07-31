@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class CindyController {
@@ -46,6 +47,13 @@ public class CindyController {
 	public String fetchCindyMenuApps(Model model) {
 		model.addAttribute("appetizers", appetizerRepo.findAll());
 		return "/cindy-html/appetizer-index";
+	}
+
+	@RequestMapping("/appetizer-reviews-cindy")
+	public String fetchAppetizerReview(@RequestParam("id") Long id, Model model) {
+		Appetizer selectedAppetizerReview = appetizerRepo.findOne(id);
+		model.addAttribute(selectedAppetizerReview);
+		return "/cindy-html/appetizer-reviews-cindy";
 	}
 
 	@RequestMapping("/cindy-menu-breakfasts")

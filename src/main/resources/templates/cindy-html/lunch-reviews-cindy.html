@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>dishmo | Reviews</title>
+<meta property="fb:app_id" content="670429023147344"></meta>
+<link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+<meta name="google-signin-client_id"
+	content="256512007537-5cnmmm9f2chrk9oec5n7jgpul06bvalt.apps.googleusercontent.com"></meta>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+<link
+	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
+	rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="/css/cindy-css/cindy-style2.css"></link>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" href="/home" >dishmo</a>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://localhost:8080/cindy-menu">Home</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-breakfasts">Breakfast</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-lunches">Lunch</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-appetizers">Appetizers</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-dinners">Dinner</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-desserts">Dessert</a></li>
+          <li><a href="http://localhost:8080/cindy-menu-drinks">Drinks</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId : '670429023147344',
+				xfbml : true,
+				version : 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div id="dishmonav"></div>
+
+	<div class="container">
+		<div class="review-content">
+			<h3 th:text="${lunch.name}"></h3>
+			<div class="item active">
+						<img th:src="${lunch.imageUrl}" alt="lunch image"></img>
+					</div>
+
+			<div id="fb-root"></div>
+
+			<div class="fb-comments" data-href="" data-width="500"
+				data-numposts="10"></div>
+
+			<script type="text/javascript"
+				src="https://code.jquery.com/jquery-2.1.4.js"></script>
+			<script type="text/javascript"
+				src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		</div>
+	</div>
+</body>
+</html>

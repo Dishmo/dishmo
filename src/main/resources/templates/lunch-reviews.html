@@ -43,13 +43,13 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	<button onclick="goBack()">Go Back</button>
+	<button class="backbutton" onclick="goBack()">Go Back</button>
 
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
 
 	<div id="dishmonav"></div>
 
@@ -97,13 +97,20 @@ function goBack() {
 
 			<div class="fb-comments" data-href="" data-width="500"
 				data-numposts="10"></div>
-				
+
+			<button class="backbutton" onclick="goBack()">Go Back</button>
+			<script>
+				function goBack() {
+					window.history.back();
+				}
+			</script>
 
 			<script type="text/javascript"
 				src="https://code.jquery.com/jquery-2.1.4.js"></script>
 			<script type="text/javascript"
 				src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		</div>
-	</div>v 
+	</div>
+	v
 </body>
 </html>

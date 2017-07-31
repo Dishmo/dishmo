@@ -49,7 +49,7 @@
 	<div class="container">
 		<div class="review-content">
 			<h3 th:text="${drink.name}"></h3>
-			
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -89,6 +89,13 @@
 
 			<div class="fb-comments" data-href="" data-width="500"
 				data-numposts="10"></div>
+
+			<button class="backbutton" onclick="goBack()">Go Back</button>
+			<script>
+				function goBack() {
+					window.history.back();
+				}
+			</script>
 
 			<script type="text/javascript"
 				src="https://code.jquery.com/jquery-2.1.4.js"></script>

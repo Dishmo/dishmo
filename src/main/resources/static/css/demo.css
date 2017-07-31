@@ -184,16 +184,7 @@ strong {
 	.demo-note {
 		display: block;
 	}
-<<<<<<< HEAD
-	.rm-back{
-	overflow: auto;}
-	.rm-front{
-	overflow:auto;}
 	
 	
-=======
-	.rm-back .rm-front{
-	overflow: auto;
-	}
->>>>>>> master
+	
 }

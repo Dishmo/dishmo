@@ -43,6 +43,13 @@ public class CindyController {
 		return "/cindy-html/drinks-index";
 	}
 
+	@RequestMapping("/drink-reviews-cindy")
+	public String fetchDrinkReview(@RequestParam("id") Long id, Model model) {
+		Drink selectedDrinkReview = drinkRepo.findOne(id);
+		model.addAttribute(selectedDrinkReview);
+		return "/cindy-html/drink-reviews-cindy";
+	}
+
 	@RequestMapping("/cindy-menu-appetizers")
 	public String fetchCindyMenuApps(Model model) {
 		model.addAttribute("appetizers", appetizerRepo.findAll());
@@ -62,10 +69,24 @@ public class CindyController {
 		return "/cindy-html/breakfast-index";
 	}
 
+	@RequestMapping("/breakfast-reviews-cindy")
+	public String fetchBreakfastReview(@RequestParam("id") Long id, Model model) {
+		Breakfast selectedBreakfastReview = breakfastRepo.findOne(id);
+		model.addAttribute(selectedBreakfastReview);
+		return "/cindy-html/breakfast-reviews-cindy";
+	}
+
 	@RequestMapping("/cindy-menu-lunches")
 	public String fetchCindyMenuLunches(Model model) {
 		model.addAttribute("lunches", lunchRepo.findAll());
 		return "/cindy-html/lunch-index";
+	}
+
+	@RequestMapping("/lunch-reviews-cindy")
+	public String fetchLunchReview(@RequestParam("id") Long id, Model model) {
+		Lunch selectedLunchReview = lunchRepo.findOne(id);
+		model.addAttribute(selectedLunchReview);
+		return "/cindy-html/lunch-reviews-cindy";
 	}
 
 	@RequestMapping("/cindy-menu-dinners")
@@ -74,9 +95,23 @@ public class CindyController {
 		return "/cindy-html/dinner-index";
 	}
 
+	@RequestMapping("/dinner-reviews-cindy")
+	public String fetchDinnerReview(@RequestParam("id") Long id, Model model) {
+		Dinner selectedDinnerReview = dinnerRepo.findOne(id);
+		model.addAttribute(selectedDinnerReview);
+		return "/cindy-html/dinner-reviews-cindy";
+	}
+
 	@RequestMapping("/cindy-menu-desserts")
 	public String fetchCindyMenuDesserts(Model model) {
 		model.addAttribute("desserts", dessertRepo.findAll());
 		return "/cindy-html/dessert-index";
+	}
+
+	@RequestMapping("/dessert-reviews-cindy")
+	public String fetchDessertReview(@RequestParam("id") Long id, Model model) {
+		Dessert selectedDessertReview = dessertRepo.findOne(id);
+		model.addAttribute(selectedDessertReview);
+		return "/cindy-html/dessert-reviews-cindy";
 	}
 }

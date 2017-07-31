@@ -40,7 +40,7 @@ h6 {
 	background-color: rgba(0,0,0,0);
 }
 
-.navbar-brand, h3 {
+.navbar-brand {
 	color: #eac67a;
 }
 
@@ -64,6 +64,7 @@ h6 {
 }
 .review-content {
 	margin-top: 60px;
+	color: black;
 }
 
 

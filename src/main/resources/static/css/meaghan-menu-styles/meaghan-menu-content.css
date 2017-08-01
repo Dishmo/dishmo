@@ -1,3 +1,43 @@
+.navbar {
+	background-color: #233237;
+}
+
+.navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-nav li a:hover {
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-brand, h3 {
+	color: #eac67a;
+}
+
+.navbar-toggle {
+	background: #233237;
+}
+
+.navbar-brand:hover {
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+button .icon-bar {
+	background-color: #eac67a;
+}
+
+.navbar-collapse.in {
+	width: 100px;
+	background-color: #233237;
+}
+
+.nav li a:hover {
+	background-color: #233237;
+}
 .name:hover {
 	background-color: orange;
 	color: white;
@@ -8,7 +48,8 @@
 }
 
 .carousel-indicators {
-	position: absolute; bottom: 0;
+	position: absolute; 
+	bottom: 0;
 }
 
 .description, .origin {
@@ -38,6 +79,11 @@ h2 {
 	column-span: all;
 	text-align: center;
 	color: orange;
+	font-family: 'Rock Salt', cursive;
+}
+
+.carousel-control.left, .carousel-control.right { /*moves entire carousel up to nav bar*/
+	top: -100px;
 }
 
 .restaurant-name, .price {
@@ -48,6 +94,10 @@ h2 {
 .price {
 	color: orange;
 }
+.drinks-flex-box {
+	display: inline-flex;
+	justify-content: space-around;
+}
 
 .meal-name, .click-to-see-more {
 	font-family: 'Rock Salt', cursive;
@@ -55,6 +105,19 @@ h2 {
 	text-align: center;
 	padding-bottom: 30px;
 }
+.beer-and-wine {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+
+.na-drinks-font {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+
+
 
 .menu-items {
 	padding-top: 10px;
@@ -83,8 +146,9 @@ h2 {
 body {
 	background-image: url("../../images/meaghan-menu-images/chalkboard-vertical1280x1920.jpg");
 	background-size: 100%;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-position: center, fixed;
+	padding-top: 70px;
 }
 .restaurant-name {
 	text-align: center;

@@ -41,26 +41,26 @@ public class MenuPopulator implements CommandLineRunner {
 
 		Breakfast housemadeGranola = new Breakfast("Housemade Granola",
 				"Organic rolled oats, almonds, pecans, fat-free Greek yogurt, fresh fruit, honey and pistachio praline brittle.",
-				"9", breakfast, "/images/Breakfast/housemade-granola.jpeg", "", "");
+				"9", breakfast, "/images/Breakfast/housemade-granola.jpeg", "/images/Breakfast/housemade-granola-2.jpg", "/images/Breakfast/housemade-granola.jpg-3");
 		Breakfast prosciuttoAndPoachedEggs = new Breakfast("Prosciutto and Poached Eggs",
 				"Three organic valley eggs* and La Quercia prosciutto on toasted rosemary focaccia with parmesan.",
-				"13", breakfast, "/images/Breakfast/prosciutto-and-poached-eggs.jpeg", "", "");
+				"13", breakfast, "/images/Breakfast/prosciutto-and-poached-eggs.jpeg", "/images/Breakfast/prosciutto-and-poached-eggs-2.jpg", "/images/Breakfast/prosciutto-and-poached-eggs-3.jpg");
 		Breakfast cloudNinePancakes = new Breakfast("Cloud Nine Pancakes",
 				"Three ricotta pancakes served with real maple syrup and bananas.", "13", breakfast,
-				"/images/Breakfast/cloud-nine-pancakes.jpeg", "", "");
+				"/images/Breakfast/cloud-nine-pancakes.jpeg", "/images/Breakfast/cloud-nine-pancakes-2.jpg", "/images/Breakfast/cloud-nine-pancakes-3.jpg");
 		Breakfast sweetPotatoAndTurkeyHash = new Breakfast("Sweet Potato and Turkey Hash",
 				"Applewood smoked turkey, red peppers, sweet onions, and two sunny eggs.*", "13", breakfast,
-				"/images/Breakfast/sweet-potato-and-turkey-hash.png", "", "");
+				"/images/Breakfast/sweet-potato-and-turkey-hash.png", "/images/Breakfast/sweet-potato-and-turkey-hash-2.jpg", "/images/Breakfast/sweet-potato-and-turkey-hash-3.jpg");
 		Breakfast bigBurrito = new Breakfast("Big Burrito",
 				"Eggs, organic black beans, roasted sweet potatoes, sauteed peppers & onions, melted white cheddar and Northstar's salsa.",
-				"11", breakfast, "/images/Breakfast/big-burrito.jpg", "", "");
+				"11", breakfast, "/images/Breakfast/big-burrito.jpg", "/images/Breakfast/big-burrito-2.jpg", "/images/Breakfast/big-burrito-3.jpg");
 		Breakfast cowboyBreakfast = new Breakfast("Cowboy Breakfast",
 				"Two organic eggs prepared any style*, bacon or sausage and a warm buttermilk biscuit with Michigan black cherry preserves.",
-				"13", breakfast, "/images/Breakfast/cowboy-breakfast.jpg", "", "");
+				"13", breakfast, "/images/Breakfast/cowboy-breakfast.jpg", "/images/Breakfast/cowboy-breakfast-2.jpg", "/images/Breakfast/cowboy-breakfast-3.jpg");
 		Breakfast theStandardEggSandwich = new Breakfast("The Standard Egg Sandwich",
-				"Warm from the oven buttermilk biscuit topped with two over-medium eggs* and aged white cheddar.",
-				"9.5", breakfast, "/images/Breakfast/the-standard-egg-sandwich.jpeg", "", "");
-
+				"Warm from the oven buttermilk buscuit topped with two over-medium eggs* and aged white cheddar.",
+				"9.5", breakfast, "/images/Breakfast/the-standard-egg-sandwich.jpeg", "/images/Breakfast/the-standard-egg-sandwich-2.jpg", "/images/Breakfast/the-standard-egg-sandwich-3.jpg");
+				
 		breakfastRepo.save(housemadeGranola);
 		breakfastRepo.save(prosciuttoAndPoachedEggs);
 		breakfastRepo.save(cloudNinePancakes);
@@ -269,7 +269,6 @@ public class MenuPopulator implements CommandLineRunner {
 		// Appetizer
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
-
 		Appetizer pimientoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
 				"/images/Appetizer/pimento-cheese-dip.jpeg", "", "");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,

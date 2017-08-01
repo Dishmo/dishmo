@@ -393,22 +393,25 @@ table {
 /* Addition */
 /* Apply a natural box layout model to all elements */
 /* Read this post by Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-<<<<<<< HEAD
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .rm-back{
-	overflow: auto;}
+	overflow: auto;
+	}
 	.rm-front{
 	overflow:auto;}
 
 .rm-middle {
 	overflow: auto;
 }
-=======
+
  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
  .rm-middle {
  overflow: auto;}
->>>>>>> master
+ .rm-middle{
+	background: cover;}
+

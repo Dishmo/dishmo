@@ -77,30 +77,35 @@
 			<div class="item">
 				<h2 class="meal-name">Drinks</h2>
 				<h4 class="click-to-see-more">Click on a menu item to see more!</h4>
+
 				<div class="menu-items">
 					<div class="drinks-flex-box">
 						<!-- non-alcoholic drinks -->
-						<div class="na-drinks">
-						<h2 class="na-drinks-font">Non-Alcoholic</h2>
-							<div th:each="currentDrink: ${drinks}">
-								<div class="drinks">
-									<a class="name"
-									th:href="@{/drink-reviews(id=${currentDrink.drinkId})}"
-									th:text="${currentDrink.name}"></a>
-									<p class="price" th:text="${currentDrink.price}"></p>
+						<div class="grid">
+							<div class="col-1-2">
+								<h2 class="na-drinks-font">Non-Alcoholic</h2>
+								<div th:each="currentDrink: ${drinks}">
+									<div class="drinks">
+										<a class="name"
+										th:href="@{/drink-reviews(id=${currentDrink.drinkId})}"
+										th:text="${currentDrink.name}"></a>
+										<p class="price" th:text="${currentDrink.price}"></p>
+									</div>
 								</div>
 							</div>
 						</div>
 						<!-- beer and wine -->
-						<div class="alcohol-drinks">
-							<h2 class="beer-and-wine">Beer &amp; Wine</h2>
-							<div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
-								<div class="drinks">
-									<a class="name"
-									th:href="@{/alcoholic-beverage-reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
-									th:text="${currentAlcoholicBeverage.name}"></a>
-									<p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
-									<p class="origin" th:text="${currentAlcoholicBeverage.whereFrom}"></p>
+						<div class="col-1-2">
+							<div class="alcohol-drinks">
+								<h2 class="beer-and-wine">Beer &amp; Wine</h2>
+								<div th:each="currentAlcoholicBeverage: ${alcoholicBeverages}">
+									<div class="drinks">
+										<a class="name"
+										th:href="@{/alcoholic-beverage-reviews(id=${currentAlcoholicBeverage.alcoholicDrinkId})}"
+										th:text="${currentAlcoholicBeverage.name}"></a>
+										<p class="price" th:text="${currentAlcoholicBeverage.price}"></p>
+										<p class="origin" th:text="${currentAlcoholicBeverage.whereFrom}"></p>
+									</div>
 								</div>
 							</div>
 						</div>

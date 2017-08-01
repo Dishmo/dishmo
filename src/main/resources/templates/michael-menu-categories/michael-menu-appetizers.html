@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>dishmo | Sample Menu</title>
+<base target="_parent"></base>
+<link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+<link
+	href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto"
+	rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css"
+	href="/css/michael-menu-styles/michael-menu-content.css"></link>
+
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+</head>
+<body>
+	<h2>Appetizers</h2>
+	<h4>Click on menu item to see more!</h4>
+	<div th:each="currentAppetizer: ${appetizers}">
+		<div class="appetizers">
+			<a class="name"
+				th:href="@{/appetizer-reviews(id=${currentAppetizer.appetizerId})}"
+				th:text="${currentAppetizer.name}"></a>
+			<p class="price" th:text="${currentAppetizer.price}"></p>
+		</div>
+	</div>
+</body>
+</html>

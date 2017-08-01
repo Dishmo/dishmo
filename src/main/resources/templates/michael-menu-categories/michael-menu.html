@@ -12,7 +12,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .bgimg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("bg.jpg");
+    background-image: url("/w3images/pizza.jpg");
     min-height: 90%;
 }
 </style>
@@ -46,28 +46,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Breakfast');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Breakfast</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Lunch');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Lunch</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Dinner');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dinner</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dessert</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
       </a>
     </div>
 
-<!-- Starters Menu Items -->
-    <div id="Starters" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
       <hr>
@@ -92,8 +82,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
     </div>
 
-<!-- Breakfast Menu Items -->
-    <div id="Breakfast" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
       <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
       <hr>
@@ -110,8 +99,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
     </div>
 
-<!-- Lunch Menu Items -->
-    <div id="Lunch" class="w3-container menu w3-padding-32 w3-white">
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
       <p class="w3-text-grey">Ask the waiter</p>
       <hr>
@@ -126,60 +115,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       
       <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
       <p class="w3-text-grey">Tomatoes and mozzarella</p>
-    </div> 
-
-<!-- Dinner Menu Items -->
-    <div id="Dinner" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-      <hr>
-   
-      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-      <p class="w3-text-grey">Ravioli filled with cheese</p>
-      <hr>
-      
-      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-      <hr>
-
-      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
-    </div>
-    
-<!-- Drink Menu Items -->    
-     <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-      <hr>
-   
-      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-      <p class="w3-text-grey">Ravioli filled with cheese</p>
-      <hr>
-      
-      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-      <hr>
-
-      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
-    </div>
-    
-<!-- Dessert Menu Items -->    
-     <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-      <hr>
-   
-      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-      <p class="w3-text-grey">Ravioli filled with cheese</p>
-      <hr>
-      
-      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-      <hr>
-
-      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
     </div><br>
 
   </div>

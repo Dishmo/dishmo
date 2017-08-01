@@ -1,0 +1,40 @@
+body {
+	background-color: #233237;
+	padding-left: 20px;
+	color: white;
+	font-size: 24px;
+	font-family:Comfortaa;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	font-size: 26px;
+	text-decoration: none;
+	color: white;
+}
+
+h2, h4 {
+	color: #eac67a;
+	text-align: center;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+.name {
+	padding-right: 20px;
+}
+
+.price {
+	display: flex;
+	display: inline-flex;
+	color: #eac67a;
+}
+.description, .origin{
+	font-size: 15px;
+}

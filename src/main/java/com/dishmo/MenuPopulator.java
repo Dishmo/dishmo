@@ -41,7 +41,7 @@ public class MenuPopulator implements CommandLineRunner {
 
 		Breakfast housemadeGranola = new Breakfast("Housemade Granola",
 				"Organic rolled oats, almonds, pecans, fat-free Greek yogurt, fresh fruit, honey and pistachio praline brittle.",
-				"9", breakfast, "/images/Breakfast/housemade-granola.jpeg", "/images/Breakfast/housemade-granola-2.jpg", "/images/Breakfast/housemade-granola.jpg-3");
+				"9", breakfast, "/images/Breakfast/housemade-granola.jpeg", "/images/Breakfast/housemade-granola-2.jpg", "/images/Breakfast/housemade-granola-3.jpg");
 		Breakfast prosciuttoAndPoachedEggs = new Breakfast("Prosciutto and Poached Eggs",
 				"Three organic valley eggs* and La Quercia prosciutto on toasted rosemary focaccia with parmesan.",
 				"13", breakfast, "/images/Breakfast/prosciutto-and-poached-eggs.jpeg", "/images/Breakfast/prosciutto-and-poached-eggs-2.jpg", "/images/Breakfast/prosciutto-and-poached-eggs-3.jpg");

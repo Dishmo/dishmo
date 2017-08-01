@@ -259,9 +259,9 @@ public class MenuPopulator implements CommandLineRunner {
 		sampleMenuRepo.save(dessert);
 
 		Dessert peanutButterCookie = new Dessert("Peanut Butter Cookie", "3", dessert,
-				"/images/Dessert/peanut-butter-cookie.jpeg", "", "");
+				"/images/Dessert/peanut-butter-cookie.jpeg", "/images/Dessert/peanut-butter-cookie-2.jpg", "/images/Dessert/peanut-butter-cookie-3.jpg");
 		Dessert darkChocolateTruffleCookie = new Dessert("Dark Chocolate Truffle Cookie", "3", dessert,
-				"/images/Dessert/dark-chocolate-truffle-cookie.jpg", "", "");
+				"/images/Dessert/dark-chocolate-truffle-cookie.jpg", "/images/Dessert/dark-chocolate-truffle-cookie-2.jpg", "/images/Dessert/dark-chocolate-truffle-cookie-3.jpg");
 
 		dessertRepo.save(peanutButterCookie);
 		dessertRepo.save(darkChocolateTruffleCookie);

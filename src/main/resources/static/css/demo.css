@@ -1,29 +1,10 @@
-body {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	-webkit-font-smoothing: antialiased;
-	
-	overflow: auto;
-	font-weight: 300;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	-webkit-font-smoothing: antialiased;
-}
 
-.navbar {
-	background-color: #233237;
-}
-
-.navbar-nav li a {
+ a {
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 }
 
-.navbar-nav li a:hover {
+li a:hover {
 	border-bottom: 3px solid #984b43;
 	background-color: rgba(0, 0, 0, 0);
 }
@@ -89,6 +70,7 @@ strong {
 	display: block;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	text-align: center;
+	margin-top: 30px;
 }
 
 .container>header h1 {
@@ -164,15 +146,7 @@ strong {
 	display: block;
 }
 
-.support-note span, .demo-note {
-	color: #e07870;
-	font-size: 16px;
-	display: none;
-	font-weight: 500;
-	text-align: center;
-	padding: 5px 0;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
+
 
 .no-cssanimations .support-note span.no-cssanimations, .no-csstransforms .support-note span.no-csstransforms,
 	.no-csstransforms3d .support-note span.no-csstransforms3d,
@@ -184,16 +158,7 @@ strong {
 	.demo-note {
 		display: block;
 	}
-<<<<<<< HEAD
-	.rm-back{
-	overflow: auto;}
-	.rm-front{
-	overflow:auto;}
 	
 	
-=======
-	.rm-back .rm-front{
-	overflow: auto;
-	}
->>>>>>> master
+	
 }

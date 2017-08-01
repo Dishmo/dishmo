@@ -16,6 +16,8 @@ public class AlcoholicBeverage {
 	private String whereFrom;
 	private String price;
 	private String imageUrl;
+	private String imageUrl2;
+	private String imageUrl3;
 
 	@ManyToOne
 	private SampleMenu sampleMenu;
@@ -39,6 +41,13 @@ public class AlcoholicBeverage {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+	public String getImageUrl2() {
+		return imageUrl2;
+	}
+
+	public String getImageUrl3() {
+		return imageUrl3;
+	}
 
 	private AlcoholicBeverage() {
 
@@ -48,11 +57,13 @@ public class AlcoholicBeverage {
 		return sampleMenu;
 	}
 
-	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl) {
+	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
 		this.name = name;
 		this.whereFrom = whereFrom;
 		this.price = price;
 		this.imageUrl = imageUrl;
+		this.imageUrl2 = imageUrl2;
+		this.imageUrl3 = imageUrl3;
 	}
 
 }

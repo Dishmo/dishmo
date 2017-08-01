@@ -25,9 +25,27 @@ audio, canvas, video {
  * Prevents modern browsers from displaying 'audio' without controls
  * Remove excess height in iOS5 devices
  */
-audio:not ([controls] ) {
-	display: none;
-	height: 0;
+audio
+:not
+ 
+(
+[
+controls
+]
+ 
+)
+{
+display
+:
+ 
+none
+;
+
+	
+height
+:
+ 
+0;
 }
 
 /*
@@ -270,8 +288,21 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9
  */
-svg:not (:root ) {
-	overflow: hidden;
+svg
+:not
+ 
+(
+:root
+ 
+)
+{
+overflow
+:
+ 
+hidden
+;
+
+
 }
 
 /* =============================================================================
@@ -366,8 +397,6 @@ button[disabled], input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-
-
 }
 
 /*
@@ -393,22 +422,30 @@ table {
 /* Addition */
 /* Apply a natural box layout model to all elements */
 /* Read this post by Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-<<<<<<< HEAD
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.rm-back{
-	overflow: auto;}
-	.rm-front{
-	overflow:auto;}
+
+.rm-back {
+	overflow: auto;
+}
+
+.rm-front {
+	overflow: auto;
+}
 
 .rm-middle {
 	overflow: auto;
 }
-=======
- * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
- .rm-middle {
- overflow: auto;}
 
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rm-middle {
+	overflow: auto;
+}

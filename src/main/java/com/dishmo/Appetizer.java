@@ -15,6 +15,8 @@ public class Appetizer {
 	private String name;
 	private String price;
 	private String imageUrl;
+	private String imageUrl2;
+	private String imageUrl3;
 
 	@ManyToOne
 	private SampleMenu sampleMenu;
@@ -38,16 +40,24 @@ public class Appetizer {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+	public String getImageUrl2() {
+		return imageUrl2;
+	}
 
+	public String getImageUrl3() {
+		return imageUrl3;
+	}
 	private Appetizer() {
 
 	}
 
-	public Appetizer(String name, String price, SampleMenu sampleMenu, String imageUrl) {
+	public Appetizer(String name, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
 		this.name = name;
 		this.price = price;
 		this.sampleMenu = sampleMenu;
 		this.imageUrl = imageUrl;
+		this.imageUrl2 = imageUrl2;
+		this.imageUrl3 = imageUrl3;
 	}
 
 }

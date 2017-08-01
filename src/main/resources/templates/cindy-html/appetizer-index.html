@@ -24,6 +24,7 @@
           <span class="icon-bar"></span>
         </button>
       </div>
+      <a class="navbar-brand" href="/home" >dishmo</a>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="http://localhost:8080/cindy-menu">Home</a></li>
@@ -42,7 +43,7 @@
    <div th:each="currentAppetizer: ${appetizers}">
     <div class="meals">
      <a class="name"
-     th:href="@{/appetizer-reviews(id=${currentAppetizer.appetizerId})}"
+     th:href="@{/appetizer-reviews-cindy(id=${currentAppetizer.appetizerId})}"
      th:text="${currentAppetizer.name}"></a>
      <p class="price" th:text="${currentAppetizer.price}"></p>
      

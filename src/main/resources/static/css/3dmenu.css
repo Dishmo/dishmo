@@ -412,6 +412,9 @@ table {
  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
  .rm-middle {
  overflow: auto;}
+<<<<<<< HEAD
  .rm-middle{
 	background: cover;}
+=======
+>>>>>>> master
 

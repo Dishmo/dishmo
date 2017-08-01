@@ -49,7 +49,7 @@
 	<div class="container">
 		<div class="review-content">
 			<h3 th:text="${alcoholicBeverage.name}"></h3>
-			
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -61,15 +61,18 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img th:src="${alcoholicBeverage.imageUrl}" alt="alcoholicBeverage image"></img>
+						<img th:src="${alcoholicBeverage.imageUrl}"
+							alt="alcoholicBeverage image"></img>
 					</div>
 
 					<div class="item">
-						<img th:src="${alcoholicBeverage.imageUrl}" alt="alcoholicBeverage image"></img>
+						<img th:src="${alcoholicBeverage.imageUrl}"
+							alt="alcoholicBeverage image"></img>
 					</div>
 
 					<div class="item">
-						<img th:src="${alcoholicBeverage.imageUrl}" alt="alcoholicBeverage image"></img>
+						<img th:src="${alcoholicBeverage.imageUrl}"
+							alt="alcoholicBeverage image"></img>
 					</div>
 				</div>
 
@@ -89,13 +92,14 @@
 
 			<div class="fb-comments" data-href="" data-width="500"
 				data-numposts="10"></div>
-				
-			<button onclick="goBack()">Go Back</button>
+
+			<button class="backbutton" onclick="goBack()">Go Back</button>
 			<script>
 				function goBack() {
 					window.history.back();
 				}
 			</script>
+
 
 			<script type="text/javascript"
 				src="https://code.jquery.com/jquery-2.1.4.js"></script>

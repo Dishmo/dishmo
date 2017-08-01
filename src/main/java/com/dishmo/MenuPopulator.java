@@ -58,7 +58,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"Two organic eggs prepared any style*, bacon or sausage and a warm buttermilk biscuit with Michigan black cherry preserves.",
 				"13", breakfast, "/images/Breakfast/cowboy-breakfast.jpg", "", "");
 		Breakfast theStandardEggSandwich = new Breakfast("The Standard Egg Sandwich",
-				"Warm from the oven buttermilk buscuit topped with two over-medium eggs* and aged white cheddar.",
+				"Warm from the oven buttermilk biscuit topped with two over-medium eggs* and aged white cheddar.",
 				"9.5", breakfast, "/images/Breakfast/the-standard-egg-sandwich.jpeg", "", "");
 
 		breakfastRepo.save(housemadeGranola);
@@ -270,13 +270,14 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
 
-		Appetizer pimientoCheeseDip = new Appetizer("Pimiento Cheese Dip", "7", appetizer,
-				"/images/Appetizer/pimiento-cheese-dip.jpeg", "", "");
+		Appetizer pimientoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
+				"/images/Appetizer/pimento-cheese-dip.jpeg", "", "");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,
 				"/images/Appetizer/made-to-order-guacamole.jpg", "", "");
 
 		appetizerRepo.save(pimientoCheeseDip);
 		appetizerRepo.save(madeToOrderGuacamole);
 	}
+
 
 }

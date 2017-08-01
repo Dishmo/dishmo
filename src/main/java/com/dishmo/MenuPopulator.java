@@ -211,13 +211,13 @@ public class MenuPopulator implements CommandLineRunner {
 		sampleMenuRepo.save(alcoholicBeverage);
 
 		AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5",
-				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","", "");
+				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","/images/Drink/rhinegeist-cougar-blonde-ale-2.jpg", "/images/Drink/rhinegeist-cougar-blonde-ale-3.jpg");
 		AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5",
-				alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg", "", "");
+				alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg", "/images/Drink/north-high-milk-stout-2.jpg", "/images/Drink/north-high-milk-stout-3.jpg");
 		AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9",
-				alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg", "", "");
+				alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg", "/images/Drink/buehler-chardonnay-2.jpg", "/images/Drink/buehler-chardonnay-3.jpg");
 		AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10",
-				alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg", "", "");
+				alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg", "/images/Drink/smith-and-hook-cabernet-2.jpg", "/images/Drink/smith-and-hook-cabernet-3.jpg");
 
 		alcBevRepo.save(rhinegeistCougarBlondeAle);
 		alcBevRepo.save(northHighMilkStout);

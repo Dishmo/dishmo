@@ -59,24 +59,7 @@ button .icon-bar {
 	color: white;
 }
 
-.drinks {
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	-moz-column-count: 2; /* Firefox */
-	column-count: 2;
-	-webkit-column-gap: 100px; /* Chrome, Safari, Opera */
-	-moz-column-gap: 100px; /* Firefox */
-	column-gap: 100px;
-	-webkit-column-width: 100px; /* Chrome, Safari, Opera */
-	-moz-column-width: 100px; /* Firefox */
-	column-width: 100px;
-	-webkit-column-rule: 3px solid orange; /* Chrome, Safari, Opera */
-	-moz-column-rule: 3px solid orange; /* Firefox */
-	column-rule: 3px solid orange;
-}
-
 h2 {
-	-webkit-column-span: all; /* Chrome, Safari, Opera */
-	column-span: all;
 	text-align: center;
 	color: orange;
 	font-family: 'Rock Salt', cursive;
@@ -94,9 +77,14 @@ h2 {
 .price {
 	color: orange;
 }
-.drinks-flex-box {
-	display: inline-flex;
-	justify-content: space-around;
+
+
+[class*='col-'] {
+	float: left;
+}
+
+.col-1-2 {
+	width: 50%;
 }
 
 .meal-name, .click-to-see-more {

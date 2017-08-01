@@ -211,13 +211,13 @@ public class MenuPopulator implements CommandLineRunner {
 		sampleMenuRepo.save(alcoholicBeverage);
 
 		AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5",
-				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","", "");
+				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","/images/Drink/rhinegeist-cougar-blonde-ale-2.jpg", "/images/Drink/rhinegeist-cougar-blonde-ale-3.jpg");
 		AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5",
-				alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg", "", "");
+				alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg", "/images/Drink/north-high-milk-stout-2.jpg", "/images/Drink/north-high-milk-stout-3.jpg");
 		AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9",
-				alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg", "", "");
+				alcoholicBeverage, "/images/Drink/buehler-chardonnay.jpeg", "/images/Drink/buehler-chardonnay-2.jpg", "/images/Drink/buehler-chardonnay-3.jpg");
 		AlcoholicBeverage smithAndHookCabernet = new AlcoholicBeverage("Smith & Hook Cabernet", "Monterey", "10",
-				alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg", "", "");
+				alcoholicBeverage, "/images/Drink/smith-and-hook-cabernet.jpg", "/images/Drink/smith-and-hook-cabernet-2.jpg", "/images/Drink/smith-and-hook-cabernet-3.jpg");
 
 		alcBevRepo.save(rhinegeistCougarBlondeAle);
 		alcBevRepo.save(northHighMilkStout);
@@ -228,20 +228,20 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu drink = new SampleMenu();
 		sampleMenuRepo.save(drink);
 
-		Drink shootingStar = new Drink("Shooting Star", "5", drink, "/images/Drink/shooting-star.jpeg", "", "");
-		Drink orangeJuice = new Drink("Orange Juice", "4.5", drink, "/images/Drink/orange-juice.jpeg", "", "");
+		Drink shootingStar = new Drink("Shooting Star", "5", drink, "/images/Drink/shooting-star.jpeg", "/images/Drink/shooting-star-2.jpg", "/images/Drink/shooting-star-3.jpg");
+		Drink orangeJuice = new Drink("Orange Juice", "4.5", drink, "/images/Drink/orange-juice.jpeg", "/images/Drink/orange-juice-2.jpg", "/images/Drink/orange-juice-3.jpg");
 		Drink organicCarrotJuice = new Drink("Organic Carrot Juice", "5", drink,
-				"/images/Drink/organic-carrot-juice.jpeg", "", "");
+				"/images/Drink/organic-carrot-juice.jpeg", "/images/Drink/organic-carrot-juice-2.jpg", "/images/Drink/organic-carrot-juice-3.jpg");
 		Drink strawberrySmoothie = new Drink("Strawberry Smoothie", "6", drink,
-				"/images/Drink/strawberry-smoothie.jpeg", "", "");
-		Drink blueberrySmoothie = new Drink("Blueberry Smoothie", "6", drink, "/images/Drink/blueberry-smoothie.jpeg", "", "");
-		Drink gingerAle = new Drink("Ginger Ale", "4", drink, "/images/Drink/gingerale.jpg", "", "");
+				"/images/Drink/strawberry-smoothie.jpeg", "/images/Drink/strawberry-smoothie-2.jpeg", "/images/Drink/strawberry-smoothie-3.jpeg");
+		Drink blueberrySmoothie = new Drink("Blueberry Smoothie", "6", drink, "/images/Drink/blueberry-smoothie.jpeg", "/images/Drink/blueberry-smoothie-2.jpg", "/images/Drink/blueberry-smoothie-3.jpg");
+		Drink gingerAle = new Drink("Ginger Ale", "4", drink, "/images/Drink/gingerale.jpg", "/images/Drink/gingerale-2.jpg", "/images/Drink/gingerale-3.jpg");
 		Drink coldBrewedIcedCoffee = new Drink("Cold-Brewed Iced Coffee", "3.5", drink,
 				"/images/Drink/cold-brewed-iced-coffee.jpeg", "", "");
-		Drink mintIcedCoffee = new Drink("Mint Iced Coffee", "4.5", drink, "/images/Drink/mint-iced-tea.jpeg", "", "");
+		Drink mintIcedCoffee = new Drink("Mint Iced Coffee", "4.5", drink, "/images/Drink/mint-iced-tea.jpeg", "/images/Drink/mint-iced-tea-2.jpg", "/images/Drink/mint-iced-tea-3.jpg");
 		Drink singleOriginCoffee = new Drink("Single Origin Coffee", "3", drink,
-				"/images/Drink/single-origin-coffee.jpeg", "", "");
-		Drink hotTea = new Drink("Hot Tea", "3", drink, "/images/Drink/mint-iced-tea.jpeg", "", "");
+				"/images/Drink/single-origin-coffee.jpeg", "/images/Drink/single-origin-coffee-2.jpg", "/images/Drink/single-origin-coffee-3.jpg");
+		Drink hotTea = new Drink("Hot Tea", "3", drink, "/images/Drink/mint-iced-tea.jpeg", "/images/Drink/mint-iced-tea-2.jpg", "/images/Drink/mint-iced-tea-3.jpg");
 
 		drinkRepo.save(shootingStar);
 		drinkRepo.save(orangeJuice);
@@ -270,7 +270,7 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
 		Appetizer pimientoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
-				"/images/Appetizer/pimento-cheese-dip.jpeg", "/images/Appetizer/pimento-cheese-dip-2.jpeg", "/images/Appetizer/pimento-cheese-dip-3.jpeg");
+				"/images/Appetizer/pimiento-cheese-dip.jpeg", "/images/Appetizer/pimiento-cheese-dip-2.jpeg", "/images/Appetizer/pimento-cheese-dip-3.jpeg");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,
 				"/images/Appetizer/made-to-order-guacamole.jpg", "/images/Appetizer/made-to-order-guacamole-2.jpg", "/images/Appetizer/made-to-order-guacamole-3.jpg");
 

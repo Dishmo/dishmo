@@ -143,51 +143,51 @@ public class MenuPopulator implements CommandLineRunner {
 		sampleMenuRepo.save(dinner);
 
 		Dinner simpleSaladD = new Dinner("Simple Salad", "Crisp greens and rosemary croutons with cafe vinaigrette.",
-				"5", dinner, "/images/Dinner/simple-salad.jpeg", "", "");
+				"5", dinner, "/images/Dinner/simple-salad.jpeg", "/images/Lunch/simple-salad-2.jpg", "/images/Lunch/simple-salad-3.jpg");
 		Dinner choppedSaladD = new Dinner("Chopped Salad",
 				"Applewood smoked turkey, bacon, avocado, blue cheese, almonds, croutons and apples with face vinaigrette.",
-				"15", dinner, "/images/Dinner/chopped-salad.jpeg", "", "");
+				"15", dinner, "/images/Dinner/chopped-salad.jpeg", "/images/Lunch/chopped-salad-2.jpg", "/images/Lunch/chopped-salad-3.jpg");
 		Dinner beechwoldSaladD = new Dinner("Beechwold Salad",
 				"Roasted chicken, dates, avocado, tomatoes, corn, goat cheese, croutons and almonds with champagne vinaigrette.",
-				"14", dinner, "/images/Dinner/beechwold-salad.jpeg", "", "");
+				"14", dinner, "/images/Dinner/beechwold-salad.jpeg", "/images/Lunch/beechwold-salad-2.jpg", "/images/Lunch/beechwold-salad-3.jpg");
 		Dinner citrusCrunchSaladD = new Dinner("Citrus Crunch Salad",
 				"Shredded chicken, crisp vegetables, mango and fresh herbs with tortillas and peanut lime dressing.",
-				"14.5", dinner, "/images/Dinner/citrus-crunch-salad.jpg", "", "");
+				"14.5", dinner, "/images/Dinner/citrus-crunch-salad.jpg", "/images/Lunch/citrus-crunch-salad-2.jpg", "/images/Lunch/citrus-crunch-salad-3.jpg");
 		Dinner buddhaBowlD = new Dinner("Buddha Bowl",
 				"Pan seared organic tofu or roasted chicken, long-grain brown rice with peanut sauce and bright veggies.",
-				"13", dinner, "/images/Dinner/buddha-bowl.jpeg", "", "");
+				"13", dinner, "/images/Dinner/buddha-bowl.jpeg", "/images/Lunch/buddha-bowl-2.jpg", "/images/Lunch/buddha-bowl-3.jpg");
 		Dinner squareMealD = new Dinner("Square Meal",
 				"Spicy organic black beans over brown rice with sauteed peppers & onions, avocado, cheddar and corn tortillas.",
-				"10", dinner, "/images/Dinner/square-meal.jpg", "", "");
+				"10", dinner, "/images/Dinner/square-meal.jpg", "/images/Lunch/square-meal-2.jpg", "/images/Lunch/square-meal-3.jpg");
 		Dinner northstarBurgerD = new Dinner("Northstar Burger",
 				"Just made with organic black beans, brown rice and beets, topped with white cheddar, kale, tomato, pickle and onion + simple salad.",
-				"14", dinner, "/images/Dinner/northstar-burger.jpeg", "", "");
+				"14", dinner, "/images/Dinner/northstar-burger.jpeg", "/images/Lunch/northstar-burger-2.jpg", "/images/Lunch/northstar-burger-3.jpg");
 		Dinner classicCheeseburgerD = new Dinner("Classic Cheeseburger",
 				"Nilman Ranch brisket and chuck*, ground in-house daily, topped with cheddar, lettuce, tomato, onion, pickle + breakfast potatoes.",
-				"15", dinner, "/images/Dinner/classic-cheeseburger.jpeg", "", "");
+				"15", dinner, "/images/Dinner/classic-cheeseburger.jpeg", "/images/Lunch/classic-cheeseburger-2.jpg", "/images/Lunch/classic-cheeseburger-3.jpg");
 		Dinner fishSandwichD = new Dinner("Fish Sandwich",
 				"Grilled barramundi filet with lettuce, tomato, red onion, and herb aioli + simple salad.", "17",
-				dinner, "/images/Dinner/fish-sandwich.jpg", "", "");
+				dinner, "/images/Dinner/fish-sandwich.jpg", "/images/Lunch/fish-sandwich-2.jpg", "/images/Lunch/fish-sandwich-3.jpg");
 		Dinner chickenAndAvoSandwichD = new Dinner("Chicken & Avocado Sandwich",
 				"Roasted Bell & Evans chicken, avocado, smoked gouda, roasted red peppers and greens with cayenne aioli + sweet potato fries.",
-				"15", dinner, "/images/Dinner/chicken-and-avocado-sandwich.jpg", "", "");
+				"15", dinner, "/images/Dinner/chicken-and-avocado-sandwich.jpg", "/images/Lunch/chicken-and-avocado-sandwich-2.jpg", "/images/Lunch/chicken-and-avocado-sandwich-3.jpg");
 		Dinner thaiburritoD = new Dinner("Thai Burrito",
 				"Seared organic tofu or roasted chicken with peanut sauce, crunchy slaw and brown rice + tortilla chips & Thai dipping sauce.",
-				"12.5", dinner, "/images/Dinner/thai-burrito.jpg", "", "");
+				"12.5", dinner, "/images/Dinner/thai-burrito.jpg", "/images/Lunch/thai-burrito-2.jpg", "/images/Lunch/thai-burrito-3.jpg");
 		Dinner sweetBasilBurritoD = new Dinner("Sweet Basil Burrito",
 				"Rotisserie roasted chicken or seared tofu with creamy pesto, sauteed veggies and brown rice + tortilla chips & Northstar's salsa",
-				"13", dinner, "/images/Dinner/sweet-basil-burrito.jpg", "", "");
+				"13", dinner, "/images/Dinner/sweet-basil-burrito.jpg", "/images/Lunch/sweet-basil-burrito-2.jpg", "/images/Lunch/sweet-basil-burrito-3.jpg");
 		Dinner spicyHarvestD = new Dinner("Spicy Harvest",
 				"Smoked gouda, pepperoni, corn, jalapenos with organic tomato sauce on a whole wheat crust.", "14",
-				dinner, "/images/Dinner/spicy-harvest-pizza.jpg", "", "");
+				dinner, "/images/Dinner/spicy-harvest-pizza.jpg", "/images/Lunch/spicy-harvest-pizza-2.jpg", "/images/Lunch/spicy-harvest-pizza-3.jpg");
 		Dinner housemadeSausageD = new Dinner("Housemade Sausage",
 				"Crumbled sausace and Mamma Lil's Peppers paired with organic tomato sauce, provolone and parmesan.",
-				"14", dinner, "/images/Dinner/housemade-sausage-pizza.jpg", "", "");
+				"14", dinner, "/images/Dinner/housemade-sausage-pizza.jpg", "/images/Lunch/housemade-sausage-pizza-2.jpg", "/images/Lunch/housemade-sausage-pizza-3.jpg");
 		Dinner smokedGoudaAndChickenD = new Dinner("Smoked Gouda + Chicken",
 				"Rotisserie roasted chicken, Northstar's BBQ sauce, red peppers, onions, cilantro and peanuts.", "14",
-				dinner, "/images/Dinner/smoked-gouda-and-chicken-pizza.jpeg", "", "");
+				dinner, "/images/Dinner/smoked-gouda-and-chicken-pizza.jpeg", "/images/Lunch/smoked-gouda-and-chicken-pizza-2.jpg", "/images/Lunch/smoked-gouda-and-chicken-pizza-3.jpg");
 		Dinner highStreetVegetableD = new Dinner("High Street Vegetable", "Crunchy veggies, tomatoes, mushrooms, jalapenos, sunflower seeds, aged provolone and Grana Padano.",
-				"12", dinner, "/images/Dinner/high-street-vegetable-pizza.jpeg", "", "");
+				"12", dinner, "/images/Dinner/high-street-vegetable-pizza.jpeg", "/images/Lunch/high-street-vegetable-pizza-2.jpg", "/images/Lunch/high-street-vegetable-pizza-3.jpg");
 
 		dinnerRepo.save(simpleSaladD);
 		dinnerRepo.save(choppedSaladD);

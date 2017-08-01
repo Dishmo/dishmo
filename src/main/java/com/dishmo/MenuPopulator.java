@@ -60,7 +60,7 @@ public class MenuPopulator implements CommandLineRunner {
 		Breakfast theStandardEggSandwich = new Breakfast("The Standard Egg Sandwich",
 				"Warm from the oven buttermilk buscuit topped with two over-medium eggs* and aged white cheddar.",
 				"9.5", breakfast, "/images/Breakfast/the-standard-egg-sandwich.jpeg", "/images/Breakfast/the-standard-egg-sandwich-2.jpg", "/images/Breakfast/the-standard-egg-sandwich-3.jpg");
-
+				
 		breakfastRepo.save(housemadeGranola);
 		breakfastRepo.save(prosciuttoAndPoachedEggs);
 		breakfastRepo.save(cloudNinePancakes);
@@ -269,14 +269,14 @@ public class MenuPopulator implements CommandLineRunner {
 		// Appetizer
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
-
-		Appetizer pimientoCheeseDip = new Appetizer("Pimiento Cheese Dip", "7", appetizer,
-				"/images/Appetizer/pimiento-cheese-dip.jpeg", "", "");
+		Appetizer pimientoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
+				"/images/Appetizer/pimento-cheese-dip.jpeg", "", "");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,
 				"/images/Appetizer/made-to-order-guacamole.jpg", "", "");
 
 		appetizerRepo.save(pimientoCheeseDip);
 		appetizerRepo.save(madeToOrderGuacamole);
 	}
+
 
 }

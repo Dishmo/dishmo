@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Northstar Cafe</title>
+<link rel="icon" type="static/image/png"
+	href="/images/dishmo-favicon.png"></link>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/carouFredSel.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+	$(function() {
+		$("#dishmonav").load("/dishmonav.html");
+	});
+</script>
+</head>
+<body>
+	<nav id="dishmonav"></nav>
+	<!--  start header  -->
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<a href=""><img src="" alt="" title="" /></a>
+			</div>
+
+			<nav></nav>
+		</div>
+	</header>
+	<!--  end header  -->
+
+
+	<!--  start hero  -->
+	<section class="hero">
+		<div class="caption">
+			<h3>Northstar Cafe</h3>
+			<h4>
+				<span class="rsep"></span> delicious local cuisine <span
+					class="lsep"></span>
+			</h4>
+
+		</div>
+	</section>
+	<!--  end hero  -->
+
+
+	<!--  start menu  -->
+	<section class="menu">
+		<div class="wrapper">
+			<div class="menu_title">
+				<h2>Breakfast</h2>
+			</div>
+
+			<div class="mean_menu">
+				<!--  left menu row  -->
+				<article class="lmenu">
+					<ul>
+						<div th:each="currentBreakfast: ${breakfasts}">
+							<div class="breakfasts">
+								<a class="name"
+									th:href="@{/breakfast-reviews(id=${currentBreakfast.breakfastId})}"
+									th:text="${currentBreakfast.name}"></a>
+								<p class="price" th:text="${currentBreakfast.price}"></p>
+								<p class="description" th:text="${currentBreakfast.description}"></p>
+							</div>
+						</div>
+					</ul>
+					<li>
+						<div class="item_info">
+							<h3 class="item_name">Metus varius laoreet.</h3>
+							<p class="item_desc">Chicken, mozzarella cheese, onions.</p>
+						</div>
+						<h4 class="price">$62</h4> <span class="separator"></span>
+					</li>
+					<li>
+						<div class="item_info">
+							<h3 class="item_name">Donec sodales magna.</h3>
+							<p class="item_desc">Tuna, Sweetcorn, Cheese.</p>
+						</div>
+						<h4 class="price">$25</h4> <span class="separator"></span>
+					</li>
+					<li>
+						<div class="item_info">
+							<h3 class="item_name">Saugue velit cursus.</h3>
+							<p class="item_desc">Pineapple, Minced Beef, Cheese.</p>
+						</div>
+						<h4 class="price">$30</h4> <span class="separator"></span>
+					</li>
+					</ul>
+				</article>
+
+				<!--  right menu row  -->
+				<article class="rmenu">
+					<ul>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Arcu pede enim justo.</h3>
+								<p class="item_desc">Tuna, Sweetcorn, Cheese.</p>
+							</div>
+							<h4 class="price">$45</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Cras dapibussemper nisi.</h3>
+								<p class="item_desc">Pineapple, Minced Beef, Cheese.</p>
+							</div>
+							<h4 class="price">$32</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Quam semper libero.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$15</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Nam eget dui Etiam.</h3>
+								<p class="item_desc">Chicken, mozzarella cheese, onions.</p>
+							</div>
+							<h4 class="price">$35</h4> <span class="separator"></span>
+						</li>
+					</ul>
+				</article>
+			</div>
+
+			<!--  hidden menu items  -->
+			<div class="hidden_items">
+				<div class="menu_title">
+					<h2>Lunch</h2>
+				</div>
+				<!--  left menu row  -->
+				<article class="lmenu">
+					<ul>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+					</ul>
+				</article>
+
+				<!--  right menu row  -->
+				<article class="rmenu">
+					<ul>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+						<li>
+							<div class="item_info">
+								<h3 class="item_name">Voluptate cillum fugiat.</h3>
+								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+							</div>
+							<h4 class="price">$50</h4> <span class="separator"></span>
+						</li>
+					</ul>
+				</article>
+			</div>
+
+			<div class="load-more">
+				<a href="#" id="more_items"> show more
+					<hr /> <span class="bottom_arrow"></span>
+					<div class="hidden_items">
+						<div class="menu_title">
+							<h2>Dinner</h2>
+						</div>
+						<!--  left menu row  -->
+						<article class="lmenu">
+							<ul>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+							</ul>
+						</article>
+
+						<!--  right menu row  -->
+						<article class="rmenu">
+							<ul>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+								<li>
+									<div class="item_info">
+										<h3 class="item_name">Voluptate cillum fugiat.</h3>
+										<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
+									</div>
+									<h4 class="price">$50</h4> <span class="separator"></span>
+								</li>
+							</ul>
+						</article>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--  end menu  -->
+
+
+	<!--  start featured dishes  -->
+	<div class="media"></div>
+	</div>
+	</section>
+	<!--  end gallery  -->
+
+
+	<!--  start footer  -->
+	<footer>
+		<div class="wrapper">
+			<!-- adresse1  -->
+			<section class="adress">
+				<p>Northstar Cafe</p>
+				<p class="location">4241 North High Street | Columbus , Ohio
+					43214</p>
+				<p class="phone">02.94.23.69.56</p>
+			</section>
+
+			<!--  footer navigation  -->
+			<section class="footer_nav">
+				<nav>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</nav>
+			</section>
+
+			<!--  footer copyrights  -->
+			<section class="copyrights">
+				<img src="" alt="" title="">
+				<p></p>
+				<p></a>
+				</p>
+			</section>
+		</div>
+	</footer>
+	<!--  end footer  -->
+	<script src='../ga.js'></script>
+
+</body>
+</html>

@@ -211,7 +211,7 @@ public class MenuPopulator implements CommandLineRunner {
 		sampleMenuRepo.save(alcoholicBeverage);
 
 		AlcoholicBeverage rhinegeistCougarBlondeAle = new AlcoholicBeverage("Rhinegeist Cougar Blonde Ale", "Ohio", "5",
-				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","/images/Drink/rhinegeist-cougar-blonde-ale-2.jpeg", "/images/Drink/rhinegeist-cougar-blonde-ale-3.jpeg");
+				alcoholicBeverage, "/images/Drink/rhinegeist-cougar-blonde-ale.jpeg","", "");
 		AlcoholicBeverage northHighMilkStout = new AlcoholicBeverage("North High Milk Stout", "Ohio", "5",
 				alcoholicBeverage, "/images/Drink/north-high-milk-stout.jpg", "", "");
 		AlcoholicBeverage buehlerChardonnay = new AlcoholicBeverage("Buehler Chardonnay", "Napa", "9",

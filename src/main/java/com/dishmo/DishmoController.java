@@ -27,7 +27,7 @@ public class DishmoController {
 
 	@Resource
 	private DessertRepository dessertRepo;
-	
+
 	@Resource
 	private AlcoholicBeverageRepository alcoholicBeverageRepo;
 
@@ -42,7 +42,7 @@ public class DishmoController {
 		model.addAttribute("desserts", dessertRepo.findAll());
 		return "sample-menu";
 	}
-	
+
 	@RequestMapping("/sample-menus")
 	public String fetchSampleMenus(Model model) {
 		return "sample-menus";
@@ -82,6 +82,7 @@ public class DishmoController {
 		model.addAttribute(selectedDrinkReview);
 		return "drink-reviews";
 	}
+
 	@RequestMapping("/alcoholic-beverage-reviews")
 	public String fetchAlcoholicBeverageReview(@RequestParam("id") Long id, Model model) {
 		AlcoholicBeverage selectedAlcoholicBeverageReview = alcoholicBeverageRepo.findOne(id);

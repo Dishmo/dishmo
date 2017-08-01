@@ -11,7 +11,7 @@ public class Dessert {
 	@Id
 	@GeneratedValue
 	private Long dessertId;
-	
+
 	private String name;
 	private String price;
 	private String imageUrl;
@@ -40,6 +40,7 @@ public class Dessert {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+
 	public String getImageUrl2() {
 		return imageUrl2;
 	}
@@ -52,7 +53,8 @@ public class Dessert {
 
 	}
 
-	public Dessert(String name, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
+	public Dessert(String name, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2,
+			String imageUrl3) {
 		this.name = name;
 		this.price = price;
 		this.sampleMenu = sampleMenu;

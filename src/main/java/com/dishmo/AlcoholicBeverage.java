@@ -29,7 +29,7 @@ public class AlcoholicBeverage {
 	public String getName() {
 		return name;
 	}
-	
+
 	public String getWhereFrom() {
 		return whereFrom;
 	}
@@ -41,6 +41,7 @@ public class AlcoholicBeverage {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+
 	public String getImageUrl2() {
 		return imageUrl2;
 	}
@@ -57,7 +58,8 @@ public class AlcoholicBeverage {
 		return sampleMenu;
 	}
 
-	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
+	public AlcoholicBeverage(String name, String whereFrom, String price, SampleMenu sampleMenu, String imageUrl,
+			String imageUrl2, String imageUrl3) {
 		this.name = name;
 		this.whereFrom = whereFrom;
 		this.price = price;

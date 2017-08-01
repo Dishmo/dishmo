@@ -45,6 +45,7 @@ public class Lunch {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+
 	public String getImageUrl2() {
 		return imageUrl2;
 	}
@@ -57,7 +58,8 @@ public class Lunch {
 
 	}
 
-	public Lunch(String name, String description, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
+	public Lunch(String name, String description, String price, SampleMenu sampleMenu, String imageUrl,
+			String imageUrl2, String imageUrl3) {
 		this.name = name;
 		this.description = description;
 		this.price = price;

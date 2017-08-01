@@ -40,6 +40,7 @@ public class Appetizer {
 	public String getImageUrl() {
 		return imageUrl;
 	}
+
 	public String getImageUrl2() {
 		return imageUrl2;
 	}
@@ -47,11 +48,13 @@ public class Appetizer {
 	public String getImageUrl3() {
 		return imageUrl3;
 	}
+
 	private Appetizer() {
 
 	}
 
-	public Appetizer(String name, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2, String imageUrl3) {
+	public Appetizer(String name, String price, SampleMenu sampleMenu, String imageUrl, String imageUrl2,
+			String imageUrl3) {
 		this.name = name;
 		this.price = price;
 		this.sampleMenu = sampleMenu;

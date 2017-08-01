@@ -181,7 +181,7 @@ public class MenuPopulator implements CommandLineRunner {
 				"Smoked gouda, pepperoni, corn, jalapenos with organic tomato sauce on a whole wheat crust.", "14",
 				dinner, "/images/Dinner/spicy-harvest-pizza.jpg", "/images/Lunch/spicy-harvest-pizza-2.jpg", "/images/Lunch/spicy-harvest-pizza-3.jpg");
 		Dinner housemadeSausageD = new Dinner("Housemade Sausage",
-				"Crumbled sausace and Mamma Lil's Peppers paired with organic tomato sauce, provolone and parmesan.",
+				"Crumbled sausage and Mamma Lil's Peppers paired with organic tomato sauce, provolone and parmesan.",
 				"14", dinner, "/images/Dinner/housemade-sausage-pizza.jpg", "/images/Lunch/housemade-sausage-pizza-2.jpg", "/images/Lunch/housemade-sausage-pizza-3.jpg");
 		Dinner smokedGoudaAndChickenD = new Dinner("Smoked Gouda + Chicken",
 				"Rotisserie roasted chicken, Northstar's BBQ sauce, red peppers, onions, cilantro and peanuts.", "14",

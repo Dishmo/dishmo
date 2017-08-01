@@ -270,7 +270,7 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu appetizer = new SampleMenu();
 		sampleMenuRepo.save(appetizer);
 		Appetizer pimientoCheeseDip = new Appetizer("Pimento Cheese Dip", "7", appetizer,
-				"/images/Appetizer/pimiento-cheese-dip.jpeg", "/images/Appetizer/pimiento-cheese-dip-2.jpeg", "/images/Appetizer/pimento-cheese-dip-3.jpeg");
+				"/images/Appetizer/pimiento-cheese-dip.jpeg", "/images/Appetizer/pimiento-cheese-dip-2.jpeg", "/images/Appetizer/pimiento-cheese-dip-3.jpeg");
 		Appetizer madeToOrderGuacamole = new Appetizer("Made to Order Guacamole", "7", appetizer,
 				"/images/Appetizer/made-to-order-guacamole.jpg", "/images/Appetizer/made-to-order-guacamole-2.jpg", "/images/Appetizer/made-to-order-guacamole-3.jpg");
 

@@ -1,10 +1,7 @@
 
-
-
-
-.navbar-nav li a {
+ a {
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 li a:hover {
@@ -73,6 +70,7 @@ strong {
 	display: block;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	text-align: center;
+	margin-top: 30px;
 }
 
 .container>header h1 {

@@ -14,10 +14,7 @@ body, html, img {
 	background-color: #233237;
 }
 
-.navbar-nav li a {
-	color: white;
-	font-size: 16px;
-}
+
 
 .navbar-nav li a:hover {
 	border-bottom: 3px solid #984b43;
@@ -136,7 +133,7 @@ i
 	{
 	font-weight: 700;
 	text-transform: ;
-	font-family: 'Arvo', Arial, sans-serif;
+
 }
 
 .rm-logo {
@@ -158,7 +155,7 @@ i
 }
 
 .rm-content h3 {
-	font-size: 13px;
+	font-size: 17px;
 	margin: 40px 0;
 	padding: 20px 40px;
 	color: #323b4c;

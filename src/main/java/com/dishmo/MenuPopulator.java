@@ -237,7 +237,7 @@ public class MenuPopulator implements CommandLineRunner {
 		Drink blueberrySmoothie = new Drink("Blueberry Smoothie", "6", drink, "/images/Drink/blueberry-smoothie.jpeg", "/images/Drink/blueberry-smoothie-2.jpg", "/images/Drink/blueberry-smoothie-3.jpg");
 		Drink gingerAle = new Drink("Ginger Ale", "4", drink, "/images/Drink/gingerale.jpg", "/images/Drink/gingerale-2.jpg", "/images/Drink/gingerale-3.jpg");
 		Drink coldBrewedIcedCoffee = new Drink("Cold-Brewed Iced Coffee", "3.5", drink,
-				"/images/Drink/cold-brewed-iced-coffee.jpeg", "", "");
+				"/images/Drink/cold-brewed-iced-coffee.jpeg", "/images/Drink/cold-brewed-iced-coffee-2.jpg", "/images/Drink/cold-brewed-iced-coffee-3.jpeg");
 		Drink mintIcedCoffee = new Drink("Mint Iced Coffee", "4.5", drink, "/images/Drink/mint-iced-tea.jpeg", "/images/Drink/mint-iced-tea-2.jpg", "/images/Drink/mint-iced-tea-3.jpg");
 		Drink singleOriginCoffee = new Drink("Single Origin Coffee", "3", drink,
 				"/images/Drink/single-origin-coffee.jpeg", "/images/Drink/single-origin-coffee-2.jpg", "/images/Drink/single-origin-coffee-3.jpg");

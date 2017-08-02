@@ -430,14 +430,22 @@ table {
 
 .rm-back {
 	overflow: auto;
+	margin-right:-100px;
+padding-right:100px;
+	
 }
 
 .rm-front {
 	overflow: auto;
+		margin-right:-100px;
+padding-right:100px
+	
 }
 
 .rm-middle {
 	overflow: auto;
+		margin-right:-100px;
+padding-right:100px
 }
 
 * {
@@ -448,4 +456,9 @@ table {
 
 .rm-middle {
 	overflow: auto;
+		margin-right:-100px;
+padding-right:100px;
+}
+.rm-middle ::-webkit-scrollbar {
+    display: none;
 }

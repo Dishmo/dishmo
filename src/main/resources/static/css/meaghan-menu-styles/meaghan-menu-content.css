@@ -1,3 +1,91 @@
+.appetizers, .breakfasts, .drinks, .lunches-dinners  {
+	text-align: center;
+}
+
+.beer-and-wine {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+
+body {
+	background-image: url("../../images/meaghan-menu-images/chalkboard-vertical1280x1920.jpg");
+	background-size: 100%;
+	background-repeat: repeat-y;
+	background-position: center, fixed;
+	padding-top: 70px;
+}
+
+button .icon-bar {
+	background-color: #eac67a;
+}
+
+.carousel-control.left, .carousel-control.right { /*moves entire carousel up to nav bar*/
+	top: -100px;
+}
+.carousel-indicators {
+	position: absolute; 
+	bottom: 0;
+}
+
+[class*='col-'] {
+	float: left;
+}
+
+.click-to-see-more, .meal-name {
+	font-family: 'Rock Salt', cursive;
+	color: orange;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.disclaimer {
+	padding-bottom: 50px;
+}
+
+.description, .origin {
+	font-family: 'Handlee', cursive;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	color: orange;
+	font-family: 'Rock Salt', cursive;
+}
+
+.menu-items {
+	padding-top: 10px;
+	padding-bottom: 75px;
+	min-height: 500px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.na-drinks-font {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+
+.name {
+	font-family: 'Handlee', cursive;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.name:hover {
+	background-color: orange;
+	color: white;
+}
+
 .navbar {
 	background-color: #233237;
 }
@@ -26,10 +114,6 @@
 	background-color: rgba(0, 0, 0, 0);
 }
 
-button .icon-bar {
-	background-color: #eac67a;
-}
-
 .navbar-collapse.in {
 	width: 100px;
 	background-color: #233237;
@@ -37,87 +121,6 @@ button .icon-bar {
 
 .nav li a:hover {
 	background-color: #233237;
-}
-.name:hover {
-	background-color: orange;
-	color: white;
-}
-
-.breakfasts, .lunches-dinners, .drinks, .appetizers {
-	text-align: center;
-}
-
-.carousel-indicators {
-	position: absolute; 
-	bottom: 0;
-}
-
-.description, .origin {
-	font-family: 'Handlee', cursive;
-	text-align: center;
-	font-size: 20px;
-	color: white;
-}
-
-h2 {
-	text-align: center;
-	color: orange;
-	font-family: 'Rock Salt', cursive;
-}
-
-.carousel-control.left, .carousel-control.right { /*moves entire carousel up to nav bar*/
-	top: -100px;
-}
-
-.restaurant-name, .price {
-	font-family: 'Rock Salt', cursive;
-	color: white;
-}
-
-.price {
-	color: orange;
-}
-
-
-[class*='col-'] {
-	float: left;
-}
-
-.col-1-2 {
-	width: 50%;
-}
-
-.meal-name, .click-to-see-more {
-	font-family: 'Rock Salt', cursive;
-	color: orange;
-	text-align: center;
-	padding-bottom: 30px;
-}
-.beer-and-wine {
-	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 40px;
-}
-
-.na-drinks-font {
-	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 40px;
-}
-
-.menu-items {
-	padding-top: 10px;
-	padding-bottom: 75px;
-	min-height: 500px;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-.name {
-	font-family: 'Handlee', cursive;
-	font-size: 30px;
-	color: white;
-	text-align: center;
 }
 
 .orange-line {
@@ -140,23 +143,21 @@ h2 {
 	text-align: center;
 }
 
-body {
-	background-image: url("../../images/meaghan-menu-images/chalkboard-vertical1280x1920.jpg");
-	background-size: 100%;
-	background-repeat: repeat-y;
-	background-position: center, fixed;
-	padding-top: 70px;
-}
-.restaurant-name {
-	text-align: center;
-}
-
 p {
 	font-family: 'Handlee', cursive;
 	color: white;
 	text-align: center;
 }
 
-.disclaimer {
-	padding-bottom: 50px;
+.price, .restaurant-name {
+	font-family: 'Rock Salt', cursive;
+}
+
+.price {
+	color: orange;
+}
+
+.restaurant-name {
+	text-align: center;
+	color: white;
 }

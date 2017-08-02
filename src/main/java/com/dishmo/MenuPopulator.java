@@ -83,11 +83,11 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu lunch = new SampleMenu();
 		sampleMenuRepo.save(lunch);
 
-		Lunch simpleSalad = new Lunch("Simple Salad", "Crisp greens and rosemary croutons with cafe vinaigrette.", "5",
+		Lunch simpleSalad = new Lunch("Simple Salad", "Crisp greens and rosemary croutons with café vinaigrette.", "5",
 				lunch, "/images/Lunch/simple-salad.jpeg", "/images/Lunch/simple-salad-2.jpg",
 				"/images/Lunch/simple-salad-3.jpg");
 		Lunch choppedSalad = new Lunch("Chopped Salad",
-				"Applewood smoked turkey, bacon, avocado, blue cheese, almonds, croutons and apples with cafe vinaigrette.",
+				"Applewood smoked turkey, bacon, avocado, blue cheese, almonds, croutons and apples with café vinaigrette.",
 				"15", lunch, "/images/Lunch/chopped-salad.jpeg", "/images/Lunch/chopped-salad-2.jpg",
 				"/images/Lunch/chopped-salad-3.jpg");
 		Lunch beechwoldSalad = new Lunch("Beechwold Salad",
@@ -169,7 +169,7 @@ public class MenuPopulator implements CommandLineRunner {
 		SampleMenu dinner = new SampleMenu();
 		sampleMenuRepo.save(dinner);
 
-		Dinner simpleSaladD = new Dinner("Simple Salad", "Crisp greens and rosemary croutons with cafe vinaigrette.",
+		Dinner simpleSaladD = new Dinner("Simple Salad", "Crisp greens and rosemary croutons with café vinaigrette.",
 				"5", dinner, "/images/Dinner/simple-salad.jpeg", "/images/Lunch/simple-salad-2.jpg",
 				"/images/Lunch/simple-salad-3.jpg");
 		Dinner choppedSaladD = new Dinner("Chopped Salad",

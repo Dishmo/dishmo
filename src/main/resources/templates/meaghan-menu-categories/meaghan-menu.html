@@ -27,9 +27,12 @@
 </head>
 
 <body>
+<div class="restaurant-name-orange-line-long"></div>
 	<h1 class="restaurant-name">Northstar Café</h1>
-	<span class="orange-line"></span>
-
+	<div class="restaurant-name-orange-line-long"></div>
+	
+	<a class="back-link" th:href="@{/sample-menus}">View All Menus</a>
+	<div class="orange-line-long"></div>
 	<div id="myCarousel" class="carousel slide" data-interval="false">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -37,6 +40,7 @@
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
 		</ol>
 		<nav id="dishmonav"></nav>
 		<div class="carousel-inner">
@@ -138,6 +142,20 @@
 							th:href="@{/appetizer-reviews(id=${currentAppetizer.appetizerId})}"
 							th:text="${currentAppetizer.name}"></a>
 							<p class="price" th:text="${currentAppetizer.price}"></p>
+							<div class="orange-line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<h2 class="meal-name">Desserts</h2>
+				<h4 class="click-to-see-more">Click on a menu item to see more!</h4>
+				<div class="menu-items">
+					<div th:each="currentDessert: ${desserts}">
+						<div class="desserts">
+							<a class="name" th:href="@{/dessert-reviews(id=${currentDessert.dessertId})}"
+							th:text="${currentDessert.name}"></a>
+							<p class="price" th:text="${currentDessert.price}"></p>
 							<div class="orange-line"></div>
 						</div>
 					</div>

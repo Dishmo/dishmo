@@ -43,6 +43,10 @@ button .icon-bar {
 	width: 50%;
 }
 
+.disclaimer {
+	padding-bottom: 50px;
+}
+
 .description, .origin {
 	font-family: 'Handlee', cursive;
 	text-align: center;
@@ -126,6 +130,22 @@ h2 {
 	margin-bottom: 40px;
 	margin-top: 25px;
 	background: orange;
+	text-align: center;
+}
+
+.orange-line-long {
+	width: 400px;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	background: orange;
+	text-align: center;
+}
+
+p {
+	font-family: 'Handlee', cursive;
+	color: white;
 	text-align: center;
 }
 

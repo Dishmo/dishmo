@@ -128,7 +128,16 @@ h2 {
 	margin-top: 25px;
 	background: orange;
 	text-align: center;
+}
 
+.orange-line-long {
+	width: 400px;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	background: orange;
+	text-align: center;
 }
 
 body {
@@ -140,4 +149,14 @@ body {
 }
 .restaurant-name {
 	text-align: center;
+}
+
+p {
+	font-family: 'Handlee', cursive;
+	color: white;
+	text-align: center;
+}
+
+.disclaimer {
+	padding-bottom: 50px;
 }

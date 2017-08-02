@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>dishmo | Sample Menu</title>
+  <link rel="icon" type="image/png" href="/images/dishmo-favicon.png"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC"></link>
+  <script type="text/javascript" src="michael-script.js"></script>
+  <link rel="stylesheet" type="text/css" href="michael-menu-content.css"></link>
+  </head>
+  <body>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Breakfast</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">lunch and dinner</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">apps</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">something else</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">asld;kfj</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">sdofkja</div>
+          </a>
+        </div>
+
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+        <div th:each="currentBreakfast: ${breakfasts}">
+		<div class="breakfasts">
+			<a class="name"
+				th:href="@{/breakfast-reviews(id=${currentBreakfast.breakfastId})}"
+				th:text="${currentBreakfast.name}"></a>
+			<p class="price" th:text="${currentBreakfast.price}"></p>
+			<p class="description" th:text="${currentBreakfast.description}"></p>
+		</div>
+	</div>
+        
+        </div>
+         
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+          <p class="w3-text-grey">Ask the waiter</p>
+          <div class="redline"></div> 
+
+          <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+          <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+          <div class="redline"></div> 
+
+          <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+          <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+          <div class="redline"></div> 
+
+          <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+          <p class="w3-text-grey">Tomatoes and mozzarella</p>
+        </div> 
+
+      </div>
+    </div>
+
+    
+	</body>
+</html>

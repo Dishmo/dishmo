@@ -1,0 +1,184 @@
+body, html {
+	height: 100% font-family: "Comfortaa";
+	background-color: #dfdce3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Amatic SC", sans-serif
+}
+
+.menu {
+	display: none
+}
+
+.bgimg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("michael-bg-image.jpeg");
+	min-height: 90%;
+}
+
+.navbar {
+	background-color: #233237;
+}
+
+.navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-nav li a:hover {
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-brand, h3 {
+	color: #eac67a;
+}
+
+.navbar-toggle {
+	background: #233237;
+}
+
+.navbar-brand:hover {
+	color: #eac67a;
+	border-bottom: 3px solid #984b43;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+button .icon-bar {
+	background-color: #eac67a;
+}
+
+.navbar-collapse.in {
+	width: 100px;
+	background-color: #233237;
+}
+
+.nav li a:hover {
+	background-color: #233237;
+}
+
+.container .maincontent {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 75px;
+	margin-bottom: 20px;
+	max-width: 1200px;
+}
+
+.container .maincontent .row .col-md-6 {
+	border: 1px solid #233237;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.maincontent a {
+	font-size: 40px;
+	color: white;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px
+		rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1), -.5px -1px 3px
+		rgba(0, 0, 0, 0.4), -.5px -3px 13px rgba(0, 0, 0, 0.1), -.5px -9px
+		23px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+#drinks, #appetizers, #breakfast, #lunch, #dinner, #dessert, figure:hover
+	{
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@
+-webkit-keyframes flash { 0% {
+	opacity: .4;
+}
+
+100%
+{
+opacity
+:
+ 
+1;
+}
+}
+@
+keyframes flash { 0% {
+	opacity: .4;
+}
+
+100%
+{
+opacity
+:
+ 
+1;
+}
+}
+.iframediv {
+	display: flex;
+	justify-content: center;
+}
+
+iframe {
+	background-color: #233237;
+	background-image:
+		url("../../images/michael-menu-items/northstar-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#drinks {
+	background-image: url("../../images/michael-menu-items/drink-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+}
+
+#appetizers {
+	background-image:
+		url("../../images/michael-menu-items/appetizer-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	background-position: center;
+}
+
+#breakfast {
+	background-image:
+		url("../../images/michael-menu-items/breakfast-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	background-position: center;
+}
+
+#lunch {
+	background-image: url("../../images/michael-menu-items/lunch-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	background-position: center;
+}
+
+#dinner {
+	background-image:
+		url("../../images/michael-menu-items/dinner-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	background-position: center;
+}
+
+#dessert {
+	background-image:
+		url("../../images/michael-menu-items/dessert-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	background-position: center;
+}

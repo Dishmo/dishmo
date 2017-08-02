@@ -1,5 +1,12 @@
-.appetizers, .breakfasts, .drinks, .lunches-dinners  {
+.appetizers, .breakfasts, .drinks, .lunches-dinners, .desserts {
 	text-align: center;
+}
+
+.back-link {
+	font-family: 'Rock Salt', cursive;
+	display: flex;
+	justify-content: space-around;
+	color: white;
 }
 
 .beer-and-wine {
@@ -21,7 +28,7 @@ button .icon-bar {
 }
 
 .carousel-control.left, .carousel-control.right { /*moves entire carousel up to nav bar*/
-	top: -100px;
+	top: -350px;
 }
 .carousel-indicators {
 	position: absolute; 
@@ -160,4 +167,14 @@ p {
 .restaurant-name {
 	text-align: center;
 	color: white;
+}
+
+.restaurant-name-orange-line-long {
+	width: 400px;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	background: orange;
+	text-align: center;
 }
